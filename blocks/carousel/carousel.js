@@ -100,7 +100,9 @@ export default function decorate(block) {
       button.title = `Slide ${i + 1}`;
       button.dataset.panel = `panel_${i}`;
       panels[i].classList.forEach(function (panelclass) {
-        button.classList.add(panelclass);
+        if (!["teaser", "block", "carousel-item"].includes(panelclass)) {
+          button.classList.add(panelclass);
+        }
       })
       if (!i) button.classList.add('selected');
 
