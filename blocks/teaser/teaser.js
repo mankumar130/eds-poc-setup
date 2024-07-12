@@ -36,12 +36,15 @@ export function generateTeaserDOM(props, classes) {
     ctaImage,
     ctaImageAlt,
     ctaImageUrl,
+    imageText,
     ctaImage2,
     ctaImageAlt2,
     ctaImageUrl2,
+    imageText2,
     ctaImage3,
     ctaImageAlt3,
     ctaImageUrl3,
+    imageText3,
     mobileImage,
   ] = props;
 
@@ -73,14 +76,23 @@ export function generateTeaserDOM(props, classes) {
           <div class='long-description'>${longDescr.innerHTML}</div>
           <!-- <div class='short-description'>${hasShortDescr ? shortDescr.innerHTML : longDescr.innerHTML}</div>-->
           <div class='short-description'>${shortDescr.innerHTML}</div>
+          <div class='cta-image-wrapper'>
+            <div class="img-with-text-wrap">
+              <div class="cta-image">${ctaImageAnchor ? ctaImageAnchor.outerHTML : ""}</div>
+              <p class="cta-text">${imageText.innerText}</p>
+            </div>
+            <div class="img-with-text-wrap">
+              <div class="cta-image">${ctaImageAnchor2 ? ctaImageAnchor2.outerHTML : ""}</div>
+              <p class="cta-text">${imageText2.innerText}</p>
+            </div>
+            <div class="img-with-text-wrap">
+              <div class="cta-image">${ctaImageAnchor3 ? ctaImageAnchor3.outerHTML : ""}</div>
+              <p class="cta-text">${imageText3.innerText}</p>
+            </div>
+          </div>
           <div class='cta'>${decorateButtons(firstCta, secondCta)}</div>
         </div>
         <div class='spacer'></div>
-        <div class='cta-image-wrapper'>
-          <div class="cta-image">${ctaImageAnchor ? ctaImageAnchor.outerHTML : ""}</div>
-          <div class="cta-image">${ctaImageAnchor2 ? ctaImageAnchor2.outerHTML : ""}</div>
-          <div class="cta-image">${ctaImageAnchor3 ? ctaImageAnchor3.outerHTML : ""}</div>
-        </div>
       </div>
   `
   );
