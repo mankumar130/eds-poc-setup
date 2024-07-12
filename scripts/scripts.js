@@ -1,3 +1,4 @@
+import { overlay } from "../blocks/applyloanform/applyloanforms.js";
 import { toggleAllNavSections } from "../blocks/header/header.js";
 import { sampleRUM, loadHeader, loadFooter, decorateButtons, decorateIcons, decorateSections, decorateBlocks, decorateTemplateAndTheme, waitForLCP, loadBlocks, loadCSS } from "./aem.js";
 const LCP_BLOCKS = []; // add your LCP blocks to the list
@@ -342,6 +343,46 @@ export function createButton(text, picture) {
   button.innerHTML = picture;
   return button;
 }
+
+function decorateAnchorTag(main) {
+  try {
+    main.querySelectorAll("a").forEach(function (anchor) {
+      if (anchor.innerHTML.includes("<sub>")) {
+        anchor.target = "_blank";
+      } else if (anchor.href.includes("/modal-popup/")) {
+        const paths = anchor.href.split("/")
+        const dataid = paths[paths.length - 1]
+        anchor.dataset.modelId = dataid;
+        targetObject.modelId = dataid;
+        anchor.dataset.href = anchor.href;
+        anchor.href = "javascript:void(0)";
+        targetObject.models = document.querySelectorAll("." + dataid);
+        targetObject.models?.forEach(function (eachModel) {
+          eachModel.classList.add("dp-none");
+        })
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          body.style.overflow = "hidden";
+
+          targetObject.models?.forEach(function (eachModel) {
+            eachModel.classList.remove("dp-none");
+            eachModel.classList.add("overlay")
+            const crossIcon = eachModel.querySelector("em");
+            if (crossIcon.innerHTML.includes(":cross-icon")) {
+              crossIcon.innerHTML = "";
+              crossIcon.addEventListener("click", function (e) {
+                eachModel.classList.remove("overlay")
+                eachModel.classList.add("dp-none");
+              })
+            }
+          })
+        })
+      }
+    });
+  } catch (error) {
+    console.warn(error);
+  }
+}
 /* helper script end */
 
 /**
@@ -388,12 +429,8 @@ function buildAutoBlocks() {
  */
 // eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
-  main.querySelectorAll("a").forEach(function (anchor) {
-    if (anchor.innerHTML.includes("<sub>")) {
-      anchor.target = "_blank";
-    }
-  });
   // hopefully forward compatible button decoration
+  decorateAnchorTag(main);
   decorateButtons(main);
   decorateIcons(main);
   buildAutoBlocks(main);
@@ -514,6 +551,7 @@ async function loadingCustomCss() {
     `${window.hlx.codeBasePath}/styles/mobile-sticky-button/mobile-sticky-button.css`,
     `${window.hlx.codeBasePath}/styles/breadcrumb/breadcrumb.css`,
     `${window.hlx.codeBasePath}/styles/disclaimer/disclaimer.css`,
+    `${window.hlx.codeBasePath}/styles/risk-gradation-popup/risk-gradation-popup.css`,
   ];
 
   loadCssArray.forEach(async (eachCss) => {
@@ -541,6 +579,12 @@ body?.addEventListener("click", function (e) {
       toggleAllNavSections(navSections);
       navSection.setAttribute("aria-expanded", "false");
     });
+  }
+  if (e.target.classList.contains("overlay")) {
+    targetObject.models?.forEach(function (eachModel) {
+      eachModel.classList.add("dp-none");
+      eachModel.classList.remove("overlay")
+    })
   }
   if (!e.target.closest(".stake-pop-up")) {
     document.querySelectorAll(".stake-pop-up").forEach((ele) => {
