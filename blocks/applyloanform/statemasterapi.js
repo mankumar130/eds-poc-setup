@@ -34,7 +34,7 @@ export function stateMasterApi() {
 
 export function statemasterGetStatesApi() {
     return new Promise((resolve, reject) => {
-        let url = "https://publish-p133703-e1305981.adobeaemcloud.com/graphql/execute.json/piramalfinance/State%20City%20Master";
+        let url = "/graphql/execute.json/piramalfinance/State%20City%20Master";
 
         // let stateMasterGraphQLQuery = "query MyQuery { statemasterList { items { state, data } } }";
 
