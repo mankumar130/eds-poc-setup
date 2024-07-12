@@ -166,9 +166,14 @@ export function createCarousle(block, prevButton, nextButton) {
   block.parentElement ? block.parentElement.append(prevButton) : block.append(prevButton);
   block.parentElement ? block.parentElement.append(nextButton) : block.append(nextButton);
   prevButton.addEventListener("click", function (e) {
+    targetObject.carouselButton = this;
+    targetObject.carouselButton.disabled = true;
     prevSlide(e);
   });
+  targetObject.carouselButton = prevButton;
   nextButton.addEventListener("click", function (e) {
+    targetObject.carouselButton = this;
+    targetObject.carouselButton.disabled = true;
     nextSlide(e);
   });
   if (block.querySelectorAll(".carousel-item").length < 4 && !targetObject.isMobile) {
@@ -224,6 +229,7 @@ export function createCarousle(block, prevButton, nextButton) {
     } else {
       setPositionByIndex();
     }
+    targetObject.carouselButton.disabled = false;
   }
 
   function drag(event) {
@@ -256,6 +262,8 @@ export function createCarousle(block, prevButton, nextButton) {
     }
     currentSlide = Math.max(0, Math.min(index, totalSlides - visibleSlides));
     setPositionByIndex();
+    console.log("targetObject.carouselButton :: ", targetObject.carouselButton);
+    targetObject.carouselButton.disabled = false;
   }
 
   const setPositionByIndex = targetObject.isTab ? function () {
@@ -280,7 +288,9 @@ export function createCarousle(block, prevButton, nextButton) {
         // Tab View Logic 3.5 carousel
         if (((currentSlide + 4) > slides.length)) {
           // targetObject.currentTranslate = 40
-          targetObject.currentTranslate = targetObject.currentTranslate ? (targetObject.currentTranslate += 340) : 40;
+          if (currentTranslate > -2100 && targetObject.currentTranslate < 50) {
+            targetObject.currentTranslate = targetObject.currentTranslate ? (targetObject.currentTranslate += 340) : 40;
+          }
         } else {
           targetObject.currentTranslate = 0
         }
@@ -317,13 +327,19 @@ export function createCarousle(block, prevButton, nextButton) {
 
 
   function nextSlide(e) {
-    if (e && !e.target.closest('.slide-next').classList.contains('light')) {
-      showSlide(currentSlide + 1);
-      checkLastChildVisibility();
-    }
+    // if (currentSlide) {
+    //   nextButton.disabled = true;
+    // }
+    // if (e && !e.target.closest('.slide-next').classList.contains('light')) {
+    showSlide(currentSlide + 1);
+    checkLastChildVisibility();
+    // }
   }
 
   function prevSlide() {
+    // if (currentSlide) {
+    //   prevButton.disabled = true;
+    // }
     showSlide(currentSlide - 1);
     checkLastChildVisibility();
   }
@@ -371,9 +387,7 @@ export function createCarousle(block, prevButton, nextButton) {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             prevButton.classList.add("light")
-            prevButton.disabled = true;
           } else {
-            prevButton.disabled = false;
             prevButton.classList.remove("light")
           }
         });
@@ -565,7 +579,7 @@ async function loadingCustomCss() {
     `${window.hlx.codeBasePath}/styles/grievance-redressal/grievance-redressal.css`,
     `${window.hlx.codeBasePath}/styles/documents-required/documents-required.css`,
     `${window.hlx.codeBasePath}/styles/mobile-sticky-button/mobile-sticky-button.css`,
-    `${window.hlx.codeBasePath}/styles/breadcrumb/breadcrumb.css`,
+    // `${window.hlx.codeBasePath}/styles/breadcrumb/breadcrumb.css`,
     `${window.hlx.codeBasePath}/styles/disclaimer/disclaimer.css`,
   ]
 
