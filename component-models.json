@@ -1479,6 +1479,14 @@
         "description": "Enter CTA Image URL 1"
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageTextOne",
+        "value": "",
+        "label": "Image Text 1",
+        "description": "Enter Image Text 1"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "ctaImageTwo",
@@ -1502,6 +1510,14 @@
         "description": "Enter CTA Image URL 2"
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageTextTwo",
+        "value": "",
+        "label": "Image Text 2",
+        "description": "Enter Image Text 2"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "ctaImageThree",
@@ -1523,6 +1539,14 @@
         "value": "",
         "label": "CTA Image URL 3",
         "description": "Enter CTA Image URL 3"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageTextThree",
+        "value": "",
+        "label": "Image Text 3",
+        "description": "Enter Image Text 3"
       },
       {
         "component": "reference",
