@@ -207,7 +207,7 @@
 .section.banner-carousel-wrapper .carousel-wrapper .carousel.block .button-container {
   position: absolute;
   left: 160px;
-  bottom: 60px;
+  bottom: 40px;
   gap: 8px;
 }
 
@@ -364,7 +364,7 @@
   color: var(--darkcharcoal);
 }
 
-@media screen and (max-width:1366px) {
+@media (min-width:1024px) and (max-width:1366px) {
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
     max-width: 312px;
     max-height: 265px;
@@ -477,7 +477,7 @@
 
   .section.banner-carousel-wrapper .carousel-wrapper .carousel.block .button-container {
     left: 12px;
-    bottom: 40px;
+    /* bottom: 40px; */
     gap: 8px;
   }
 
@@ -651,7 +651,7 @@
 
   .section.banner-carousel-wrapper .carousel-wrapper .carousel.block .button-container {
     left: 12px;
-    bottom: 40px;
+    /* bottom: 40px; */
     gap: 8px;
   }
 
