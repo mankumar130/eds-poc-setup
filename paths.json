@@ -8,6 +8,7 @@
     "/content/piramalfinance-eds/home-eligi-calc:/home-eligi-calc.json",
     "/content/piramalfinance-eds/lead-form:/lead-form.json",
     "/content/piramalfinance-eds/home-loan-cities:/home-loan-cities.json",
+    "/content/piramalfinance-eds/personal-loan-cities:/personal-loan-cities.json",
     "/content/piramalfinance-eds/personal-loan-city:/personal-loan-city.json",
     "/content/piramalfinance-eds/bussiness-loan-city:/bussiness-loan-city.json",
     "/content/piramalfinance-eds/document-kyc:/document-kyc.json",
