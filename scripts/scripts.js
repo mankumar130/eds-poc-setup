@@ -3,6 +3,7 @@ import { toggleAllNavSections } from "../blocks/header/header.js";
 import { sampleRUM, loadHeader, loadFooter, decorateButtons, decorateIcons, decorateSections, decorateBlocks, decorateTemplateAndTheme, waitForLCP, loadBlocks, loadCSS } from "./aem.js";
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
+console.log("Main Branch");
 /**
  * Moves all the attributes from a given elmenet to another given element.
  * @param {Element} from the element to copy attributes from
