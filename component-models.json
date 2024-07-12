@@ -1160,6 +1160,10 @@
               {
                 "name": "Teaser 9",
                 "value": "teaser-block-nine"
+              },
+              {
+                "name": "Teaser 10",
+                "value": "teaser-whatsapp-banner"
               }
             ]
           },
