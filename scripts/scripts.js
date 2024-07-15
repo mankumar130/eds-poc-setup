@@ -3,6 +3,7 @@ import { toggleAllNavSections } from "../blocks/header/header.js";
 import { sampleRUM, loadHeader, loadFooter, decorateButtons, decorateIcons, decorateSections, decorateBlocks, decorateTemplateAndTheme, waitForLCP, loadBlocks, loadCSS } from "./aem.js";
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
+console.log("Main Branch 1.3");
 /**
  * Moves all the attributes from a given elmenet to another given element.
  * @param {Element} from the element to copy attributes from
@@ -165,8 +166,15 @@ export function currenyCommaSeperation(x) {
 export function createCarousle(block, prevButton, nextButton) {
   block.parentElement ? block.parentElement.append(prevButton) : block.append(prevButton);
   block.parentElement ? block.parentElement.append(nextButton) : block.append(nextButton);
-  prevButton.addEventListener("click", prevSlide);
+  prevButton.addEventListener("click", function (e) {
+    targetObject.carouselButton = this;
+    targetObject.carouselButton.disabled = true;
+    prevSlide(e);
+  });
+  targetObject.carouselButton = prevButton;
   nextButton.addEventListener("click", function (e) {
+    targetObject.carouselButton = this;
+    targetObject.carouselButton.disabled = true;
     nextSlide(e);
   });
   if (block.querySelectorAll(".carousel-item").length < 4 && !targetObject.isMobile) {
@@ -222,6 +230,7 @@ export function createCarousle(block, prevButton, nextButton) {
     } else {
       setPositionByIndex();
     }
+    targetObject.carouselButton.disabled = false;
   }
 
   function drag(event) {
@@ -238,9 +247,9 @@ export function createCarousle(block, prevButton, nextButton) {
 
   function getVisibleSlides() {
     if (targetObject.isMobile) {
-      return 2;
+      return 2
     } else if (targetObject.isTab) {
-      return 3;
+      return 3
     }
     return 4;
   }
@@ -254,23 +263,84 @@ export function createCarousle(block, prevButton, nextButton) {
     }
     currentSlide = Math.max(0, Math.min(index, totalSlides - visibleSlides));
     setPositionByIndex();
+    console.log("targetObject.carouselButton :: ", targetObject.carouselButton);
+    targetObject.carouselButton.disabled = false;
   }
 
-  function setPositionByIndex() {
-    currentTranslate = (currentSlide * -carouselInner.clientWidth) / visibleSlides;
+  const setPositionByIndex = targetObject.isTab ? function () {
+    // Tab 
+    currentTranslate = (currentSlide * -carouselInner.clientWidth) / (block.closest(".carousel-3pt5") ? 2 : visibleSlides);
+    console.log("currentSlide :: ", currentSlide);
+    console.log("-carouselInner.clientWidth :: ", -carouselInner.clientWidth);
+    console.log("visibleSlides :: ", visibleSlides);
+    console.log("currentTranslate :: ", currentTranslate);
+    console.log("length :: ", (slides.length));
+    console.log("check length :: ", (currentSlide + 4) == (slides.length));
+    console.log("targetObject.isTab :: ", targetObject.isTab);
     prevTranslate = currentTranslate;
     carouselInner.style.transition = "transform 0.5s ease";
-    carouselInner.style.transform = `translateX(${currentTranslate}px)`;
-  }
-
-  function nextSlide(e) {
-    if (!e.target.closest(".slide-next").classList.contains("light")) {
-      showSlide(currentSlide + 1);
-      checkLastChildVisibility();
+    if (block.closest(".carousel-3pt5") && !targetObject.isTab && ((currentSlide + 4) == slides.length)) {
+      // Desktop View Logic 3.5 carousel
+      // carouselInner.style.transform = `translateX(${-600}px)`
+      // carouselInner.style.transform = `translateX(${currentTranslate }px)`;
+      carouselInner.style.transform = `translateX(${currentTranslate - 200}px)`;
+    } else {
+      if (block.closest(".carousel-3pt5") && targetObject.isTab && currentSlide) {
+        // Tab View Logic 3.5 carousel
+        if (((currentSlide + 4) > slides.length)) {
+          // targetObject.currentTranslate = 40
+          if (currentTranslate > -2100 && targetObject.currentTranslate < 50) {
+            targetObject.currentTranslate = targetObject.currentTranslate ? (targetObject.currentTranslate += 340) : 40;
+          }
+        } else {
+          targetObject.currentTranslate = 0
+        }
+        carouselInner.style.transform = `translateX(${currentTranslate - targetObject.currentTranslate}px)`;
+      } else {
+        if (block.closest(".carousel-3pt5") && currentSlide) {
+          // Desktop View Logic 3.5 carousel
+          carouselInner.style.transform = `translateX(${currentTranslate - 200}px)`;
+        } else {
+          carouselInner.style.transform = `translateX(${currentTranslate}px)`;
+        }
+      }
+    }
+  } : function () {
+    // Desktop 
+    currentTranslate = (currentSlide * -carouselInner.clientWidth) / visibleSlides;
+    currentTranslate = (currentSlide * -carouselInner.clientWidth) / visibleSlides;
+    console.log("currentSlide :: ", currentSlide);
+    console.log("-carouselInner.clientWidth :: ", -carouselInner.clientWidth);
+    console.log("visibleSlides :: ", visibleSlides);
+    console.log("currentTranslate :: ", currentTranslate);
+    console.log("length :: ", (slides.length));
+    console.log("check length :: ", (currentSlide + 4) == (slides.length));
+    prevTranslate = currentTranslate;
+    carouselInner.style.transition = "transform 0.5s ease";
+    if (block.closest(".carousel-3pt5") && ((currentSlide + 4) == slides.length)) {
+      // carouselInner.style.transform = `translateX(${-600}px)`
+      carouselInner.style.transform = `translateX(${currentTranslate - 200}px)`;
+    } else {
+      carouselInner.style.transform = `translateX(${currentTranslate}px)`;
     }
   }
 
+
+
+  function nextSlide(e) {
+    // if (currentSlide) {
+    //   nextButton.disabled = true;
+    // }
+    // if (e && !e.target.closest('.slide-next').classList.contains('light')) {
+    showSlide(currentSlide + 1);
+    checkLastChildVisibility();
+    // }
+  }
+
   function prevSlide() {
+    // if (currentSlide) {
+    //   prevButton.disabled = true;
+    // }
     showSlide(currentSlide - 1);
     checkLastChildVisibility();
   }
@@ -294,15 +364,17 @@ export function createCarousle(block, prevButton, nextButton) {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            nextButton.classList.add("light");
+            nextButton.classList.add("light")
+            nextButton.disabled = true;
           } else {
-            nextButton.classList.remove("light");
+            nextButton.disabled = false;
+            nextButton.classList.remove("light")
           }
         });
       },
       {
         root: carousel,
-        threshold: 0.1,
+        threshold: block.closest(".carousel-3pt5") ? 1 : 0.1,
       }
     );
 
@@ -315,15 +387,15 @@ export function createCarousle(block, prevButton, nextButton) {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            prevButton.classList.add("light");
+            prevButton.classList.add("light")
           } else {
-            prevButton.classList.remove("light");
+            prevButton.classList.remove("light")
           }
         });
       },
       {
         root: carousel,
-        threshold: 0.1,
+        threshold: block.closest(".carousel-3pt5") ? 1 : 0.1,
       }
     );
 
@@ -551,6 +623,7 @@ async function loadingCustomCss() {
     `${window.hlx.codeBasePath}/styles/grievance-redressal/grievance-redressal.css`,
     `${window.hlx.codeBasePath}/styles/documents-required/documents-required.css`,
     `${window.hlx.codeBasePath}/styles/mobile-sticky-button/mobile-sticky-button.css`,
+    // `${window.hlx.codeBasePath}/styles/breadcrumb/breadcrumb.css`,
     `${window.hlx.codeBasePath}/styles/disclaimer/disclaimer.css`,
     `${window.hlx.codeBasePath}/styles/risk-gradation-popup/risk-gradation-popup.css`,
   ];
