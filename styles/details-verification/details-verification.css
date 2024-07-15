@@ -35,6 +35,7 @@
 .section.embed-wrapper .embed-wrapper .embed .embed-placeholder .embed-placeholder-play>button {
     background-color: var(--white);
     cursor: pointer;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.1);
 }
 
 .section.embed-wrapper .embed-wrapper .embed .embed-placeholder .embed-placeholder-play>button::before {
@@ -166,6 +167,7 @@
     display: block;
     height: 68px;
     width: 68px;
+    max-width: unset;
 }
 
 .section.details-verification-wrapper .teaserv2-wrapper .teaserv2.block>a .bg-image .title {

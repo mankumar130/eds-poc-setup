@@ -46,6 +46,7 @@ function renderTeaserHTMLFactory(props) {
 
   const textwithDiv = document.createElement("div");
   textwithDiv.innerHTML = textwithinnerhtml?.innerHTML || "";
+  textwithDiv.classList.add("rte-text-description")
 
   bgImageDiv.append(frontImageDiv, titleDiv, descriptionDiv, newButtonTag, textwithDiv);
 

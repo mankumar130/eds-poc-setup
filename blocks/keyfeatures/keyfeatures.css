@@ -155,6 +155,7 @@
     line-height: 28px;
     display: inline-block;
     position: relative;
+    cursor: pointer;
 }
 .view-more-less-js .default-content-wrapper .button-container::after{
     content: '';
@@ -167,6 +168,11 @@
     right: -17px;
     border-radius: 2px;
     transform: rotate(45deg);
+    cursor: pointer;
+}
+.view-more-less-js .default-content-wrapper .button-container.up-arrow::after {
+    transform: rotate(-135deg);
+    top: 10px;
 }
 .view-more-less-js .wrappercreation-wrapper .default-content-wrapper{
     position: absolute;
@@ -196,6 +202,13 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
+}
+
+.section.home-loans-products-wrapper.home-loans-single-products-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .keyfeatures-wrapper .keyfeatures .homeloanteaser .cmp-teaser .cmp-teaser__link .cmp-teaser__content p:nth-child(2) {
+    display: block;
+}
+.section.home-loans-products-wrapper.home-loans-single-products-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .keyfeatures-wrapper .keyfeatures .homeloanteaser .cmp-teaser .cmp-teaser__link .cmp-teaser__content p {
+    width: 100%;
 }
 @media screen and (max-width: 767px) {
     .section.home-loans-products-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container{
@@ -257,7 +270,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media (min-width:768px) and (max-width: 1024px) {
     .section.home-loans-products-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .keyfeatures-wrapper .keyfeatures .homeloanteaser .cmp-teaser .cmp-teaser__link{
         height: 268px;
         row-gap: 12px;
@@ -265,5 +278,17 @@
     }
     .section.home-loans-products-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .keyfeatures-wrapper .keyfeatures .homeloanteaser .cmp-teaser .cmp-teaser__link .cmp-teaser__content p{
         width: 100%;
+    }
+    .section.home-loans-products-wrapper.home-loans-single-products-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .keyfeatures-wrapper .keyfeatures .homeloanteaser .cmp-teaser .cmp-teaser__link .cmp-teaser__content p {
+        width: 96%;
+    }
+    .section.home-loans-products-wrapper.home-loans-single-products-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .keyfeatures-wrapper .keyfeatures .homeloanteaser .cmp-teaser .cmp-teaser__link {
+        height: 319px;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1366px) {
+    .section.home-loans-products-wrapper.home-loans-single-products-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .keyfeatures-wrapper .keyfeatures .homeloanteaser .cmp-teaser .cmp-teaser__link {
+        height: 243px;
     }
 }
