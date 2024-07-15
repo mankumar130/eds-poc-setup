@@ -12,6 +12,7 @@
     "/content/piramalfinance-eds/personal-loan-city:/personal-loan-city.json",
     "/content/piramalfinance-eds/bussiness-loan-city:/bussiness-loan-city.json",
     "/content/piramalfinance-eds/document-kyc:/document-kyc.json",
+    "/content/piramalfinance-eds/personal-loan-document:/personal-loan-document.json",
     "/content/piramalfinance-eds/home-loan-combined-calculator:/home-loan-combined-calculator.json",
     "/content/piramalfinance-eds/home-construction-loans-combined-calculator:/home-construction-loans-combined-calculator.json",
     "/content/piramalfinance-eds/business-loan-combined-calculator:/business-loan-combined-calculator.json",
@@ -22,7 +23,6 @@
     "/content/piramalfinance-eds/homepage-emi-calculator:/homepage-emi-calculator.json",
     "/content/piramalfinance-eds/placeholder:/placeholder.json",
     "/content/piramalfinance-eds/ph:/ph.json",
-    "/content/piramalfinance-eds/meta:/meta.json",
     "/content/piramalfinance-eds/test:/test.json"
   ]
 }

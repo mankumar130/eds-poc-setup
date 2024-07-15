@@ -89,7 +89,7 @@
     padding-top: 0;
     width: 80%;
 }
-.section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion.block:last-child{
+.section.documents-required-brown.last-child-hide .accordion-group-wrapper .accordion-group .accordion.block:last-child{
     pointer-events: none;
 }
 .section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion details summary div {
@@ -123,7 +123,7 @@
     object-fit: contain;
     background-size: 100%;
 }
-.section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion:last-child details summary div::before{
+.section.documents-required-brown.last-child-hide .accordion-group-wrapper .accordion-group .accordion:last-child details summary div::before{
     content: none;
 }
 .section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion details summary::before{
