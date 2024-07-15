@@ -356,13 +356,13 @@ export function decorateAnchorTag(main) {
         targetObject.modelId = dataid;
         anchor.dataset.href = anchor.href;
         anchor.href = "javascript:void(0)";
-        targetObject.models = document.querySelectorAll("." + dataid);
-        targetObject.models?.forEach(function (eachModel) {
-          eachModel.classList.add("dp-none");
-          eachModel.remove();
-          body.prepend(eachModel);
-        })
         anchor.addEventListener("click", function (e) {
+          targetObject.models = document.querySelectorAll("." + dataid);
+          targetObject.models?.forEach(function (eachModel) {
+            eachModel.classList.add("dp-none");
+            eachModel.remove();
+            body.prepend(eachModel);
+          })
           e.preventDefault();
           body.style.overflow = "hidden";
 
