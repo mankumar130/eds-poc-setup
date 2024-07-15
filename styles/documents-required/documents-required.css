@@ -89,7 +89,7 @@
     padding-top: 0;
     width: 80%;
 }
-.section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion.block:last-child{
+.section.documents-required-brown.last-child-hide .accordion-group-wrapper .accordion-group .accordion.block:last-child{
     pointer-events: none;
 }
 .section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion details summary div {
