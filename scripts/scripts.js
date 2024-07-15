@@ -344,7 +344,7 @@ export function createButton(text, picture) {
   return button;
 }
 
-function decorateAnchorTag(main) {
+export function decorateAnchorTag(main) {
   try {
     main.querySelectorAll("a").forEach(function (anchor) {
       if (anchor.innerHTML.includes("<sub>")) {
@@ -359,6 +359,8 @@ function decorateAnchorTag(main) {
         targetObject.models = document.querySelectorAll("." + dataid);
         targetObject.models?.forEach(function (eachModel) {
           eachModel.classList.add("dp-none");
+          eachModel.remove();
+          body.prepend(eachModel);
         })
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
@@ -549,7 +551,6 @@ async function loadingCustomCss() {
     `${window.hlx.codeBasePath}/styles/grievance-redressal/grievance-redressal.css`,
     `${window.hlx.codeBasePath}/styles/documents-required/documents-required.css`,
     `${window.hlx.codeBasePath}/styles/mobile-sticky-button/mobile-sticky-button.css`,
-    `${window.hlx.codeBasePath}/styles/breadcrumb/breadcrumb.css`,
     `${window.hlx.codeBasePath}/styles/disclaimer/disclaimer.css`,
     `${window.hlx.codeBasePath}/styles/risk-gradation-popup/risk-gradation-popup.css`,
   ];
