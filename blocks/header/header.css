@@ -345,8 +345,8 @@ header nav .nav-sections .nav-drop::after{
   color: var(--darkcharcoal);
   cursor: pointer;
   font-family: 'Nunito-Bold',sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-decoration: none;
 }
 .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper>ul>li>p a {
@@ -356,8 +356,8 @@ header nav .nav-sections .nav-drop::after{
   color: var(--darkcharcoal);
   cursor: pointer;
   font-family: 'Nunito-Bold',sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-decoration: none;
   background: transparent;
   margin: unset;
@@ -367,12 +367,12 @@ header nav .nav-sections .nav-drop::after{
 .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper>ul>li>p>a>sup{
   background-color: #41c672;
   color: #fff;
-  font-size: 10px;
+  font-size: 0.625rem;
   font-family: 'Nunito-Bold';
   padding: 2px 4px;
   height: 18px;
   width: 33px;
-  line-height: 12px;
+  line-height: 0.75rem;
   display: flex;
   align-items: center;
   border-radius: 4px;
@@ -410,16 +410,16 @@ header nav .nav-sections .nav-drop::after{
   height: max-content;
   color: var(--darkcharcoal);
   font-family: 'Nunito-Bold',sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper>ul>li>ul>li>p {
   font-family: 'Nunito-Bold', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.5rem;
   margin-left: 10px;
   height: max-content;
   position: relative;
@@ -434,7 +434,7 @@ header nav .nav-sections .nav-drop::after{
 
 .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper>ul>li>ul>li>ul>li {
   font-family: 'Nunito-Regular', sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   margin-bottom: 12px;
   color: rgb(51 51 51);
   font-weight: 300;
@@ -521,9 +521,9 @@ header nav .nav-sections .nav-drop::after{
   color: #333;
   cursor: pointer;
   font-family: Nunito-Bold, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 1.5rem;
   text-decoration: none;
   padding: 13px 6px 0 6px;
 }
@@ -538,8 +538,8 @@ header nav .nav-sections .nav-drop::after{
   color: #f26841;
   display: flex;
   font-family: Nunito-Bold, sans-serif;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   min-width: 81px;
   min-height: 38px;
   padding-left: 16px;
@@ -661,8 +661,8 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
   border-radius: 4px;
   color: #fff;
   font-family: 'Nunito-Bold',sans-serif;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   padding: 4px 10px;
 }
 
@@ -795,14 +795,14 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     width: 100%;
     background-color: #fff;
     font-family: 'Nunito-Regular', sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     padding: 16px 12px;
     padding-bottom: 0;
   }
 
   .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper>ul>li>ul>li>p {
-    font-size: 14px;
+    font-size: 0.875rem;
     display: block;
   }
 
@@ -866,16 +866,16 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     bottom: 17px;
     left: 12px;
     padding: 4px 10px 4px 8px;
-    font-size: 12px;
+    font-size: 0.75rem;
     width: 47px;
     background-color: #41C672;
     color: #fff;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-family: 'Nunito-Bold';
     padding: 6px 10px;
     min-height: 24px;
     width: 50px;
-    line-height: 12px;
+    line-height: 0.75rem;
     display: flex;
     border-radius: 4px;
     position: absolute;
@@ -1057,9 +1057,9 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     cursor: pointer;
     display: flex;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 1pc;
+    font-size: 1rem;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-decoration: none;
     color: #212529;
     padding: 1pc 0;
@@ -1151,8 +1151,8 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
   .section.mobile-view-header .code-wrapper .code div div ul:nth-child(1) li:nth-child(3) span,
   .section.mobile-view-header .code-wrapper .code div div ul:nth-child(1) li:nth-child(4) span{
     color: #212529;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     padding-left: 8px;
     font-family: Nunito-Bold, sans-serif;
     text-decoration: none;
@@ -1228,8 +1228,8 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
 .section.mobile-view-header .code-wrapper .code   div > div > ul:nth-child(2) > li:nth-child(2) > ul li,
 .section.mobile-view-header .code-wrapper .code  div > div > ul:nth-child(2) > li:nth-child(1) > ul li{
   font-family: Nunito-Regular, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   color: #212529;
 }
 .section.mobile-view-header .code-wrapper .code div > div > ul:nth-child(4) > li:nth-child(1) > span{
@@ -1239,7 +1239,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
 .section.mobile-view-header .code-wrapper .code div > div > ul:nth-child(4) > li:nth-child(1) > a > span::before{
   position: absolute;
   content: 'FREE';
-  line-height: 24px;
+  line-height: 1.5rem;
   align-items: center;
   background-color: #41c66e;
   border-radius: 4px;
@@ -1247,7 +1247,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
   cursor: pointer;
   display: flex;
   font-family: Nunito-Bold, sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   height: 16px;
   width: 32px;
   padding: 1px 6px 0px 8px;
@@ -1268,8 +1268,8 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     border-radius: 4px;
     color: #fff;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 0.75rem;
+    line-height: 1rem;
     margin-left: 10px;
     padding:4px 10px;
 }
@@ -1313,8 +1313,8 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
 .section.mobile-view-header .header-mobile-app-store p{
   color: #212529;
   font-family: Nunito-Bold, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   margin: unset;
   margin-bottom: 12px;
   text-align: center;
@@ -1374,7 +1374,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     font-family: Nunito-Bold, sans-serif;
     font-size: 1pc;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-decoration: none;
     color: #212529;
     padding: 16px 0;
@@ -1392,7 +1392,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     display: flex;
     font-family: Nunito-Bold, sans-serif;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-decoration: none;
     margin-bottom: 0;
     position: relative;
@@ -1457,7 +1457,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     font-family: Nunito-Regular, sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 1.25rem;
     text-decoration: none;
     color: #212529;
   }
@@ -1492,7 +1492,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     display: flex;
     font-family: Nunito-Bold, sans-serif;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-decoration: none;
     margin-bottom: 0;
     position: relative;
