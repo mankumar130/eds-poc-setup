@@ -14,16 +14,16 @@
 .happy-customer .title {
     font-family: "Nunito-Extrabold", sans-serif;
     font-weight: 800;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2.5rem;
     color: #333333;
     text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
     .happy-customer .title {
-        font-size: 20px;
-        line-height: 40px;
+        font-size: 1.25rem;
+        line-height: 2.5rem;
     }
 }
 
@@ -305,8 +305,8 @@
 .happy-customer .info-card .customer-info .customer-comments .comments p .custinfo {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     color: #333333;
     margin-bottom: 20px;
     display: block;
@@ -314,16 +314,16 @@
 
 @media screen and (max-width: 1024px) {
     .happy-customer .info-card .customer-info .customer-comments .comments p .custinfo {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 }
 
 .happy-customer .info-card .customer-info .customer-comments .comments p .custname {
     font-family: "Nunito-Bold", sans-serif;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     color: #333333;
     margin-bottom: 4px;
     display: block;
@@ -331,23 +331,23 @@
 
 @media screen and (max-width: 1024px) {
     .happy-customer .info-card .customer-info .customer-comments .comments p .custname {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
     }
 }
 
 .happy-customer .info-card .customer-info .customer-comments .comments p .custprofession {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #808080;
 }
 
 @media screen and (max-width: 1024px) {
     .happy-customer .info-card .customer-info .customer-comments .comments p .custprofession {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 0.75rem;
+        line-height: 1rem;
     }
 }
 
@@ -733,9 +733,9 @@
     color: #000;
     display: block;
     font-family: 'Nunito-Extrabold',sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
-    line-height: 40px;
+    line-height: 2.5rem;
     padding-bottom: 8px;
     text-align: center;
 }
@@ -746,8 +746,8 @@
     }
 
     .section.testimonial-content-wrapper .default-content-wrapper h2 {
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
         padding-bottom: 4px;
     }
 }

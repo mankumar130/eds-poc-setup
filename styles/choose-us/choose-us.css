@@ -4,9 +4,9 @@
   color: #000;
   display: block;
   font-family: 'Nunito-Extrabold', sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 800;
-  line-height: 40px;
+  line-height: 2.5rem;
   padding-bottom: 8px;
   margin: 0;
 }
@@ -16,9 +16,9 @@
   color: var(--gradient-gray);
   display: block;
   font-family: 'Nunito-Regular', sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75rem;
   padding-bottom: 8px;
   margin: 0;
 }
@@ -57,18 +57,18 @@
 .section.choose-us-css .columns-wrapper .columns div div :nth-child(2) {
   color: #333;
   font-family: 'Nunito-Extrabold', sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 800;
-  line-height: 28px;
+  line-height: 1.75rem;
   padding: 16px 0;
 }
 
 .section.choose-us-css .columns-wrapper .columns div div :nth-child(3) {
   color: #666;
   font-family: 'Nunito-Regular', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 .section.choose-us-css.choose-us-2-col .columns-wrapper .columns>div {
@@ -103,15 +103,15 @@
 
 @media screen and (max-width: 767px) {
   .section.choose-us-css .default-content-wrapper h2 {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     padding-bottom: 4px;
   }
 
   .section.choose-us-css .default-content-wrapper p,
   .section.choose-us-css .columns-wrapper .columns div div :nth-child(3) {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     padding-bottom: 4px;
   }
 
@@ -145,9 +145,9 @@
   .section.choose-us-css .columns-wrapper .columns div div :nth-child(2) {
     color: #333;
     font-family: 'Nunito-Bold', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.5rem;
     padding: 8px 0 12px;
   }
 
@@ -194,9 +194,9 @@
   .section.choose-us-css .columns-wrapper .columns div div :nth-child(2) {
     color: #333;
     font-family: 'Nunito-Bold',sans-serif;
-    font-size: 1pc;
+    font-size: 1rem;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.5rem;
     padding: 8px 0 9pt;
   }
   .section.choose-us-css .columns-wrapper .columns>div:nth-child(2) {
