@@ -8,7 +8,7 @@
     padding: 0 32px;
     margin-bottom: 0;
 }
-.section.documents-required-brown .default-content-wrapper #documents-required{
+.section.documents-required-brown .default-content-wrapper>h2{
     color: #333;
     display: block;
     font-family: Nunito-Extrabold, sans-serif;
@@ -31,6 +31,9 @@
     padding-bottom: 8px;
     margin-bottom: 24px;
     margin-top: 24px;
+}
+.section.documents-required-brown .default-content-wrapper p>a {
+    color: var(--orange);
 }
 .section.documents-required-brown .default-content-wrapper .button-container ::after{
     content: '';
@@ -481,7 +484,7 @@ table {
         margin-bottom: 20px;
         margin-top: 12px;
     }
-    .section.documents-required-brown .default-content-wrapper #documents-required{
+    .section.documents-required-brown .default-content-wrapper>h2{
         font-size: 18px;
         line-height: 26px;
         padding-bottom: 4px;
