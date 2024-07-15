@@ -416,7 +416,7 @@ export function createButton(text, picture) {
   return button;
 }
 
-function decorateAnchorTag(main) {
+export function decorateAnchorTag(main) {
   try {
     main.querySelectorAll("a").forEach(function (anchor) {
       if (anchor.innerHTML.includes("<sub>")) {
@@ -428,11 +428,13 @@ function decorateAnchorTag(main) {
         targetObject.modelId = dataid;
         anchor.dataset.href = anchor.href;
         anchor.href = "javascript:void(0)";
-        targetObject.models = document.querySelectorAll("." + dataid);
-        targetObject.models?.forEach(function (eachModel) {
-          eachModel.classList.add("dp-none");
-        })
         anchor.addEventListener("click", function (e) {
+          targetObject.models = document.querySelectorAll("." + dataid);
+          targetObject.models?.forEach(function (eachModel) {
+            eachModel.classList.add("dp-none");
+            eachModel.remove();
+            body.prepend(eachModel);
+          })
           e.preventDefault();
           body.style.overflow = "hidden";
 

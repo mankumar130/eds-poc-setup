@@ -5,9 +5,9 @@
     color: #000;
     display: block;
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
-    line-height: 40px;
+    line-height: 2.5rem;
     padding-bottom: 8px;
 }
 
@@ -17,9 +17,9 @@
     color: #666;
     display: block;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.75rem;
     padding-bottom: 8px;
 }
 
@@ -62,9 +62,9 @@
     left: 24px;
     color: #fff;
     font-family: 'Nunito-Bold', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
-    line-height: 32px;
+    line-height: 2rem;
 }
 
 .section.calculator-section-wrapper .wrappercreation-wrapper .block .wrapper-creation-container .teaserv2-wrapper .block>a .bg-image .button-container-text {
@@ -76,9 +76,9 @@
     border-radius: 8px;
     color: #fff;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 1.25rem;
     padding: 15.5px 17.5px;
 }
 
@@ -106,15 +106,15 @@
 
 @media screen and (max-width:767px) {
     .section.calculator-section-wrapper .default-content-wrapper h2 {
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
         padding-bottom: 4px;
     }
 
     .section.calculator-section-wrapper .default-content-wrapper p {
         margin-bottom: 20px;
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
         padding-bottom: 4px;
     }
 
@@ -135,15 +135,15 @@
     .section.calculator-section-wrapper .wrappercreation-wrapper .block .wrapper-creation-container .teaserv2-wrapper .block>a .bg-image .title {
         top: 16px;
         left: 16px;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 
     .section.calculator-section-wrapper .wrappercreation-wrapper .block .wrapper-creation-container .teaserv2-wrapper .block>a .bg-image .button-container-text {
         top: 60px;
         left: 16px;
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
         padding: 9px 11.21px;
     }
 }
