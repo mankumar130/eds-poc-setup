@@ -12,7 +12,7 @@
     color: #333;
     display: block;
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 2pc;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 28px;
     padding-bottom: 8px;
@@ -26,7 +26,7 @@
     color: #666;
     display: block;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 28px;
     padding-bottom: 8px;
     margin-bottom: 24px;
@@ -48,7 +48,7 @@
 .section.documents-required-brown .default-content-wrapper .button-container{
     color: #365069;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     border: 1px solid #365069;
     max-width: 322px;
@@ -70,7 +70,7 @@
     background-color: unset;
     color: #365069;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 24px;
     padding-left: 10px;
@@ -80,14 +80,14 @@
 .section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion details summary div h3{
     color: #333;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 28px;
     padding-bottom: 4px;
 }
 .section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion.block details summary div p{
     color: #666;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     margin-top: unset;
     padding-top: 0;
@@ -235,7 +235,7 @@ summary div::before{
     color: #000;
     display: block;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     margin-top: unset;
 }
@@ -248,7 +248,7 @@ summary div::before{
     color: #000;
     display: block;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     margin-top: unset;
     padding-top: 24px;
@@ -260,7 +260,7 @@ summary div::before{
 .section.documents-required-brown  > div.accordion-group-wrapper > div > div > details > div > p:nth-child(1) > strong{
     color: #f26841;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 1pc;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 24px;
     padding-bottom: 24px;
@@ -271,14 +271,14 @@ table {
 .accordion.block >details> div> table:nth-child(1)> tbody> tr> th:nth-child(1){
     color: #f26841;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     padding-top: unset;
 }
 .accordion.block >details> div> table:nth-child(1)> tbody> tr> th:nth-child(3){
     color: #000;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     padding-top: unset;
@@ -287,7 +287,7 @@ table {
 .section.documents-required-brown table:nth-child(2) > tbody > tr > th:nth-child(1) > span{
     color: #666;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 24px;
     margin-left: 10px;
@@ -297,7 +297,7 @@ table {
 .section.documents-required-brown table:nth-child(2) > tbody > tr> th:nth-child(1){
     color: #f26841;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 24px;
     padding-top: 32px;
@@ -306,7 +306,7 @@ table {
     padding-top: 32px;
     color: #000;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 1pc;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     padding-top: 24px;
@@ -348,7 +348,7 @@ table {
 .section.documents-required-brown .accordion.block > details > div > ul > li > p strong{
     color: #f26841;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 24px;
 }
@@ -359,7 +359,7 @@ table {
     color: #000;
     display: block;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     padding-top: 24px;
@@ -450,11 +450,11 @@ table {
         margin-left: 12px;
     }
     .section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion details summary div h3{
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
     }
     .section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion.block details summary div p{
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 16px;
     }
     .section.documents-required-brown .accordion-group>.accordion details summary{
@@ -479,30 +479,30 @@ table {
         top: 10px;
     }
     .section.documents-required-brown .default-content-wrapper p{
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
         padding-bottom: 4px;
         margin-bottom: 20px;
         margin-top: 12px;
     }
     .section.documents-required-brown .default-content-wrapper>h2{
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 26px;
         padding-bottom: 4px;
     }
     .accordion.block >details> div> table:nth-child(1)> tbody> tr> th:nth-child(1){
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 16px;
     }
     .accordion.block >details> div> table:nth-child(1)> tbody> tr> th:nth-child(3){
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 16px;
     }
     .section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion details>div{
         padding-left: 0;
     }
     .section.documents-required-brown table:nth-child(2) > tbody > tr> th:nth-child(3), .section.documents-required-brown table:nth-child(2) > tbody > tr> th:nth-child(2), .section.documents-required-brown table:nth-child(2) > tbody > tr> th:nth-child(1){
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 16px;
         padding-top: 24px;
     }
@@ -510,12 +510,12 @@ table {
         width: 36%;
     }
     .section.documents-required-brown table:nth-child(2) > tbody > tr > th:nth-child(1) > span{
-        font-size: 10px;
+        font-size: 0.625rem;
         line-height: 14px;
         margin-left: unset;
     }
     .section.documents-required-brown th, .section.documents-required-brown td{
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 16px;
     }
     .section.documents-required-brown table:nth-child(4) tbody tr th:nth-child(1), .section.documents-required-brown table:nth-child(5) tbody tr th:nth-child(1), .section.documents-required-brown table:nth-child(6) tbody tr th:nth-child(1), .section.documents-required-brown table:nth-child(7) tbody tr th:nth-child(1), .section.documents-required-brown table:nth-child(8) tbody tr th:nth-child(1), .section.documents-required-brown table:nth-child(9) tbody tr th:nth-child(1){
@@ -547,22 +547,22 @@ table {
         left: 18px;
     }
     .section.documents-required-brown > div.accordion-group-wrapper > div > div > details > div > p:nth-child(1) > strong{
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 16px;
     }
     .section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion details div p{
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 16px;
     }
     .section.documents-required-brown .accordion-group-wrapper{
         margin-bottom: unset;
     }
     .section.documents-required-brown .accordion.block > details > div > ul > li > ul > li{
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 16px;
     }
     .section.documents-required-brown .accordion.block > details > div > ul > li > p strong{
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 16px;
     }
     .section.documents-required-brown .default-content-wrapper:last-child{

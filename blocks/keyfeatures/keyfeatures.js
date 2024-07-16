@@ -6,8 +6,8 @@ export default function decorate(block) {
     block.innerHTML = '';
     block.append(newDivFeature);
     try {
-        featureDropDownClick();
-        document.querySelector('.home-loans-products-wrapper.view-more-less-js') ? viewLogic() : "";   
+        featureDropDownClick(block);
+        block.closest('.home-loans-products-wrapper.view-more-less-js') ? viewLogic(block) : "";
     } catch (error) {
         console.warn(error)
     }
@@ -183,8 +183,8 @@ function generateFeatureHTML(props) {
 }
 
 
-function featureDropDownClick() {
-    var featureClick = document.querySelectorAll('.keyfeatures-info .heading')
+function featureDropDownClick(block) {
+    var featureClick = block.querySelectorAll('.keyfeatures-info .heading')
     featureClick.forEach(function (btn) {
         btn.addEventListener('click', function (e) {
             e.stopImmediatePropagation();
@@ -193,18 +193,18 @@ function featureDropDownClick() {
             keyfeaturesList.forEach(function (keyfeatures) {
                 if (keyfeatures.style.display === 'none') {
                     keyfeatures.style.display = 'block';
-                    document.querySelectorAll('.plusicon').forEach(function (icon) {
+                    block.querySelectorAll('.plusicon').forEach(function (icon) {
                         icon.style.display = 'none';
                     })
-                    document.querySelectorAll('.minusicon').forEach(function (icon) {
+                    block.querySelectorAll('.minusicon').forEach(function (icon) {
                         icon.style.display = 'block';
                     })
                 } else {
                     keyfeatures.style.display = 'none';
-                    document.querySelectorAll('.plusicon').forEach(function (icon) {
+                    block.querySelectorAll('.plusicon').forEach(function (icon) {
                         icon.style.display = 'block';
                     })
-                    document.querySelectorAll('.minusicon').forEach(function (icon) {
+                    block.querySelectorAll('.minusicon').forEach(function (icon) {
                         icon.style.display = 'none';
                     })
                 }
@@ -213,42 +213,48 @@ function featureDropDownClick() {
     })
 }
 
-function viewLogic() {
-    document.querySelectorAll('.home-loans-products-wrapper.view-more-less-js').forEach(each => {
-        const wrapper = each.querySelector('.wrappercreation-wrapper');
-        const keyFeatures = wrapper.querySelectorAll('.keyfeatures-wrapper');
-        
-        keyFeatures.forEach((eachFeature, index) => {
-            eachFeature.classList.toggle("dp-none", index > 2);
-        });
-        
-        const buttonContainer = wrapper.querySelector('.button-container');
-        if (buttonContainer) {
-            const buttonText = buttonContainer?.querySelector('a')?.textContent.trim();
-            buttonContainer.innerHTML = buttonText;
-            viewMoreLogic(each);
-        }
+function viewLogic(block) {
+    const viewMoreSection = block.closest('.home-loans-products-wrapper.view-more-less-js')
+    // .forEach(each => {
+    const wrapper = viewMoreSection?.querySelector('.wrappercreation-wrapper');
+    const keyFeatures = wrapper?.querySelectorAll('.keyfeatures-wrapper');
+
+    keyFeatures.forEach((eachFeature, index) => {
+        eachFeature.classList.toggle("dp-none", index > 2);
     });
+
+    const buttonContainer = wrapper.querySelector('.button-container');
+    if (buttonContainer) {
+        const buttonText = buttonContainer?.textContent.trim();
+        buttonContainer.innerHTML = buttonText;
+        viewMoreLogic(viewMoreSection);
+    }
+    // });
 }
 
 function viewMoreLogic(each) {
     const buttonContainer = each.querySelector('.wrappercreation-wrapper .button-container');
-    buttonContainer.addEventListener('click', function () {
+    !each.dataset.clickAdded && buttonContainer.addEventListener('click', function () {
         const isViewMore = this.textContent.toLowerCase() === 'view more';
-        if(isViewMore){
-            this.innerText = "View Less";
-            this.classList.add("up-arrow");
-        }else{
-            this.innerText = "View More";
-            this.classList.remove("up-arrow");
-            scrollToComponent(each);
-        }
-        
+
         each.querySelectorAll('.keyfeatures-wrapper').forEach((eachFeature, index) => {
             eachFeature.classList.toggle("dp-none", !isViewMore && index > 2);
         });
 
+        if (isViewMore) {
+            this.innerText = "View Less";
+            this.classList.add("up-arrow");
+        } else {
+            this.innerText = "View More";
+            this.classList.remove("up-arrow");
+            scrollToComponent(each);
+        }
     });
+    
+    if (!each.dataset.clickAdded) {
+        each.dataset.clickAdded = true;
+    }
+
 }
 
 function scrollToComponent(component) {
