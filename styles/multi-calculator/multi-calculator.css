@@ -1,6 +1,6 @@
 /* calculator start */
 .section.multi-calculator-wrapper.teaser-container {
-    padding: 0  ;
+    padding: 0;
     background-color: var(--lilen);
 }
 
@@ -13,20 +13,20 @@
     padding-bottom: 40px;
 }
 
-.section.multi-calculator-wrapper .teaser-wrapper .teaser .background .text .title h2{
+.section.multi-calculator-wrapper .teaser-wrapper .teaser .background .text .title h2 {
     color: var(--black);
     display: inline-block;
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 800;
     line-height: 60px;
     margin-bottom: 16px;
 }
 
-.section.multi-calculator-wrapper .teaser-wrapper .teaser .background .text .long-description p{
+.section.multi-calculator-wrapper .teaser-wrapper .teaser .background .text .long-description p {
     color: #666;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 32px;
 }
@@ -42,39 +42,44 @@
     justify-content: center;
 }
 
-.section.multi-calculator-wrapper .teaser-wrapper .teaser .background .front-picture picture > img {
+.section.multi-calculator-wrapper .teaser-wrapper .teaser .background .front-picture picture>img {
     height: 124px;
     width: 124px;
 }
 
 @media screen and (max-width: 767px) {
-    .section.multi-calculator-wrapper .teaser-wrapper .teaser .background .text .long-description p{
-        font-size: 14px;
+    .section.multi-calculator-wrapper .teaser-wrapper .teaser .background .text .long-description p {
+        font-size: 0.875rem;
         line-height: 20px;
+    }
+
+    .section.center-home-loan-calculator.teaser-container {
+        padding: unset;
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .section.multi-calculator-wrapper .teaser-wrapper .teaser .background {
         align-items: center;
         padding-top: 24px;
         margin-top: 0;
     }
 
-    .section.multi-calculator-wrapper .teaser-wrapper .teaser .background img{
+    .section.multi-calculator-wrapper .teaser-wrapper .teaser .background img {
         display: none;
     }
 
-    .section.multi-calculator-wrapper .teaser-wrapper .teaser .background .text .title h2{
-        font-size: 24px;
+    .section.multi-calculator-wrapper .teaser-wrapper .teaser .background .text .title h2 {
+        font-size: 1.5rem;
         line-height: 32px;
         margin-bottom: 8px;
     }
 
-    .section.multi-calculator-wrapper .teaser-wrapper .teaser .background .text .long-description p{
+    .section.multi-calculator-wrapper .teaser-wrapper .teaser .background .text .long-description p {
         display: none;
     }
 }
+
 /* calculator end */
 
 
@@ -83,7 +88,7 @@
     padding: 0;
 }
 
-.section.multi-calc-teaser-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container{
+.section.multi-calc-teaser-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container {
     column-gap: 24px;
     display: grid;
     grid-template-columns: minmax(0, 595px) minmax(0, 595px);
@@ -111,7 +116,7 @@
     color: var(--white);
     display: block;
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 800;
     line-height: 30px;
     padding-bottom: 24px;
@@ -122,7 +127,7 @@
     border-radius: 8px;
     color: var(--white);
     font-family: Nunito-Bold, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
     line-height: 21px;
     padding: 10px 16px;
@@ -139,7 +144,7 @@
         min-height: 105px;
     }
 
-    .section.multi-calc-teaser-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container{
+    .section.multi-calc-teaser-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container {
         grid-template-columns: minmax(0, 595px);
     }
 
@@ -148,11 +153,12 @@
     }
 
     .section.multi-calc-teaser-wrapper .teaser-wrapper .teaser .background .foreground .text .long-description p {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 24px;
         padding-bottom: 8px;
     }
 }
+
 /* calculator teaser container end */
 
 
@@ -169,26 +175,26 @@
     display: flex;
     align-items: center;
     height: 100%;
-    margin-top: 3pc;
+    margin-top: 48px;
     min-height: 200px;
     padding: 43px;
     width: 100%;
 }
 
 .section.home-loan-eligibility-calculator .teaser-wrapper .teaser .background .foreground .text .title h2 {
-    color: #fff;
+    color: var(--white);
     display: block;
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 32px;
     padding-bottom: 16px;
 }
 
 .section.home-loan-eligibility-calculator .teaser-wrapper .teaser .background .foreground .text .long-description p {
-    color: #fff;
+    color: var(--white);
     font-family: Nunito-Regular, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
 }
@@ -201,14 +207,14 @@
     }
 
     .section.home-loan-eligibility-calculator .teaser-wrapper .teaser .background .foreground .text .title h2 {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
         line-height: 24px;
         padding-bottom: 8px;
     }
 
     .section.home-loan-eligibility-calculator .teaser-wrapper .teaser .background .foreground .text .long-description p {
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 16px;
     }
 }
@@ -219,3 +225,89 @@
     }
 } */
 /* home loan eligibility calculator end */
+
+
+/* center home loan calculator start*/
+/* .section.center-home-loan-calculator .default-content-wrapper {
+    margin-bottom: 24px;
+} */
+
+.section.center-home-loan-calculator .default-content-wrapper h2 {
+    color: var(--black);
+    display: block;
+    font-family: Nunito-Extrabold, sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 40px;
+    padding-bottom: 8px;
+}
+
+.section.center-home-loan-calculator .wrappercreation-wrapper .wrappercreation .wrapper-creation-container {
+    display: flex;
+    justify-content: center;
+    row-gap: 0;
+    column-gap: 0;
+    margin-top: 24px;
+}
+
+.section.center-home-loan-calculator .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaser-wrapper {
+    width: 438.222px;
+    margin-right: 24px;
+}
+
+.section.center-home-loan-calculator .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaser-wrapper .teaser {
+    border-radius: 16px;
+    height: 100%;
+    max-width: 356px;
+    min-height: 182px;
+    position: relative;
+    width: 100%;
+}
+
+.section.center-home-loan-calculator .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaser-wrapper .teaser .background {
+    border-radius: 16px;
+    height: 180px;
+    min-height: 180px;
+    width: 100%;
+}
+
+.section.center-home-loan-calculator .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaser-wrapper .teaser .background .foreground {
+    padding: 32px;
+}
+
+.section.center-home-loan-calculator .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaser-wrapper .teaser .background .foreground .text .long-description p {
+    max-width: 240px;
+    padding: 0;
+}
+
+.section.center-home-loan-calculator .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaser-wrapper .teaser .background .foreground .text .cta {
+    margin-top: 16px;
+}
+
+.section.center-home-loan-calculator .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaser-wrapper .teaser .background .foreground .text .cta a {
+    border: 1px solid var(--solitude);
+    display: inline-block;
+    min-width: 129.6px;
+    padding: 12px;
+    text-align: center;
+    line-height: 14px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .section.center-home-loan-calculator.teaser-container {
+        padding: unset;
+    }
+}
+
+@media screen and (min-width: 768px) and  (max-width: 1024px){
+    .section.center-home-loan-calculator.teaser-container {
+        padding: unset;
+    }
+    .section.center-home-loan-calculator .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaser-wrapper {
+        width: 363px;
+        margin-right: 10px;
+    }
+}
+
+/* center home loan calculator end*/
