@@ -60,10 +60,11 @@ const createLink = (path) => {
 };
 
 export default async function decorate(block) {
-    const [hideBreadcrumbVal, startLevelVal, hideCurrentPageVal] = block.children;
+    const [hideBreadcrumbVal, startLevelVal, hideCurrentPageVal , classNameVal] = block.children;
     const hideBreadcrumb = hideBreadcrumbVal?.textContent.trim() || 'false';
     const hideCurrentPage = hideCurrentPageVal?.textContent.trim() || 'false';
     let startLevel = startLevelVal?.textContent.trim() || 1;
+    let className = classNameVal?.textContent.trim() || "black";
     const metaBreadcrumbLevel = getMetadata('breadcrumblevel');
 
     if (metaBreadcrumbLevel !== '') {
@@ -71,6 +72,7 @@ export default async function decorate(block) {
     }
 
     block.innerHTML = '';
+    block.classList.add(className)
 
     if (hideBreadcrumb === 'true') {
         return;
