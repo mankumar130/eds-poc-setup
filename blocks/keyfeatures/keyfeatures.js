@@ -224,7 +224,7 @@ function viewLogic() {
         
         const buttonContainer = wrapper.querySelector('.button-container');
         if (buttonContainer) {
-            const buttonText = buttonContainer.querySelector('a').textContent.trim();
+            const buttonText = buttonContainer?.querySelector('a')?.textContent.trim();
             buttonContainer.innerHTML = buttonText;
             viewMoreLogic(each);
         }

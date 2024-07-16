@@ -39,7 +39,7 @@ export default async function decorate(block) {
 
     sessionStorage.setItem("calDefaultValueObj", JSON.stringify(calDefaultValueObj));
 
-  homeLoanCalcFunc(currentSection);
+    homeLoanCalcFunc(currentSection);
 
     let isCombinedEmiEligibility = document.querySelector(".combined-emi-eligibility");
     if(isCombinedEmiEligibility) {
