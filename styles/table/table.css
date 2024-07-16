@@ -3,7 +3,7 @@
     color: var(--black);
     display: block;
     font-family: 'Nunito-Extrabold', sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 40px;
     padding-bottom: 8px;
@@ -13,7 +13,7 @@
     color: #666;
     display: block;
     font-family: 'Nunito-Regular', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 28px;
     padding-bottom: 8px;
@@ -23,7 +23,7 @@
     color: var(--black);
     display: block;
     font-family: 'Nunito-Regular', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 28px;
     padding-bottom: 0;
@@ -43,7 +43,7 @@
     border-left: 1px solid var(--pattensblue);
     color: #4d4d4d;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 24px;
     padding: 24px;
@@ -69,7 +69,7 @@
     border-left: 1px solid var(--pattensblue);
     color: #20303f;
     font-family: 'Nunito-Regular', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     padding: 24px;
@@ -80,7 +80,7 @@
 .section.fees-charges-wrapper .code-wrapper .code>div>table>tbody>tr>td>p {
     color: #20303f;
     font-family: 'Nunito-Regular', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
 }
@@ -111,13 +111,13 @@
 
 @media screen and (max-width: 767px) {
     .section.fees-charges-wrapper .default-content-wrapper h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 28px;
         padding-bottom: 4px;
     }
 
     .section.fees-charges-wrapper .default-content-wrapper p {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
         padding-bottom: 4px;
     }
@@ -131,18 +131,18 @@
     }
 
     .section.fees-charges-wrapper .code-wrapper .code>div>table>tbody>tr>td {
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 16px;
         padding: 24px 16px;
     }
 
     .section.fees-charges-wrapper .code-wrapper .code>div>table>tbody>tr>td>p {
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 16px;
     }
 
     .section.fees-charges-wrapper .default-content-wrapper p>strong {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
     }
 
@@ -168,7 +168,7 @@
 
 /* microfinance loans table start */
 .section.microfinance-loan-wrapper .default-content-wrapper h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 8px;
     padding: 0;
 }
@@ -187,7 +187,7 @@
 .section.microfinance-loan-wrapper .code-wrapper .code>div>table>tbody>tr:first-child td {
     background-color: var(--greyishblue);
     color: var(--white);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
     line-height: 20px;
     padding: 20px 5px;
@@ -200,7 +200,7 @@
 .section.microfinance-loan-wrapper .code-wrapper .code>div>table>tbody>tr>td {
     border: 1px solid var(--dark-color);
     color: var(--text-color);
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
     padding: 20px 0;
     text-align: center;
@@ -213,7 +213,7 @@
 
 @media screen and (max-width: 767px) {
     .section.microfinance-loan-wrapper .default-content-wrapper h2 {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 24px;
     }
 
@@ -227,7 +227,7 @@
 /* csr committee table start */
 .section.csr-commitee-wrapper .default-content-wrapper h2 {
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 800;
     line-height: 30px;
     margin-top: 40px;
@@ -240,7 +240,7 @@
     border: 1px solid var(--dark-color);
     color: var(--background-color);
     font-family: Nunito-Bold, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
     line-height: 21px;
     padding: 16px 4px;
@@ -292,7 +292,7 @@
 
 @media screen and (max-width: 767px) {
     .section.offer-document-table-wrapper .default-content-wrapper h2 {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 24px;
     }
 }
@@ -303,7 +303,7 @@
 .section.statutory-committees-wrapper .default-content-wrapper h2 {
     color: var(--orange);
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 800;
     line-height: 42px;
     margin: 24px 0;
@@ -326,14 +326,14 @@
 .section.statutory-committees-wrapper .code-wrapper .code>div>table>tbody>tr>td:nth-child(3)> p {
     color: var(--black);
     font-family: Nunito-Regular, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 21px;
 }
 
 @media screen and (max-width: 767px) {
     .section.statutory-committees-wrapper .default-content-wrapper h2 {
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 27px;
         margin: 40px 0 14px;
     } 

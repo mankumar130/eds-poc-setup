@@ -8,7 +8,7 @@
 .section.key-feature-wrapper .default-content-wrapper p {
     color: #d7dce1;
     font-family: 'Nunito-Regular', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     padding-bottom: 8px;
@@ -18,7 +18,7 @@
     color: #fff;
     display: block;
     font-family: 'Nunito-Bold', sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 40px;
 }
@@ -57,7 +57,7 @@
 .section.key-feature-wrapper .cards-wrapper .cards ul li .cards-card-body>p {
     color: #d7dce1;
     font-family: 'Nunito-Regular', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: unset;
@@ -67,7 +67,7 @@
 .section.key-feature-wrapper .cards-wrapper .cards ul li .cards-card-body :nth-child(2) {
     color: #fff;
     font-family: 'Nunito-Regular', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 32px;
     padding: 0;
@@ -76,7 +76,7 @@
 .section.key-feature-wrapper .cards-wrapper .cards ul li .cards-card-body :nth-child(2) > strong {
     color: #fff;
     font-family: 'Nunito-Bold', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 32px;
 }
@@ -84,7 +84,7 @@
 .section.key-feature-wrapper :nth-child(3)>p {
     color: #d7dce1;
     font-family: 'Nunito-Regular', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     padding: 0;
@@ -98,7 +98,7 @@
 .section.key-feature-wrapper :nth-child(3)>p a>sub {
     cursor: pointer;
     font-family: 'Nunito-Bold', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 24px;
 }
@@ -109,7 +109,7 @@
     }
 
     .section.key-feature-wrapper .default-content-wrapper h2 {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 24px;
         padding-bottom: 24px;
     }
@@ -131,19 +131,19 @@
     }
 
     .section.key-feature-wrapper .cards-wrapper .cards ul li .cards-card-body>p {
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 400;
         line-height: 16px;
         padding: 0 0 4px;
     }
 
     .section.key-feature-wrapper .cards-wrapper .cards ul li .cards-card-body :nth-child(2) > strong {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 24px;
     }
 
     .section.key-feature-wrapper .cards-wrapper .cards ul li .cards-card-body :nth-child(2) {
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 24px
     }
 
@@ -162,11 +162,11 @@
     }
 
     .section.key-feature-wrapper :nth-child(3)>p {
-        font-size: 12px;
+        font-size: 0.75rem;
         padding: 0;
     }
     .section.key-feature-wrapper :nth-child(3)>p a>sub {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 }
 
