@@ -42,12 +42,9 @@
 .section.carousel-articles-wrapper .carousel-wrapper .slide-next div div picture img{
     border: 1px solid #365069;
     border-radius: 50%;
-    bottom: 50%;
     color: #365069;
     height: 40px;
     margin-top: unset;
-    right: -60px !important;
-    top: 50%;
     width: 40px;
 }
 .section.carousel-articles-wrapper .carousel-wrapper .slide-prev.light  div div picture img,
@@ -242,11 +239,15 @@
         width: 50%;
         margin-right: 5px;
     }
-    .section.carousel-articles-wrapper .carousel-wrapper .slide-prev {
+    .section.carousel-articles-wrapper .carousel-wrapper .slide-prev,
+    .section.carousel-articles-wrapper .carousel-wrapper .carousel .carousel-navigation-buttons .slide-prev {
         left: 5px;
+        display: block;
     }
-    .section.carousel-articles-wrapper .carousel-wrapper .slide-next {
-        right: 5px;
+    .section.carousel-articles-wrapper .carousel-wrapper .slide-next,
+    .section.carousel-articles-wrapper .carousel-wrapper .carousel .carousel-navigation-buttons .slide-next {
+        right: 5px !important;
+        display: block;
     }
     .section.carousel-articles-wrapper .carousel.block .panel-container{
         margin-top: 24px;

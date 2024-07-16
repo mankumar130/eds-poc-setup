@@ -173,6 +173,9 @@
 .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description {
   margin-right: 30px;
 }
+.section.banner-carousel-wrapper.personal-loan-banner .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description {
+  margin-right: 12px;
+}
 
 .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .foreground .text .short-description>p {
   color: var(--black);
@@ -381,6 +384,9 @@
 
   .banner-carousel-wrapper .carousel-wrapper .carousel .panel-container .teaser.teaser-block-two .foreground {
     width: 70%;
+  }
+  .section.banner-carousel-wrapper.personal-loan-banner .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description {
+    margin-right: 40px;
   }
 }
 

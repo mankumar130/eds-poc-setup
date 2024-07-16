@@ -224,7 +224,7 @@ function viewLogic() {
         
         const buttonContainer = wrapper.querySelector('.button-container');
         if (buttonContainer) {
-            const buttonText = buttonContainer.querySelector('a').textContent.trim();
+            const buttonText = buttonContainer?.querySelector('a')?.textContent.trim();
             buttonContainer.innerHTML = buttonText;
             viewMoreLogic(each);
         }
@@ -235,10 +235,40 @@ function viewMoreLogic(each) {
     const buttonContainer = each.querySelector('.wrappercreation-wrapper .button-container');
     buttonContainer.addEventListener('click', function () {
         const isViewMore = this.textContent.toLowerCase() === 'view more';
-        this.innerText = isViewMore ? "View Less" : "View More";
+        if(isViewMore){
+            this.innerText = "View Less";
+            this.classList.add("up-arrow");
+        }else{
+            this.innerText = "View More";
+            this.classList.remove("up-arrow");
+            scrollToComponent(each);
+        }
         
         each.querySelectorAll('.keyfeatures-wrapper').forEach((eachFeature, index) => {
             eachFeature.classList.toggle("dp-none", !isViewMore && index > 2);
         });
+
     });
+}
+
+function scrollToComponent(component) {
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        window.scroll({
+            top: component.offsetTop - 100,
+            left: 0,
+            behavior: "smooth",
+        });
+    } else if (window.matchMedia("(max-width: 1024px)").matches) {
+        window.scroll({
+            top: component.offsetTop - 140,
+            left: 0,
+            behavior: "smooth",
+        });
+    } else {
+        window.scroll({
+            top: component.offsetTop - 180,
+            left: 0,
+            behavior: "smooth",
+        });
+    }
 }
