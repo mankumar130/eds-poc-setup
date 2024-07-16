@@ -1812,3 +1812,11 @@
     }
   }
   
+  @media screen and (max-width: 1300px) {
+    .homeloancalculator .home-loan-calculator-parent .hlc-subparent{
+        max-width: 81.25%;
+    }
+    .homeloancalculator .calculator-parent .calculator-parent-child .cp-child{
+      max-width: 81.25%;
+    }
+  }
