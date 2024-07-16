@@ -24,6 +24,7 @@
     "/content/piramalfinance-eds/homepage-emi-calculator:/homepage-emi-calculator.json",
     "/content/piramalfinance-eds/placeholder:/placeholder.json",
     "/content/piramalfinance-eds/ph:/ph.json",
+    "/content/piramalfinance-eds/metadata:/metadata.json",
     "/content/piramalfinance-eds/test:/test.json"
   ]
 }
