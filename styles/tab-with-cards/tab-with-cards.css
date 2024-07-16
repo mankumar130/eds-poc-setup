@@ -48,18 +48,21 @@
     color: var(--orange);
 }
 
-.section.tab-with-cards-wrapper .panel-container {
+.section.tab-with-cards-wrapper .panel-container,
+.section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 32px;
     gap: 24px;
 }
 
-.section.tab-with-cards-wrapper .panel-container .teaser.block.card-full-width {
+.section.tab-with-cards-wrapper .panel-container .teaser.block.card-full-width,
+.section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block.card-full-width{
     grid-column: span 2;
 }
 
-.section.tab-with-cards-wrapper .panel-container .teaser.block .background {
+.section.tab-with-cards-wrapper .panel-container .teaser.block .background,
+.section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block .background {
     background-position: right;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -67,9 +70,11 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-box-pack: end;
+    position: unset;
 }
 
-.section.tab-with-cards-wrapper .panel-container .teaser.block .background >.foreground .text {
+.section.tab-with-cards-wrapper .panel-container .teaser.block .background >.foreground .text,
+.section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block .background >.foreground .text{
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -78,7 +83,8 @@
     width: 100%;
 }
 
-.section.tab-with-cards-wrapper .panel-container .teaser.block .background >.foreground .text .title> h3 {
+.section.tab-with-cards-wrapper .panel-container .teaser.block .background >.foreground .text .title> h3,
+.section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block .background >.foreground .text .title> h3  {
     color: var(--white);
     display: block;
     font-family: 'Nunito-Bold',sans-serif;
@@ -88,7 +94,8 @@
     margin-bottom: 9px;
 }
 
-.section.tab-with-cards-wrapper .panel-container .teaser.block .background >.foreground .text .long-description > p {
+.section.tab-with-cards-wrapper .panel-container .teaser.block .background >.foreground .text .long-description > p,
+.section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block .background >.foreground .text .long-description > p {
     color: var(--white);
     display: block;
     font-family: 'Nunito-Regular',sans-serif;
@@ -97,12 +104,14 @@
     line-height: 20px;
 }
 @media screen and (max-width:900px) {
-.section.tab-with-cards-wrapper .panel-container {
+.section.tab-with-cards-wrapper .panel-container,
+.section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container{
     grid-template-columns: 1fr;
     margin-top: 20px;
     gap: 16px;
 }
-.section.tab-with-cards-wrapper .panel-container .teaser.block.card-full-width {
+.section.tab-with-cards-wrapper .panel-container .teaser.block.card-full-width,
+.section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block.card-full-width {
     grid-column: span 1;
 }
 }
@@ -123,34 +132,40 @@
         padding: 0 12px;
     }
 
-    .section.tab-with-cards-wrapper .panel-container .teaser.block.card-full-width {
+    .section.tab-with-cards-wrapper .panel-container .teaser.block.card-full-width,
+        .section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block.card-full-width {
         grid-column: span 1;
     }
 
-    .section.tab-with-cards-wrapper .panel-container .teaser.block .background >.foreground .text {
+    .section.tab-with-cards-wrapper .panel-container .teaser.block .background >.foreground .text,
+    .section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block .background >.foreground .text {
         min-height: 220px;
         padding: 16px;
     }
 
-    .section.tab-with-cards-wrapper .panel-container .teaser.block .background >.foreground .text .title> h3 {
+    .section.tab-with-cards-wrapper .panel-container .teaser.block .background >.foreground .text .title> h3,
+    .section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block .background >.foreground .text .title> h3 {
         font-size: 16px;
         line-height: 24px;
     }
 
-    .section.tab-with-cards-wrapper .panel-container .teaser.block .background >.foreground .text .long-description > p {
+    .section.tab-with-cards-wrapper .panel-container .teaser.block .background >.foreground .text .long-description > p,
+        .section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block .background >.foreground .text .long-description > p {
         font-size: 12px;
         line-height: 16px;
     }
 }
 
 @media only screen and (max-width: 425px) {
-    .section.tab-with-cards-wrapper .panel-container .teaser.block .background >.foreground .text .long-description > p>br {
+    .section.tab-with-cards-wrapper .panel-container .teaser.block .background >.foreground .text .long-description > p>br 
+    .section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block .background >.foreground .text .long-description > p>br {
         display: none;
     }
 }
 
 @media screen and (min-width:900px) and (max-width:1024px) {
-    .section.tab-with-cards-wrapper .panel-container .teaser.block.card-full-width {
+    .section.tab-with-cards-wrapper .panel-container .teaser.block.card-full-width ,
+    .section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block.card-full-width {
         grid-column: span 1;
     }
 }

@@ -1,9 +1,9 @@
 .section.nearest-branches .default-content-wrapper>h2 {
     margin-bottom: 24px;
-    color: #000;
+    color: var(--text-color);
     display: block;
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 2pc;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 40px;
     padding-bottom: 8px;
@@ -16,12 +16,12 @@
 }
 
 .section.nearest-branches .columns-wrapper .columns>div {
-    border: 2px solid #e5e7eb;
-    border-radius: 1pc;
+    border: 2px solid var(--solitude);
+    border-radius: 16px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
     transition-duration: .2s;
     translate: 0;
-    padding: 2pc;
+    padding: 32px;
     position: relative;
 }
 
@@ -31,10 +31,10 @@
 
 .section.nearest-branches .columns-wrapper .columns>div>div>h2 {
     align-items: center;
-    color: #365069;
+    color: var(--greyishblue);
     display: grid;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     gap: 8px;
     grid-template-columns: 3% auto;
@@ -47,32 +47,39 @@
     position: relative;
 }
 
-.section.nearest-branches .columns-wrapper .columns>div:hover>div>h4 {
+.section.nearest-branches .columns-wrapper .columns>div:hover>div>.button-container {
     display: block;
 }
 
-.section.nearest-branches .columns-wrapper .columns>div>div>h4 {
-    display: grid;
-    grid-template-columns: auto auto;
+.section.nearest-branches .columns-wrapper .columns>div>div>p>a {
+    color: var(--orange);
+    background-color: unset;
+    padding: 0;
+    margin: 0;
+    font-family: Nunito-Bold, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 21px;
+    border: unset;
+    border-radius: unset;
+}
+
+.section.nearest-branches .columns-wrapper .columns>div>div>.button-container {
     position: absolute;
     right: 0;
     top: 0;
-    color: #f26841;
-    display: grid;
+    color: var(--orange);
     font-family: Nunito-Bold, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 21px;
     margin-right: 20px;
     display: none;
     margin-top: 8px;
 }
 
-.section.nearest-branches .columns-wrapper .columns>div>div>h4:hover {
+.section.nearest-branches .columns-wrapper .columns>div>div>.button-container:hover {
     display: block;
 }
 
-.section.nearest-branches .columns-wrapper .columns>div>div>h4::after {
+.section.nearest-branches .columns-wrapper .columns>div>div>.button-container::after {
     background-image: url("https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/product-page/cities/ahmedabad/arrow-right-orange.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,7 +101,7 @@
 }
 
 .section.nearest-branches .columns-wrapper .columns>div:hover>div>h2 {
-    color: #f26841;
+    color: var(--orange);
 }
 
 .section.nearest-branches .columns-wrapper .columns>div:hover>div>h2::before {
@@ -102,16 +109,15 @@
 }
 
 .section.nearest-branches .columns-wrapper .columns>div>div>p {
-    color: #000;
+    color: var(--text-color);
     font-family: Nunito-Regular, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 24px;
 }
 
 
 @media screen and (max-width: 1024px) {
-
     .section.nearest-branches .columns-wrapper .columns>div:hover {
         translate: 0;
     }
@@ -121,7 +127,7 @@
     }
 
     .section.nearest-branches .columns-wrapper .columns>div>div>h2 {
-        color: #f26841;
+        color: var(--orange);
     }
 
     .section.nearest-branches .columns-wrapper .columns>div>div>h4{
@@ -139,17 +145,20 @@
     .section.nearest-branches .columns-wrapper .columns>div>div>h2{
         grid-template-columns: 4% auto;
     }
+    .section.nearest-branches .columns-wrapper .columns>div>div>.button-container {
+        display: block;
+    }
 }
-@media screen and (max-width: 767px) {
 
+@media screen and (max-width: 767px) {
     .section.nearest-branches .columns-wrapper .columns>div{
         padding: 16px;
     }
     .section.nearest-branches .columns-wrapper .columns>div>div>h2{
         margin: 8px 0;
-        font-size: 16px;
+        font-size: 1rem;
         gap: 4px;
-        grid-template-columns: 7% 80%;
+        grid-template-columns: 7% 56%;
         line-height: 24px;
         width: unset;
     }
@@ -158,13 +167,15 @@
         height: 19px;
         margin-top: 2px;
     }
-    .section.nearest-branches .columns-wrapper .columns>div>div>h4{
-        font-size: 16px;
+    .section.nearest-branches .columns-wrapper .columns>div>div>.button-container {
+        display: block;
+    }
+    .section.nearest-branches .columns-wrapper .columns>div>div>p>a{
+        font-size: 1rem;
         line-height: 24px;
-        margin-top: 8px;
     }
     .section.nearest-branches .columns-wrapper .columns>div>div>p{
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 24px;
     }
 }
