@@ -549,7 +549,7 @@ async function fetchPlaceholders(prefix = 'default') {
   window.placeholders = window.placeholders || {};
   if (!window.placeholders[prefix]) {
     window.placeholders[prefix] = new Promise((resolve) => {
-      fetch(`${prefix === 'default' ? '' : prefix}/ph.json`)
+      fetch(`${prefix === 'default' ? '' : prefix}/api/ph.json`)
         .then((resp) => {
           if (resp.ok) {
             return resp.json();

@@ -1,4 +1,8 @@
-export default function decorate(block) {
+import { fetchPlaceholders } from "../../scripts/aem.js";
+
+export default async function decorate(block) {
+    const resp = await fetchPlaceholders();
+    console.log(resp);
     const props = [...block.children].map(row => row);
     const getHTML = generateFeatureHTML(props);
     const newDivFeature = document.createElement('div');
@@ -7,7 +11,7 @@ export default function decorate(block) {
     block.append(newDivFeature);
     try {
         featureDropDownClick();
-        document.querySelector('.home-loans-products-wrapper.view-more-less-js') ? viewLogic() : "";   
+        document.querySelector('.home-loans-products-wrapper.view-more-less-js') ? viewLogic() : "";
     } catch (error) {
         console.warn(error)
     }
@@ -217,11 +221,11 @@ function viewLogic() {
     document.querySelectorAll('.home-loans-products-wrapper.view-more-less-js').forEach(each => {
         const wrapper = each.querySelector('.wrappercreation-wrapper');
         const keyFeatures = wrapper.querySelectorAll('.keyfeatures-wrapper');
-        
+
         keyFeatures.forEach((eachFeature, index) => {
             eachFeature.classList.toggle("dp-none", index > 2);
         });
-        
+
         const buttonContainer = wrapper.querySelector('.button-container');
         if (buttonContainer) {
             const buttonText = buttonContainer?.querySelector('a')?.textContent.trim();
@@ -235,15 +239,15 @@ function viewMoreLogic(each) {
     const buttonContainer = each.querySelector('.wrappercreation-wrapper .button-container');
     buttonContainer.addEventListener('click', function () {
         const isViewMore = this.textContent.toLowerCase() === 'view more';
-        if(isViewMore){
+        if (isViewMore) {
             this.innerText = "View Less";
             this.classList.add("up-arrow");
-        }else{
+        } else {
             this.innerText = "View More";
             this.classList.remove("up-arrow");
             scrollToComponent(each);
         }
-        
+
         each.querySelectorAll('.keyfeatures-wrapper').forEach((eachFeature, index) => {
             eachFeature.classList.toggle("dp-none", !isViewMore && index > 2);
         });
