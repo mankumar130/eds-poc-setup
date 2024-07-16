@@ -34,6 +34,7 @@
 }
 .section.documents-required-brown .default-content-wrapper p>a {
     color: var(--orange);
+    text-decoration: none;
 }
 .section.documents-required-brown .default-content-wrapper .button-container ::after{
     content: '';
