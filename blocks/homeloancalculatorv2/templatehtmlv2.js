@@ -209,7 +209,7 @@ export function homeloanCalHTML(callJson) {
         <div id="container-7dfdb51cd4" class="cmp-container">
             <div class="title home-loan-title">
                 <div id="title-bd2a9ac3b1" class="cmp-title">
-                    <h3 class="cmp-title__text">${callJson.title}</h3>
+                    <h3 class="cmp-title__text">${callJson.title || ""}</h3>
                 </div>
             </div>
             <div class="homeloancalculator ${callJson.tabcenterclass || ""} ">
@@ -226,27 +226,27 @@ export function homeloanCalHTML(callJson) {
                     </div>
                 </div>
     
-                <div class="calculator-parent">
+                <div class="calculator-parent ${callJson.dpnoneclass || ""}">
                     <div class="calculator-parent-child">
                         <div class="cp-child">
                             <div class="mainheading ${callJson.dpnoneclass || ""}">
-                                <p class="first-head">${callJson.selectloantype.subheading}</p>
-                                  <p class="second-head">${callJson.selectloantype.subheadingtow}</p>
+                                <p class="first-head">${callJson.selectloantype.subheading || ""}</p>
+                                  <p class="second-head">${callJson.selectloantype.subheadingtow || ""}</p>
                             </div>
                             <div class="headingtabs ${callJson.dpnoneclass || ""}">
                                 <ul class="headul">
   
   
                                     <li class="tab-emi-calc tab-common active">
-                                        <p>${callJson.tabname.firsttabbname}</p>
+                                        <p>${callJson.tabname.firsttabbname || ""}</p>
                                     </li>
     
                                     <li class="tab-eligibility-calc tab-common">
-                                        <p>${callJson.tabname.secondtabbname}</p>
+                                        <p>${callJson.tabname.secondtabbname || ""}</p>
                                     </li>
   
                                     <li class="tab-eligibility-calc tab-common gst-third-tab">
-                                        <p>${callJson.tabname.thridtabname}</p>
+                                        <p>${callJson.tabname.thridtabname || ""}</p>
                                     </li>
     
     
@@ -260,15 +260,15 @@ export function homeloanCalHTML(callJson) {
     
                             </div>
     
-                            <div class="customerbuttons">
+                            <div class="customerbuttons ${callJson.button1link || ""}">
     
-                                <a href="${callJson.button1link}" target="_self">
+                                <a href="${callJson.button1link || ""}" target="_self">
     
-                                    <button class="expert">${callJson.button1text}</button>
+                                    <button class="expert">${callJson.button1text || ""}</button>
                                 </a>
-                                <a href="${callJson.button2link}" target="_self">
+                                <a href="${callJson.button2link || ""}" target="_self">
     
-                                    <button class="expert orangeexpert">${callJson.button2text}</button>
+                                    <button class="expert orangeexpert">${callJson.button2text || ""}</button>
                                 </a>
     
                             </div>
@@ -280,7 +280,7 @@ export function homeloanCalHTML(callJson) {
                 </div>
     
                 <div class="homepagemobiledesign"></div>
-                <input type="hidden" name="product type" id="calculator-product-type" value="${callJson.pageproperties}">
+                <input type="hidden" name="product type" id="calculator-product-type" value="${callJson.pageproperties || ""}">
                 <!-- tab-center--calculator -->
             </div>
         </div>
