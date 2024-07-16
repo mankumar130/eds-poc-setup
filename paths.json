@@ -23,7 +23,7 @@
     "/content/piramalfinance-eds/api/homepage-eligibility-calculator:/api/homepage-eligibility-calculator.json",
     "/content/piramalfinance-eds/api/homepage-emi-calculator:/api/homepage-emi-calculator.json",
     "/content/piramalfinance-eds/api/placeholder:/api/placeholder.json",
-    "/content/piramalfinance-eds/api/ph:/api/ph.json",
+    "/content/piramalfinance-eds/api/placeholder:/api/placeholder.json",
     "/content/piramalfinance-eds/api/metadata:/api/metadata.json",
     "/content/piramalfinance-eds/api/test:/api/test.json"
   ]
