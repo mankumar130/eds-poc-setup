@@ -416,6 +416,15 @@ export function createButton(text, picture) {
   return button;
 }
 
+export function decoratePH(block) {
+  try {
+    block.querySelectorAll("a").forEach(function (anchor) {
+
+    });
+  } catch (error) {
+    console.warn(error);
+  }
+}
 export function decorateAnchorTag(main) {
   try {
     main.querySelectorAll("a").forEach(function (anchor) {
@@ -505,6 +514,7 @@ function buildAutoBlocks() {
 export function decorateMain(main) {
   // hopefully forward compatible button decoration
   decorateAnchorTag(main);
+  decoratePH(main);
   decorateButtons(main);
   decorateIcons(main);
   buildAutoBlocks(main);

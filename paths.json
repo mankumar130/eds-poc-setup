@@ -2,8 +2,8 @@
   "mappings": [
     "/content/piramalfinance-eds/:/",
     "/content/piramalfinance-eds/in/en/:/",
-    "/content/piramalfinance-eds/api/redirects:/api/redirects.json",
-    "/content/piramalfinance-eds/api/cust-testimonial:/api/cust-testimonial.json",
+    "/content/piramalfinance-eds/in/en/api/redirects:/api/redirects.json",
+    "/content/piramalfinance-eds/in/en/api/cust-testimonial:/api/cust-testimonial.json",
     "/content/piramalfinance-eds/api/home-emi-calc:/api/home-emi-calc.json",
     "/content/piramalfinance-eds/api/home-eligi-calc:/api/home-eligi-calc.json",
     "/content/piramalfinance-eds/api/lead-form:/api/lead-form.json",
@@ -23,7 +23,6 @@
     "/content/piramalfinance-eds/api/homepage-eligibility-calculator:/api/homepage-eligibility-calculator.json",
     "/content/piramalfinance-eds/api/homepage-emi-calculator:/api/homepage-emi-calculator.json",
     "/content/piramalfinance-eds/api/placeholder:/api/placeholder.json",
-    "/content/piramalfinance-eds/api/ph:/api/ph.json",
     "/content/piramalfinance-eds/api/metadata:/api/metadata.json",
     "/content/piramalfinance-eds/api/test:/api/test.json"
   ]

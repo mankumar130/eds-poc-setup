@@ -1,4 +1,10 @@
-export default function decorate(block) {
+import { fetchPlaceholders } from "../../scripts/aem.js";
+import { renderHelper } from "../../scripts/scripts.js";
+
+export default async function decorate(block) {
+    const resp = await fetchPlaceholders();
+    console.log(resp);
+    block.innerHTML = renderHelper([resp], `<div class="forName">${block.innerHTML}</div>`);
     const props = [...block.children].map(row => row);
     const getHTML = generateFeatureHTML(props);
     const newDivFeature = document.createElement('div');
@@ -250,7 +256,7 @@ function viewMoreLogic(each) {
             scrollToComponent(each);
         }
     });
-    
+
     if (!each.dataset.clickAdded) {
         each.dataset.clickAdded = true;
     }
