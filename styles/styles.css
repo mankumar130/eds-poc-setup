@@ -830,7 +830,11 @@ main .section.highlight {
     max-width: 76.1% !important;
   }
 }
-
+@media screen and (max-width: 1300px) {
+  .section.page-container>div{
+    max-width: 81.25% !important;
+  }
+}
 @media screen and (max-width: 1024px) {
   .section.page-container>div {
     max-width: 100% !important;
@@ -891,10 +895,4 @@ body.overlay-active {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1111;
-}
-
-@media screen and (max-width: 1300px) {
-  .section.page-container>div{
-    max-width: 81.25% !important;
-  }
 }
