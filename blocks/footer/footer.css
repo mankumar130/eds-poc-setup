@@ -574,6 +574,9 @@ footer.footer-wrapper .footer {
   .section.footer-section-third {
     display: none;
   }
+  .section.footer-last-wrapper.padding-bottom-footer .default-content-wrapper{
+    padding-bottom: 95px;
+  }
 /* footer third section onwords css end  */
 }
 
