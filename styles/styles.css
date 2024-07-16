@@ -9,9 +9,16 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-html {
-  scroll-behavior: smooth
+ html {
+  scroll-behavior: smooth;
+  /* font-size : 16px !important; */
 }
+  /* Handle 125% and 150% Windows 10 Font Scaling on 96dpi monitors */
+  /* @media (min-resolution: 120dpi) {
+    html {
+         font-size: 80% !important;
+    }
+} */
 
 input,
 select {
