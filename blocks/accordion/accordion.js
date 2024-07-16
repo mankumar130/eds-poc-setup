@@ -71,16 +71,14 @@ function KYCDocuments(data) {
   return html;
 }
 
-export function documentRequired(){
-  // var accordionDiv = document.querySelector('.documents-required-brown').querySelectorAll('.accordion.block');
-  // debugger;
-  var ulDiv = document.querySelector('.documents-required-brown').querySelectorAll('.accordion.block')[1].querySelectorAll('div > ul');
-
-   if(ulDiv.length > 0){
-    var firstUl = ulDiv[0];
-    firstUl.classList.add('cmp-text--doc-salary');
-    var secondUl = ulDiv[1]
-    secondUl?.classList.add('cmp-text--doc-business');
+export function documentRequired() {
+  if (document.querySelector(".documents-required-brown").querySelectorAll(".accordion.block").length > 0) {
+    const ulDiv = document.querySelector(".documents-required-brown").querySelectorAll(".accordion.block")[1]?.querySelectorAll("div > ul");
+    if (ulDiv.length > 0) {
+      const firstUl = ulDiv[0];
+      firstUl.classList.add("cmp-text--doc-salary");
+      const secondUl = ulDiv[1];
+      secondUl?.classList.add("cmp-text--doc-business");
+    }
   }
-
 }
