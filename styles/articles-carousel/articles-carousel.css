@@ -2,7 +2,7 @@
     color: #000;
     display: block;
     font-family: 'Nunito-Extrabold', sans-serif;
-    font-size: 2pc;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 40px;
     padding-bottom: 8px;
@@ -11,7 +11,7 @@
     color: #666;
     display: block;
     font-family: 'Nunito-Regular', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 28px;
     padding-bottom: 8px;
@@ -88,7 +88,7 @@
 .section.carousel-articles-wrapper .button-container a{
     color: #f26841;
     font-family: 'Nunito-Bold', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 2pc;
     background: unset;
@@ -99,7 +99,7 @@
     color: #333;
     display: inline-block;
     font-family: 'Nunito-Regular', sans-serif;
-    font-size: 1pc;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     text-align: start;
@@ -113,7 +113,7 @@
 .section.carousel-articles-wrapper .default-content-wrapper .button-container a {
     color: #f26841;
     font-family: 'Nunito-Bold', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 2pc;
     margin-right: 8px;
@@ -165,7 +165,7 @@
     grid-column: span 1;
     color: #999;
     font-family: 'Nunito-Regular', sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 20px;
     }
@@ -204,7 +204,7 @@
         display: block;
     }
     .section.carousel-articles-wrapper .default-content-wrapper #recommended-articles{
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 28px;
         padding-bottom: 4px;
     }
@@ -212,7 +212,7 @@
         margin-top: unset;
     }
     .section.carousel-articles-wrapper .default-content-wrapper .button-container a{
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 28px;
     }
     .section.carousel-articles-wrapper .default-content-wrapper .button-container{

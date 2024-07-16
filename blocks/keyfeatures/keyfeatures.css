@@ -4,7 +4,7 @@
  .section.home-loans-products-wrapper .default-content-wrapper #more-home-loan-products{
     color: #000;
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 40px;
     padding-bottom: 8px;
@@ -45,7 +45,7 @@
 .section.home-loans-products-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .keyfeatures-wrapper .keyfeatures .homeloanteaser .cmp-teaser .cmp-teaser__link .cmp-teaser__content p{
     color: #666;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 1pc;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     padding-bottom: 4px;
@@ -61,7 +61,7 @@
 .section.home-loans-products-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .keyfeatures-wrapper .keyfeatures .homeloanteaser .cmp-teaser .cmp-teaser__link .cmp-teaser__content p:nth-child(1) strong{
     color: #000;
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 800;
     line-height: 28px;
 }
@@ -104,7 +104,7 @@
     color: #333;
     cursor: pointer;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 24px;
     padding: 16px 24px;
@@ -124,14 +124,14 @@
 .section.home-loans-products-wrapper .homeloanteaser .keyfeature-container .keyfeatures .feature .feature-details div p:first-child{
     color: #666;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 20px;
 }
 .section.home-loans-products-wrapper .homeloanteaser .keyfeature-container .keyfeatures .feature .feature-details div p:last-child strong{
     color: #333;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     line-height: 26px;
     padding-top: 4px;
@@ -150,7 +150,7 @@
 .view-more-less-js .default-content-wrapper .button-container{
     color: #f26841;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 28px;
     display: inline-block;
@@ -185,7 +185,7 @@
     color: #000;
     display: block;
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 40px;
     margin-bottom: 8px;
@@ -193,7 +193,7 @@
 .view-more-less-js .default-content-wrapper p{
     color: #000;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 24px;
 }
@@ -207,25 +207,25 @@
         margin-top: unset;
     }
     .section.home-loans-products-wrapper .default-content-wrapper #more-home-loan-products{
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 28px;
         padding-bottom: 4px;
         margin-bottom: 0;
     }
     .section.home-loans-products-wrapper .homeloanteaser .keyfeature-container .keyfeatures .feature .feature-details div p:last-child strong{
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 24px;
     }
     .section.home-loans-products-wrapper .homeloanteaser .keyfeature-container .keyfeatures .feature .feature-details div p:first-child{
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 16px;
     }
     .section.home-loans-products-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .keyfeatures-wrapper .keyfeatures .homeloanteaser .cmp-teaser .cmp-teaser__link .cmp-teaser__content p{
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
     }
     .section.home-loans-products-wrapper .homeloanteaser .cmp-teaser .keyfeature-container .keyfeatures-info .heading{
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
     }
     .section.home-loans-products-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .keyfeatures-wrapper .keyfeatures .homeloanteaser .cmp-teaser .cmp-teaser__link{
@@ -241,18 +241,18 @@
         padding-bottom: 40px;
     }
     .view-more-less-js .default-content-wrapper .button-container{
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 28px;
     }
     .view-more-less-js .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .keyfeatures-wrapper:nth-child(n+4) {
         margin-top: unset;
     }
     .view-more-less-js .default-content-wrapper p strong{
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 24px;
     }
     .view-more-less-js .default-content-wrapper p {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
     }
 }
