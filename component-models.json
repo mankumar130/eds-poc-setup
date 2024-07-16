@@ -207,6 +207,12 @@
         "valueType": "boolean",
         "label": "Hide Current Page",
         "name": "hideCurrentPage"
+      },
+      {
+        "component": "text",
+        "name": "breadcrumb-class",
+        "label": "Breadcrumb Class",
+        "valueType": "string"
       }
     ]
   },
