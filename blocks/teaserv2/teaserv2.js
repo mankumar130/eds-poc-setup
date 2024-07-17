@@ -9,7 +9,11 @@ export default function decorate(block) {
 }
 
 function renderTeaserHTMLFactory(props) {
-  const [mainHref, bgImage, frontImage, title, description, mobileDescription, button, buttonHref, bgColor, teaserv2Attr, textwithinnerhtml] = props;
+
+  const isDesktop = window.matchMedia('(min-width: 900px)');
+  const isMobile = window.matchMedia('(max-width: 767px)');
+
+  const [mainHref, bgImage, frontImage, title, description, mobileDescription, button, buttonHref, bgColor, teaserv2Attr, textwithinnerhtml, mobileImg] = props;
 
   const createElement = (tag, className, content) => {
     const element = document.createElement(tag);
@@ -23,9 +27,16 @@ function renderTeaserHTMLFactory(props) {
   if (mainLink) container.href = mainLink;
 
   const bgImageSrc = bgImage?.querySelector("picture > img")?.src || "";
+  const mobileSrc = mobileImg?.querySelector("picture > img")?.src || "";
   const bgBannerColor = bgColor?.textContent.trim()?.src || "";
   const bgImageDiv = createElement("div", "bg-image");
-  if (bgImageSrc) bgImageDiv.style.backgroundImage = `url(${bgImageSrc})`;
+
+  if(isDesktop){
+    if (bgImageSrc) bgImageDiv.style.backgroundImage = `url(${bgImageSrc})`;
+  }else if(isMobile){
+    if (mobileSrc) bgImageDiv.style.backgroundImage = `url(${mobileSrc})`;
+  }
+
   if (bgBannerColor) bgImageDiv.style.backgroundColor = bgBannerColor;
 
   const frontImagePic = frontImage?.querySelector("picture");
