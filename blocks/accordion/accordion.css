@@ -233,6 +233,7 @@ ol .accordion ul {
     font-weight: 800;
     line-height: 40px;
     padding-bottom: 8px;
+    margin-bottom: 24px;
 }
 
 .faq-accordion-css-with-orange-heading .default-content-wrapper,
@@ -287,8 +288,8 @@ ol .accordion ul {
 .faq-accordion-css-with-orange-heading .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block summary::after {
     content: "";
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background-image: url('../../icons/downArrow.png');
     background-size: cover;
     /* margin-left: 10px; */

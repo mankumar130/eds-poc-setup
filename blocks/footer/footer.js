@@ -31,7 +31,12 @@ export default async function decorate(block) {
           footerInteraction(click_text, menu_category, null, targetObject.pageName);
         }
       })
-    })
+    });
+    
+    if(block.closest('body').querySelector('.mobile-sticky-button')){
+      block.querySelector('.footer-last-wrapper').classList.add('padding-bottom-footer')
+    } 
+
   } catch (error) {
     console.warn(error);
   }

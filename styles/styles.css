@@ -9,9 +9,16 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-html {
-  scroll-behavior: smooth
+ html {
+  scroll-behavior: smooth;
+  /* font-size : 16px !important; */
 }
+  /* Handle 125% and 150% Windows 10 Font Scaling on 96dpi monitors */
+  /* @media (min-resolution: 120dpi) {
+    html {
+         font-size: 80% !important;
+    }
+} */
 
 input,
 select {
@@ -823,7 +830,11 @@ main .section.highlight {
     max-width: 76.1% !important;
   }
 }
-
+@media screen and (max-width: 1300px) {
+  .section.page-container>div{
+    max-width: 81.25% !important;
+  }
+}
 @media screen and (max-width: 1024px) {
   .section.page-container>div {
     max-width: 100% !important;
@@ -884,10 +895,4 @@ body.overlay-active {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1111;
-}
-
-@media screen and (max-width: 1300px) {
-  .section.page-container>div{
-    max-width: 81.25% !important;
-  }
 }
