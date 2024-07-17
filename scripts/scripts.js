@@ -1,6 +1,6 @@
 import { overlay } from "../blocks/applyloanform/applyloanforms.js";
 import { toggleAllNavSections } from "../blocks/header/header.js";
-import { sampleRUM, loadHeader, loadFooter, decorateButtons, decorateIcons, decorateSections, decorateBlocks, decorateTemplateAndTheme, waitForLCP, loadBlocks, loadCSS } from "./aem.js";
+import { sampleRUM, loadHeader, loadFooter, decorateButtons, decorateIcons, decorateSections, decorateBlocks, decorateTemplateAndTheme, waitForLCP, loadBlocks, loadCSS, fetchPlaceholders } from "./aem.js";
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
 console.log("Main Branch 1.3");
@@ -416,11 +416,11 @@ export function createButton(text, picture) {
   return button;
 }
 
-export function decoratePH(block) {
+export async function decoratePlaceholder(block, path) {
   try {
-    block.querySelectorAll("a").forEach(function (anchor) {
-
-    });
+    const resp = await fetchPlaceholders(path);
+    console.log(resp);
+    return renderHelper([resp], `<div class="forName">${block.innerHTML}</div>`);
   } catch (error) {
     console.warn(error);
   }
@@ -514,7 +514,7 @@ function buildAutoBlocks() {
 export function decorateMain(main) {
   // hopefully forward compatible button decoration
   decorateAnchorTag(main);
-  decoratePH(main);
+  decoratePlaceholder(main);
   decorateButtons(main);
   decorateIcons(main);
   buildAutoBlocks(main);
