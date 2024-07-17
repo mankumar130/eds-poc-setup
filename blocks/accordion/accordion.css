@@ -272,7 +272,7 @@ ol .accordion ul {
 }
 
 .faq-accordion-css-with-orange-heading .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block {
-    border-bottom: 1px dashed #ccc;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .faq-accordion-css-with-orange-heading .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block summary {
