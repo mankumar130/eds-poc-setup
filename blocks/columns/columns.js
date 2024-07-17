@@ -1,4 +1,7 @@
+import { decorateViewMore } from "../../scripts/scripts.js";
+
 export default function decorate(block) {
+  decorateViewMore(block);
   const cols = [...block.firstElementChild.children];
   block.classList.add(`columns-${cols.length}-cols`);
 

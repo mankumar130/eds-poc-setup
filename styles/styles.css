@@ -811,7 +811,7 @@ main .section.highlight {
 }
 
 .dp-none {
-  display: none;
+  display: none !important;
 }
 .dp-block{
   display: block;
