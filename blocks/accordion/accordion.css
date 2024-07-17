@@ -360,14 +360,14 @@ ol .accordion ul {
     opacity: .3;
 }
 
-/* .faq-section-wrapper .default-content-wrapper {
+.section.faq-view-more-logic .default-content-wrapper {
     text-align: center;
     align-items: center;
     display: flex;
     justify-content: center;
     padding-top: 10px;
 }
-.faq-section-wrapper .default-content-wrapper .button-container {
+.section.faq-view-more-logic .default-content-wrapper .button-container {
     background-color: transparent;
     border: 1px solid #365069;
     border-radius: 8px;
@@ -376,7 +376,7 @@ ol .accordion ul {
     padding: 1pc 24px;
     font-family: nunito-bold;
     font-size: 1.125rem;
-} */
+}
 
 .faq-accordion-css-with-orange-heading .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block summary>div,
 .faq-accordion-css-with-orange-heading .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block summary>div>p {
