@@ -57,6 +57,10 @@
     height: 18px;
     vertical-align: middle;
 }
+.section.fees-charges-wrapper .code-wrapper .code.block>div>table>tbody>tr > td > p {
+   height: unset;
+   width: unset;
+}
 
 .section.fees-charges-wrapper .code-wrapper .code>div>table>tbody>tr :nth-child(2) {
     border-radius: 0 10px 0 0;
