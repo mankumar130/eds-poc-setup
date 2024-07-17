@@ -187,7 +187,8 @@
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr;
   }
-  .section.choose-us-css .columns-wrapper .columns div div>p>picture>img {
+  .section.choose-us-css .columns-wrapper .columns div div>p>picture>img,
+  .section.choose-us-css .columns-wrapper .columns div div :nth-child(1) {
     height: 48px;
     width: 40px;
   }
