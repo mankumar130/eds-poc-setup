@@ -894,3 +894,6 @@ body.overlay-active {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1111;
 }
+.blue-bg{
+  background: #EEF3FF !important;
+}
