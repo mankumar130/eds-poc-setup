@@ -499,7 +499,11 @@ ol .accordion ul {
         font-size: 1rem;
         line-height: 1.5rem;
     }
-
+    .section.faq-view-more-logic .default-content-wrapper .button-container{
+        width: 100%;
+        font-size: 1rem;
+        line-height: 24px;
+    }
     /* .section.faq-section-wrapper .default-content-wrapper{
         padding-top: 10px;
     } */
