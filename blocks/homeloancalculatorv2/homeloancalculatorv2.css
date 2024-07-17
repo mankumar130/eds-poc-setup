@@ -1812,7 +1812,7 @@
     }
   }
   
-  @media screen and (max-width: 1300px) {
+  @media screen and (min-width:1025px) and (max-width: 1300px) {
     .homeloancalculator .home-loan-calculator-parent .hlc-subparent{
         max-width: 81.25%;
     }
