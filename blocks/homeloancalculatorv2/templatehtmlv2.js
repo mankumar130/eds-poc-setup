@@ -226,7 +226,7 @@ export function homeloanCalHTML(callJson) {
                     </div>
                 </div>
     
-                <div class="calculator-parent ${callJson.dpnoneclass || ""}">
+                <div class="calculator-parent ${callJson.handleclass || ""}">
                     <div class="calculator-parent-child">
                         <div class="cp-child">
                             <div class="mainheading ${callJson.dpnoneclass || ""}">
