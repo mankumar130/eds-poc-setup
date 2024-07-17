@@ -694,5 +694,8 @@ footer.footer-wrapper .footer {
   .footer-section-second .columns > div > div {
     width: 50%;
   }
+  .footer-section-first .columns-wrapper p {
+    margin-right: 7%;
+  }
 /* footer third section onwords css end  */
 }
