@@ -809,7 +809,7 @@ main .section.highlight {
 }
 
 .dp-none {
-  display: none;
+  display: none !important;
 }
 .dp-block{
   display: block;
@@ -893,4 +893,7 @@ body.overlay-active {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1111;
+}
+.blue-bg{
+  background: #EEF3FF !important;
 }
