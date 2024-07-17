@@ -146,7 +146,7 @@ ol .accordion ul {
 }
 
 .faq-accordion-css .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block {
-    border-bottom: 1px dashed #ccc;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 
@@ -360,14 +360,14 @@ ol .accordion ul {
     opacity: .3;
 }
 
-/* .faq-section-wrapper .default-content-wrapper {
+.section.faq-view-more-logic .default-content-wrapper {
     text-align: center;
     align-items: center;
     display: flex;
     justify-content: center;
     padding-top: 10px;
 }
-.faq-section-wrapper .default-content-wrapper .button-container {
+.section.faq-view-more-logic .default-content-wrapper .button-container {
     background-color: transparent;
     border: 1px solid #365069;
     border-radius: 8px;
@@ -376,7 +376,7 @@ ol .accordion ul {
     padding: 1pc 24px;
     font-family: nunito-bold;
     font-size: 1.125rem;
-} */
+}
 
 .faq-accordion-css-with-orange-heading .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block summary>div,
 .faq-accordion-css-with-orange-heading .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block summary>div>p {
@@ -402,7 +402,12 @@ ol .accordion ul {
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
-
+.section.faq-section-wrapper .accordion-group-wrapper .accordion-group .accordion details summary div{
+    width: 98%;
+}
+.faq-section-wrapper .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block{
+    border-bottom: 1px solid #e5e7eb;
+}
 /* .faq-accordion-css-with-orange-heading .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block details>div>article>div,
 .faq-accordion-css-with-orange-heading .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block details>div>article>div>article>div {
     margin: 0;
@@ -499,7 +504,14 @@ ol .accordion ul {
         font-size: 1rem;
         line-height: 1.5rem;
     }
-
+    .section.faq-view-more-logic .default-content-wrapper .button-container{
+        width: 100%;
+        font-size: 1rem;
+        line-height: 24px;
+    }
+    .faq-section-wrapper .default-content-wrapper h2{
+        margin-bottom: unset;
+    }
     /* .section.faq-section-wrapper .default-content-wrapper{
         padding-top: 10px;
     } */
