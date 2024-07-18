@@ -23,7 +23,7 @@
     color: #333;
     display: block;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 32px;
@@ -31,7 +31,7 @@
 .section.knowledge-card-carousel .carousel-wrapper .carousel .panel-container .teaser .background .foreground .text .long-description p strong{
     color: #000;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 24px;
 }
@@ -42,7 +42,7 @@
     color: #000;
     display: block;
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 2pc;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 40px;
     padding-bottom: 8px;
@@ -74,7 +74,7 @@
     cursor: default;
     display: block;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 28px;
     text-align: center;
     padding: 10px 20px;
@@ -122,7 +122,7 @@
         display: none;
     }
     .section.knowledge-card-carousel .default-content-wrapper #piramal-values{
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 28px;
         padding-bottom: 4px;
         margin: 20px 0;

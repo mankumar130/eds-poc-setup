@@ -26,7 +26,7 @@
     background: unset;
 }
 
-.section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>p {
+.section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>p {
     display: none;
 }
 
@@ -36,19 +36,19 @@
     margin: 0 56px;
 }
 
-.section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>ul {
+.section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>ul {
     display: flex;
     align-items: center;
     gap: 34px;
     height: 45px;
 }
 
-.section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>ul>li {
+.section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li {
     background: unset;
     padding: 0;
 }
 
-.section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>ul>li a {
+.section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li a {
     padding: 8px 1pc 7px;
     position: relative;
     white-space: nowrap;
@@ -77,13 +77,13 @@
     content: none;
 }
 
-.section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>ul>li>strong>a {
+.section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li>strong>a {
     background-color: var(--greyishblue);
     color: #fce6e5;
 }
 
-.section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>ul>li>a:hover,
-.section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>ul>li>strong>a:hover {
+.section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li>a:hover,
+.section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li>strong>a:hover {
     background-color: var(--greyishblue);
     color: #fce6e5;
     text-decoration: none;
@@ -138,7 +138,7 @@
     .section.company-details-wrapper .tab-link-wrapper .tab-link.block .text.legal-mobile-text .cmp-text p:first-child {
         color: var(--greyishblue);
         font-family: 'Nunito-Regular', sans-serif;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 400;
         line-height: 20px;
         margin-bottom: 4px;
@@ -148,14 +148,14 @@
     .section.company-details-wrapper .tab-link-wrapper .tab-link.block .text.legal-mobile-text .cmp-text p:nth-child(2) {
         color: var(--black);
         font-family: 'Nunito-Bold', sans-serif;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
         line-height: 24px;
         padding-bottom: 4px;
         z-index: 1;
     }
 
-    .section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>p {
+    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>p {
         border-bottom: 1px solid var(--whisper);
         display: block;
         padding: 28px 0 1pc;
@@ -163,13 +163,13 @@
         text-align: center;
         color: #010812;
         font-family: Nunito-Bold, sans-serif;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 700;
         line-height: 27px;
         text-transform: capitalize;
     }
 
-    .section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>ul>li a {
+    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li a {
         align-items: center;
         border: unset;
         border-radius: 50px;
@@ -187,8 +187,8 @@
         margin: 0;
     }
 
-    .section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>ul>li>a:hover,
-    .section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>ul>li>strong>a:hover {
+    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li>a:hover,
+    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li>strong>a:hover {
         background-color: transparent;
         color: var(--black);
         text-decoration: none;
@@ -202,11 +202,11 @@
         display: none;
     }
 
-    .section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>ul>li:last-child a {
+    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li:last-child a {
         padding-bottom: 32px;
     }
 
-    .section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>ul>li a::before {
+    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li a::before {
         border: 1px solid #a9a9a9;
         border-radius: 50%;
         content: "";
@@ -219,7 +219,7 @@
         width: 15px;
     }
 
-    .section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>ul>li>strong a::after {
+    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li>strong a::after {
         background: #000;
         border-radius: 50%;
         content: "";
@@ -233,14 +233,14 @@
         border: unset;
     }
 
-    .section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>ul {
+    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>ul {
         gap: 0;
         margin: 0;
         flex-direction: column;
         align-items: baseline;
     }
 
-    .section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>ul>li>strong>a {
+    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li>strong>a {
         color: var(--black);
         background-color: transparent;
         font-family: 'Nunito-Bold', sans-serif;
@@ -250,11 +250,11 @@
         margin: 0;
     }
 
-    .section.company-details-wrapper .tab-link-wrapper .tab-link.block >div {
+    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>div {
         display: none;
     }
 
-    .section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>::before {
+    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>::before {
         background-color: var(--silver);
         border-radius: 6px;
         content: "";
@@ -272,7 +272,7 @@
     }
 
     /* Modal and Overlay Styles */
-    .section.company-details-wrapper .tab-link-wrapper .tab-link.block >div {
+    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>div {
         display: none;
         display: flex;
         outline: 0;
@@ -292,7 +292,7 @@
         max-height: 80vh;
     }
 
-    .section.company-details-wrapper .tab-link-wrapper .tab-link.block >div.model-mob-hide {
+    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>div.model-mob-hide {
         transform: translateY(0);
         overflow: hidden;
         overflow-y: auto;
@@ -314,7 +314,7 @@
         backdrop-filter: blur(0);
     }
 
-    .section.company-details-wrapper .tab-link-wrapper .tab-link.block >div>div>ul>li {
+    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li {
         margin-top: 16px;
         padding: 0;
         text-align: start;
