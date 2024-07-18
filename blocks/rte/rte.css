@@ -1,7 +1,7 @@
 /* privacy policy content css start */
 .section.content-wrapper .rte.block > div >div>p{
     font-family: "Nunito-Regular";
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     margin: 7px 0 0;
     color: #333;
@@ -11,7 +11,7 @@
     margin-top: 16px;
     text-decoration: underline;
     font-family: "Nunito-Regular";
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     font-weight: 400;
     color: #333;
@@ -19,7 +19,7 @@
 
 .section.content-wrapper .rte.block > div >div>ul>li {
     font-family: "Nunito-Regular";
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     font-weight: 400;
     color: #333;
@@ -32,7 +32,7 @@
 }
 
 .section.content-wrapper .rte.block > div >div>ul>li::marker {
-    font-size: 25px;
+    font-size: 1.563rem;
 }
 
 .section.content-wrapper .rte.block > div >div>p>a {

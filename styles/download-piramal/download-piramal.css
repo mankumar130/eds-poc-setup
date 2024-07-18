@@ -24,7 +24,7 @@
 .download-piramal-wrapper .default-content-wrapper p:nth-child(3) {
   position: absolute;
   top: 25%;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Nunito-Regular";
   color: #ffffff;
   left: 5%;
@@ -69,7 +69,7 @@
     border-radius: 8px;
     color: #fff;
     font-family: "Nunito-Bold", sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
     line-height: 16px;
     padding: 8px 15px;
@@ -101,7 +101,7 @@
   position: absolute;
   left: 204px;
   top: 50px;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-family: "Nunito-Regular";
   font-weight: 700;
   color: #ffffff;
@@ -111,7 +111,7 @@
   margin: 0;
   color: #fff;
   font-family: "Nunito-Bold", sans-serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
   line-height: 36px;
   margin-bottom: 8px;
@@ -121,7 +121,7 @@
   margin: 0px;
   color: #fff;
   font-family: "Nunito-Regular", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 32px;
 }
@@ -178,14 +178,14 @@
   .section.download-piramal-wrapper>.default-content-wrapper>h4{
     color: #fff;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 2pc;
   }
   .section.download-piramal-wrapper>.default-content-wrapper>p{
     color: #fff;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 28px;
   }

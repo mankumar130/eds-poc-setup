@@ -7,7 +7,7 @@
 .section.rte-wrapper.rte-bg-blue .default-content-wrapper p{
     color: #d7dce1;
     font-family: 'Nunito-Regular', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
  }
@@ -17,7 +17,7 @@
         padding: 24px 0;
     }
     .section.rte-wrapper.rte-bg-blue .default-content-wrapper p{
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
     }
 }
@@ -31,13 +31,13 @@
 .section.rte-wrapper.rte-bg-light-yellow .default-content-wrapper p{
     color: #000;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 24px;
 }
 @media screen and (max-width: 1024px) {
     .section.rte-wrapper.rte-bg-light-yellow .default-content-wrapper p{
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
     }
 }

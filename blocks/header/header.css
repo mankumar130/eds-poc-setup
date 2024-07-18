@@ -1348,7 +1348,11 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
   }
 }
 
-
+@media screen and (min-width: 1025px) and (max-width: 1300px){
+  .header-wrapper .nav-wrapper nav{
+    max-width: 81.25%;
+  }
+}
 
 /* header mobile */
 /* @media screen and (max-width: 1024px) {
@@ -1391,7 +1395,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     cursor: pointer;
     display: flex;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.5rem;
     text-decoration: none;
     margin-bottom: 0;
@@ -1419,7 +1423,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
   .section.mobile-view-header .code-wrapper .code div div ul:nth-child(1) li:nth-child(2) ul:nth-child(2) li:nth-child(1) {
     padding: unset;
     margin-bottom: 12px;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   .section.mobile-view-header .code-wrapper .code div ul li:nth-child(2) {
@@ -1455,7 +1459,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
   .section.mobile-view-header .code-wrapper .code div ul li:nth-child(2) ul li a {
     cursor: pointer;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.25rem;
     text-decoration: none;
@@ -1491,7 +1495,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     cursor: pointer;
     display: flex;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.5rem;
     text-decoration: none;
     margin-bottom: 0;
@@ -1523,7 +1527,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     cursor: pointer;
     display: flex;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     text-decoration: none;
     color: #212529;
@@ -1535,7 +1539,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     cursor: pointer;
     display: flex;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 24px;
     text-decoration: none;
     color: #212529;
@@ -1563,7 +1567,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     cursor: pointer;
     display: flex;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     text-decoration: none;
     color: #212529;
@@ -1582,7 +1586,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     color: #212529;
     padding-left: 8px;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 24px;
     padding-left: 12px;
     width: 100%;

@@ -19,7 +19,7 @@
     background-color: #fa4616;
     color: #fff;
     padding: 2px;
-    font-size: 13px;
+    font-size: 0.813rem;
     text-align: center;
     font-family: nunito-bold;
     border-style: none;
@@ -27,7 +27,7 @@
 .section.e-auction-wrapper .code-wrapper .code.block > div table tbody tr td{
     border: 1px solid #c5c4c4;
     padding: 2px;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-family: nunito-regular;
     vertical-align: middle;
 }
