@@ -1,6 +1,6 @@
 import { overlay } from "../blocks/applyloanform/applyloanforms.js";
 import { toggleAllNavSections } from "../blocks/header/header.js";
-import { sampleRUM, loadHeader, loadFooter, decorateButtons, decorateIcons, decorateSections, decorateBlocks, decorateTemplateAndTheme, waitForLCP, loadBlocks, loadCSS } from "./aem.js";
+import { sampleRUM, loadHeader, loadFooter, decorateButtons, decorateIcons, decorateSections, decorateBlocks, decorateTemplateAndTheme, waitForLCP, loadBlocks, loadCSS, fetchPlaceholders } from "./aem.js";
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
 console.log("Main Branch 1.3");
@@ -247,9 +247,9 @@ export function createCarousle(block, prevButton, nextButton) {
 
   function getVisibleSlides() {
     if (targetObject.isMobile) {
-      return 2
+      return 2;
     } else if (targetObject.isTab) {
-      return 3
+      return 3;
     }
     return 4;
   }
@@ -267,65 +267,65 @@ export function createCarousle(block, prevButton, nextButton) {
     targetObject.carouselButton.disabled = false;
   }
 
-  const setPositionByIndex = targetObject.isTab ? function () {
-    // Tab 
-    currentTranslate = (currentSlide * -carouselInner.clientWidth) / (block.closest(".carousel-3pt5") ? 2 : visibleSlides);
-    console.log("currentSlide :: ", currentSlide);
-    console.log("-carouselInner.clientWidth :: ", -carouselInner.clientWidth);
-    console.log("visibleSlides :: ", visibleSlides);
-    console.log("currentTranslate :: ", currentTranslate);
-    console.log("length :: ", (slides.length));
-    console.log("check length :: ", (currentSlide + 4) == (slides.length));
-    console.log("targetObject.isTab :: ", targetObject.isTab);
-    prevTranslate = currentTranslate;
-    carouselInner.style.transition = "transform 0.5s ease";
-    if (block.closest(".carousel-3pt5") && !targetObject.isTab && ((currentSlide + 4) == slides.length)) {
-      // Desktop View Logic 3.5 carousel
-      // carouselInner.style.transform = `translateX(${-600}px)`
-      // carouselInner.style.transform = `translateX(${currentTranslate }px)`;
-      carouselInner.style.transform = `translateX(${currentTranslate - 200}px)`;
-    } else {
-      if (block.closest(".carousel-3pt5") && targetObject.isTab && currentSlide) {
-        // Tab View Logic 3.5 carousel
-        if (((currentSlide + 4) > slides.length)) {
-          // targetObject.currentTranslate = 40
-          if (currentTranslate > -2100 && targetObject.currentTranslate < 50) {
-            targetObject.currentTranslate = targetObject.currentTranslate ? (targetObject.currentTranslate += 340) : 40;
-          }
-        } else {
-          targetObject.currentTranslate = 0
-        }
-        carouselInner.style.transform = `translateX(${currentTranslate - targetObject.currentTranslate}px)`;
-      } else {
-        if (block.closest(".carousel-3pt5") && currentSlide) {
+  const setPositionByIndex = targetObject.isTab
+    ? function () {
+        // Tab
+        currentTranslate = (currentSlide * -carouselInner.clientWidth) / (block.closest(".carousel-3pt5") ? 2 : visibleSlides);
+        console.log("currentSlide :: ", currentSlide);
+        console.log("-carouselInner.clientWidth :: ", -carouselInner.clientWidth);
+        console.log("visibleSlides :: ", visibleSlides);
+        console.log("currentTranslate :: ", currentTranslate);
+        console.log("length :: ", slides.length);
+        console.log("check length :: ", currentSlide + 4 == slides.length);
+        console.log("targetObject.isTab :: ", targetObject.isTab);
+        prevTranslate = currentTranslate;
+        carouselInner.style.transition = "transform 0.5s ease";
+        if (block.closest(".carousel-3pt5") && !targetObject.isTab && currentSlide + 4 == slides.length) {
           // Desktop View Logic 3.5 carousel
+          // carouselInner.style.transform = `translateX(${-600}px)`
+          // carouselInner.style.transform = `translateX(${currentTranslate }px)`;
+          carouselInner.style.transform = `translateX(${currentTranslate - 200}px)`;
+        } else {
+          if (block.closest(".carousel-3pt5") && targetObject.isTab && currentSlide) {
+            // Tab View Logic 3.5 carousel
+            if (currentSlide + 4 > slides.length) {
+              // targetObject.currentTranslate = 40
+              if (currentTranslate > -2100 && targetObject.currentTranslate < 50) {
+                targetObject.currentTranslate = targetObject.currentTranslate ? (targetObject.currentTranslate += 340) : 40;
+              }
+            } else {
+              targetObject.currentTranslate = 0;
+            }
+            carouselInner.style.transform = `translateX(${currentTranslate - targetObject.currentTranslate}px)`;
+          } else {
+            if (block.closest(".carousel-3pt5") && currentSlide) {
+              // Desktop View Logic 3.5 carousel
+              carouselInner.style.transform = `translateX(${currentTranslate - 200}px)`;
+            } else {
+              carouselInner.style.transform = `translateX(${currentTranslate}px)`;
+            }
+          }
+        }
+      }
+    : function () {
+        // Desktop
+        currentTranslate = (currentSlide * -carouselInner.clientWidth) / visibleSlides;
+        currentTranslate = (currentSlide * -carouselInner.clientWidth) / visibleSlides;
+        console.log("currentSlide :: ", currentSlide);
+        console.log("-carouselInner.clientWidth :: ", -carouselInner.clientWidth);
+        console.log("visibleSlides :: ", visibleSlides);
+        console.log("currentTranslate :: ", currentTranslate);
+        console.log("length :: ", slides.length);
+        console.log("check length :: ", currentSlide + 4 == slides.length);
+        prevTranslate = currentTranslate;
+        carouselInner.style.transition = "transform 0.5s ease";
+        if (block.closest(".carousel-3pt5") && currentSlide + 4 == slides.length) {
+          // carouselInner.style.transform = `translateX(${-600}px)`
           carouselInner.style.transform = `translateX(${currentTranslate - 200}px)`;
         } else {
           carouselInner.style.transform = `translateX(${currentTranslate}px)`;
         }
-      }
-    }
-  } : function () {
-    // Desktop 
-    currentTranslate = (currentSlide * -carouselInner.clientWidth) / visibleSlides;
-    currentTranslate = (currentSlide * -carouselInner.clientWidth) / visibleSlides;
-    console.log("currentSlide :: ", currentSlide);
-    console.log("-carouselInner.clientWidth :: ", -carouselInner.clientWidth);
-    console.log("visibleSlides :: ", visibleSlides);
-    console.log("currentTranslate :: ", currentTranslate);
-    console.log("length :: ", (slides.length));
-    console.log("check length :: ", (currentSlide + 4) == (slides.length));
-    prevTranslate = currentTranslate;
-    carouselInner.style.transition = "transform 0.5s ease";
-    if (block.closest(".carousel-3pt5") && ((currentSlide + 4) == slides.length)) {
-      // carouselInner.style.transform = `translateX(${-600}px)`
-      carouselInner.style.transform = `translateX(${currentTranslate - 200}px)`;
-    } else {
-      carouselInner.style.transform = `translateX(${currentTranslate}px)`;
-    }
-  }
-
-
+      };
 
   function nextSlide(e) {
     // if (currentSlide) {
@@ -364,11 +364,11 @@ export function createCarousle(block, prevButton, nextButton) {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            nextButton.classList.add("light")
+            nextButton.classList.add("light");
             nextButton.disabled = true;
           } else {
             nextButton.disabled = false;
-            nextButton.classList.remove("light")
+            nextButton.classList.remove("light");
           }
         });
       },
@@ -387,9 +387,9 @@ export function createCarousle(block, prevButton, nextButton) {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            prevButton.classList.add("light")
+            prevButton.classList.add("light");
           } else {
-            prevButton.classList.remove("light")
+            prevButton.classList.remove("light");
           }
         });
       },
@@ -416,23 +416,55 @@ export function createButton(text, picture) {
   return button;
 }
 
-export function decoratePH(block) {
+export async function decoratePlaceholder(block, path) {
   try {
-    block.querySelectorAll("a").forEach(function (anchor) {
-
-    });
+    const resp = await fetchPlaceholders(path);
+    console.log(resp);
+    return renderHelper([resp], `<div class="forName">${block.innerHTML}</div>`);
   } catch (error) {
     console.warn(error);
   }
 }
+
+export function decorateViewMore(block) {
+  const section = block.closest(".section");
+  if (!section.classList.contains("view-more-btn")) return;
+  
+  const displayCount = parseInt(Array.from(section.classList)
+    .find(cls => cls.endsWith("-item-display"))
+    ?.replace("-item-display", "") || "0");
+  
+    const items = block.classList.contains("columns")
+    ? block.children
+    : block.parentElement.parentElement.children;
+  
+  const toggleVisibility = (showAll = false) => {
+    [...items].forEach((item, index) => {
+      item.classList.toggle("dp-none", !showAll && index >= displayCount);
+    });
+  };
+  
+  toggleVisibility();
+  
+  const viewBtn = section.querySelector('.default-content-wrapper .button-container');
+  const viewLink = viewBtn.querySelector('a');
+  
+  viewBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const isViewMore = viewLink.textContent.trim().toLowerCase() === 'view more';
+    toggleVisibility(isViewMore);
+    viewLink.textContent = isViewMore ? 'View less' : 'View more';
+  });
+}
+
 export function decorateAnchorTag(main) {
   try {
     main.querySelectorAll("a").forEach(function (anchor) {
       if (anchor.innerHTML.includes("<sub>")) {
         anchor.target = "_blank";
       } else if (anchor.href.includes("/modal-popup/")) {
-        const paths = anchor.href.split("/")
-        const dataid = paths[paths.length - 1]
+        const paths = anchor.href.split("/");
+        const dataid = paths[paths.length - 1];
         anchor.dataset.modelId = dataid;
         targetObject.modelId = dataid;
         anchor.dataset.href = anchor.href;
@@ -443,23 +475,23 @@ export function decorateAnchorTag(main) {
             eachModel.classList.add("dp-none");
             eachModel.remove();
             body.prepend(eachModel);
-          })
+          });
           e.preventDefault();
           body.style.overflow = "hidden";
 
           targetObject.models?.forEach(function (eachModel) {
             eachModel.classList.remove("dp-none");
-            eachModel.classList.add("overlay")
+            eachModel.classList.add("overlay");
             const crossIcon = eachModel.querySelector("em");
             if (crossIcon.innerHTML.includes(":cross-icon")) {
               crossIcon.innerHTML = "";
               crossIcon.addEventListener("click", function (e) {
-                eachModel.classList.remove("overlay")
+                eachModel.classList.remove("overlay");
                 eachModel.classList.add("dp-none");
-              })
+              });
             }
-          })
-        })
+          });
+        });
       }
     });
   } catch (error) {
@@ -514,7 +546,7 @@ function buildAutoBlocks() {
 export function decorateMain(main) {
   // hopefully forward compatible button decoration
   decorateAnchorTag(main);
-  decoratePH(main);
+  decoratePlaceholder(main);
   decorateButtons(main);
   decorateIcons(main);
   buildAutoBlocks(main);
@@ -667,8 +699,8 @@ body?.addEventListener("click", function (e) {
   if (e.target.classList.contains("overlay")) {
     targetObject.models?.forEach(function (eachModel) {
       eachModel.classList.add("dp-none");
-      eachModel.classList.remove("overlay")
-    })
+      eachModel.classList.remove("overlay");
+    });
   }
   if (!e.target.closest(".stake-pop-up")) {
     document.querySelectorAll(".stake-pop-up").forEach((ele) => {

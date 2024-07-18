@@ -39,6 +39,16 @@
     color: var(--orange);
 }
 
+.section.list-content-wrapper.list-language-text-underline .default-content-wrapper ul>li>a {
+    text-decoration: underline;
+}
+.section.list-content-wrapper.list-language-text-underline .default-content-wrapper ul>li {
+    margin-bottom: 16px;
+}
+.section.list-content-wrapper.list-language-text-underline .default-content-wrapper ul>li:last-child {
+    margin-bottom: 0;
+}
+
 /* heading sub heading common css start  */
 .section.types-of-interest-rates-wrapper .default-content-wrapper h3 {
     color: var(--black);

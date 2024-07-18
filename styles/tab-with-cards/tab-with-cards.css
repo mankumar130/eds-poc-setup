@@ -57,7 +57,7 @@
 }
 
 .section.tab-with-cards-wrapper .panel-container .teaser.block.card-full-width,
-.section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block.card-full-width{
+.section.tab-with-cards-wrapper.corporate-last-card-fw .wrappercreation-wrapper .wrapper-creation-container .teaser-wrapper:last-child {
     grid-column: span 2;
 }
 
