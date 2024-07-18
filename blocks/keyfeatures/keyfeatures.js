@@ -139,18 +139,14 @@ function generateFeatureHTML(props) {
                 </div>
     
                 <div class="feature" id="hideshow">
-                    <img data-src="${keyFeatureInnerImage2}" alt="tenure"
-                        class="lozad" src="${keyFeatureInnerImage2}"
-                        data-loaded="true">
+                ${keyFeatureInnerImage2 ? `<img data-src="${keyFeatureInnerImage2}" alt="Interest" class="lozad" src="${keyFeatureInnerImage2}" data-loaded="true">` : ''}
                     <div class="feature-details">
                         ${keyFeatureInnerText2.outerHTML}
                     </div>
                 </div>
     
                 <div class="feature" id="hideshow">
-                    <img data-src="${keyFeatureInnerImage3}" alt="Interest"
-                        class="lozad" src="${keyFeatureInnerImage3}"
-                        data-loaded="true">
+                ${keyFeatureInnerImage3 ? `<img data-src="${keyFeatureInnerImage3}" alt="Interest" class="lozad" src="${keyFeatureInnerImage3}" data-loaded="true">` : ''}
                     <div class="feature-details">
                     ${keyFeatureInnerText3.outerHTML}
                     </div>

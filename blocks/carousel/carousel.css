@@ -367,6 +367,29 @@
   color: var(--darkcharcoal);
 }
 
+.section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background {
+  align-items: start;
+}
+
+.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser .foreground {
+  padding-top: 133px;
+}
+
+.section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser {
+  height: 630px;
+}
+
+.section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+  max-height: 394px;
+  mix-blend-mode: luminosity;
+  max-width: 814px;
+}
+
+.section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description>p{
+  color: var(--darkcharcoal);
+  margin-top: 4px;
+}
+
 @media (min-width:1024px) and (max-width:1366px) {
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
     max-width: 312px;
@@ -507,7 +530,8 @@
     max-width: 200px;
   }
 
-  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .front-picture {
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .front-picture,
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture {
     right: 16px;
   }
 
@@ -561,6 +585,20 @@
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-whatsapp-banner>.background .front-picture img {
     max-width: 240px;
     max-height: 200px;
+  }
+
+  .banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser .foreground {
+    padding-top: unset;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description>p{
+    margin-top: 12px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser {
+    height: 455px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+    max-height: 154px;
+    max-width: 100%;
   }
 }
 
@@ -730,6 +768,23 @@
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-whatsapp-banner>.background .front-picture img {
     max-width: 240px;
     max-height: 200px;
+  }
+
+  .banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser .foreground {
+    padding-top: unset;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description>p {
+    margin-top: 20px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser {
+    height: 400px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+    max-height: 154px;
+    max-width: 412px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture {
+    right: 60px;
   }
 }
 
