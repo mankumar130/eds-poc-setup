@@ -830,7 +830,20 @@
     max-height: 335px;
     max-width: 394px;
   }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser-block-one.block>.background .front-picture img {
+    max-width: 312px;
+    max-height: 265px;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-two >.background .front-picture img{
+    max-width: 204px;
+    max-height: 212px;
+  }
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background{
     background-size: cover;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-two>.background .front-picture{
+    bottom: 55%;
+    right: 9%;
+    translate: -50% 50%;
   }
 }
