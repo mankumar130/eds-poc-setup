@@ -767,4 +767,15 @@
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background{
     padding: 0 115px 0 119px;
   }
+  .section.banner-carousel-wrapper .carousel-wrapper .carousel.block .button-container {
+    left: 119px;
+    bottom: 60px;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+    max-height: 335px;
+    max-width: 394px;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background{
+    background-size: cover;
+  }
 }
