@@ -4,7 +4,7 @@
     color: var(--black);
     display: block;
     font-family: 'Nunito-Extrabold', sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 40px;
     margin-bottom: 8px;
@@ -14,7 +14,7 @@
 .section.types-of-interest-rates-wrapper .default-content-wrapper p {
     color: var(--black);
     font-family: 'Nunito-Regular', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 24px;
 }
@@ -28,7 +28,7 @@
 .section.list-content-wrapper .default-content-wrapper ul > li {
     color: var(--black);
     font-family: 'Nunito-Regular', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 28px;
     list-style-type: disc;
@@ -39,27 +39,87 @@
     color: var(--orange);
 }
 
+.section.list-content-wrapper.list-language-text-underline .default-content-wrapper ul>li>a {
+    text-decoration: underline;
+}
+.section.list-content-wrapper.list-language-text-underline .default-content-wrapper ul>li {
+    margin-bottom: 16px;
+}
+.section.list-content-wrapper.list-language-text-underline .default-content-wrapper ul>li:last-child {
+    margin-bottom: 0;
+}
+
 /* heading sub heading common css start  */
 .section.types-of-interest-rates-wrapper .default-content-wrapper h3 {
     color: var(--black);
     display: block;
     font-family: 'Nunito-Extrabold',sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 40px;
     margin-bottom: 8px;
 }
-
+.section.supply-chain-description > .default-content-wrapper > p{
+    color: #000;
+    font-family: Nunito-Regular, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.section.supply-chain-description > .default-content-wrapper > p > strong{
+    color: #000;
+    font-family: Nunito-Bold, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.section.list-content-wrapper .default-content-wrapper > p >strong{
+    color: #000;
+    font-family: Nunito-Bold, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.section.inventory-financing .default-content-wrapper > h2{
+    color: #000;
+    display: block;
+    font-family: Nunito-Extrabold, sans-serif;
+    font-size: 2pc;
+    font-weight: 800;
+    line-height: 40px;
+    padding-bottom: 8px;
+}
+.section.inventory-financing .default-content-wrapper > ul > li > p >strong{
+    color: #000;
+    font-family: Nunito-Bold, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.section.inventory-financing .default-content-wrapper > p > strong{
+    color: #000;
+    font-family: Nunito-Bold, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.section.inventory-financing .default-content-wrapper > p{
+    color: #000;
+    font-family: Nunito-Regular, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
 @media screen and (max-width: 768px) {
 /* list content common css start  */
     .section.list-content-wrapper .default-content-wrapper h2,
     .section.types-of-interest-rates-wrapper .default-content-wrapper h2 {
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 24px;
     }
 
     .section.list-content-wrapper .default-content-wrapper p,
     .section.types-of-interest-rates-wrapper .default-content-wrapper p {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
     }
 
@@ -68,12 +128,12 @@
     }
 
     .section.list-content-wrapper .default-content-wrapper ul > li {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 24px;
     }
     
     .section.types-of-interest-rates-wrapper .default-content-wrapper h3 {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 24px;
     }
 }

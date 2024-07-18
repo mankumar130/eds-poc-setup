@@ -1812,11 +1812,20 @@
     }
   }
   
-  @media screen and (max-width: 1300px) {
+  @media screen and (min-width:1025px) and (max-width: 1300px) {
     .homeloancalculator .home-loan-calculator-parent .hlc-subparent{
         max-width: 81.25%;
     }
     .homeloancalculator .calculator-parent .calculator-parent-child .cp-child{
       max-width: 81.25%;
+    }
+    .homeloancalculator .home-loan-calculator-parent .hlc-subparent .radiotab .firsttab{
+      padding: 12px 16px 0 0;
+    }
+    .homeloancalculator .home-loan-calculator-parent .hlc-subparent .radiotab .secondtab .customecheck{
+      margin-left: 78px;
+    }
+    .homeloancalculator .calculator-parent .calculator-parent-child .cp-child .headingtabs .headul .active p{
+      font-size: 22px;
     }
   }

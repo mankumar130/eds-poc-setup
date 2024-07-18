@@ -2,7 +2,7 @@
     color: #000;
     display: block;
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 40px;
     margin-bottom: 8px;
@@ -11,7 +11,7 @@
 .section.risk-gradation .default-content-wrapper>p {
     color: #000;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 24px;
 }
@@ -19,7 +19,7 @@
 .section.risk-gradation .default-content-wrapper>ul>li::marker {
     color: #000;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 28px;
 }
@@ -27,7 +27,7 @@
 .section.risk-gradation .default-content-wrapper>ul>li>p {
     color: #000;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 24px;
 }
@@ -41,7 +41,7 @@
 .section.risk-gradation .default-content-wrapper>ul>li{
     color: #000;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 28px;
     padding: 5px 0;
@@ -115,12 +115,12 @@
     }
 
     .section.risk-gradation .default-content-wrapper #risk-gradation strong {
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 24px;
     }
 
     .section.risk-gradation .default-content-wrapper>p {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
     }
 
@@ -129,13 +129,13 @@
     }
 
     .section.risk-gradation .default-content-wrapper>ul>li>p {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
         padding: 0;
     }
 
     .section.risk-gradation .default-content-wrapper>ul>li::marker {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 24px;
     }
 

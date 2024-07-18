@@ -138,7 +138,7 @@
   font-family: "Nunito-Extrabold", sans-serif;
   font-size: 3rem;
   font-weight: 800;
-  line-height: 3.75rem;
+  line-height: 60px;
   margin: unset;
 }
 
@@ -153,7 +153,7 @@
   font-family: "Nunito-Regular", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 32px;
   margin: unset;
 }
 
@@ -173,7 +173,7 @@
 .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description {
   margin-right: 30px;
 }
-.section.banner-carousel-wrapper.personal-loan-banner .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description {
+.section.banner-carousel-wrapper.banner-description-align .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description {
   margin-right: 12px;
 }
 
@@ -182,7 +182,7 @@
   font-family: "Nunito-Regular", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 32px;
   margin: unset;
 }
 
@@ -199,7 +199,7 @@
   font-family: 'Nunito-Bold', sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
-  line-height: 1.25rem;
+  line-height: 20px;
   padding: 18px 2.16pc 18px 34.65px;
   width: fit-content;
   position: unset;
@@ -251,7 +251,7 @@
   font-family: 'Nunito-Regular', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 32px;
   margin-bottom: 20px;
   color: var(--white);
 }
@@ -290,7 +290,7 @@
   font-family: 'Nunito-Regular', sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 28px;
 }
 
 .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .short-description>ul>li>ul>li>a {
@@ -298,7 +298,7 @@
   font-family: 'Nunito-Bold', sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
-  line-height: 1.75rem;
+  line-height: 28px;
   text-decoration: underline;
 }
 
@@ -352,7 +352,7 @@
   color: var(--darkcharcoal);
   font-family: "Nunito-Regular", sans-serif;
   font-size: 1.125rem;
-  line-height: 1.625rem;
+  line-height: 26px;
   /* padding: 8px 64px 0 0; */
   padding-top: 8px;
 }
@@ -365,6 +365,29 @@
 .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-whatsapp-banner>.background .foreground .text .eyebrow,
 .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-whatsapp-banner .background .foreground .long-description>h2 {
   color: var(--darkcharcoal);
+}
+
+.section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background {
+  align-items: start;
+}
+
+.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser .foreground {
+  padding-top: 133px;
+}
+
+.section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser {
+  height: 630px;
+}
+
+.section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+  max-height: 394px;
+  mix-blend-mode: luminosity;
+  max-width: 814px;
+}
+
+.section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description>p{
+  color: var(--darkcharcoal);
+  margin-top: 4px;
 }
 
 @media (min-width:1024px) and (max-width:1366px) {
@@ -385,7 +408,7 @@
   .banner-carousel-wrapper .carousel-wrapper .carousel .panel-container .teaser.teaser-block-two .foreground {
     width: 70%;
   }
-  .section.banner-carousel-wrapper.personal-loan-banner .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description {
+  .section.banner-carousel-wrapper.banner-description-align .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description {
     margin-right: 40px;
   }
 }
@@ -422,7 +445,7 @@
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-whatsapp-banner .background .foreground .long-description>h2,
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-whatsapp-banner .background .foreground .long-description>h2>strong {
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 32px;
   }
 
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-five>.background .foreground .text .long-description>p,
@@ -433,7 +456,7 @@
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-seven>.background .foreground .text .long-description>p,
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.--skyblue>.background .foreground .text .long-description>p {
     font-size: .875rem;
-    line-height: 1rem;
+    line-height: 20px;
   }
 
   .banner-carousel-wrapper .carousel-wrapper .carousel .panel-container .teaser .foreground .long-description {
@@ -443,7 +466,7 @@
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .foreground .text .cta>a,
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .short-description>ul>li>p>a {
     font-size: .875rem;
-    line-height: 1.063rem;
+    line-height: 17px;
     padding: 14px 16px;
     margin: 0;
   }
@@ -465,12 +488,12 @@
 
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .short-description>ul>li>ul>li {
     font-size: .75rem;
-    line-height: 1rem;
+    line-height: 16px;
   }
 
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .short-description>ul>li>ul>li>a {
     font-size: .875rem;
-    line-height: 1.25rem;
+    line-height: 20px;
   }
 
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .foreground .text {
@@ -498,7 +521,7 @@
 
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-two>.background .foreground .text .eyebrow {
     font-size: .875rem;
-    line-height: 1rem;
+    line-height: 16px;
     margin-bottom: 12px;
   }
 
@@ -507,7 +530,8 @@
     max-width: 200px;
   }
 
-  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .front-picture {
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .front-picture,
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture {
     right: 16px;
   }
 
@@ -554,13 +578,27 @@
   
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-whatsapp-banner .background .foreground .text .cta-image-wrapper .img-with-text-wrap p {
     font-size: 0.875rem;
-    line-height: 1.25rem;
+    line-height: 20px;
     padding-top: 4px;
   }
 
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-whatsapp-banner>.background .front-picture img {
     max-width: 240px;
     max-height: 200px;
+  }
+
+  .banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser .foreground {
+    padding-top: unset;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description>p{
+    margin-top: 12px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser {
+    height: 455px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+    max-height: 154px;
+    max-width: 100%;
   }
 }
 
@@ -596,7 +634,7 @@
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-whatsapp-banner .background .foreground .long-description>h2,
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-whatsapp-banner .background .foreground .long-description>h2>strong {
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 32px;
   }
 
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-five>.background .foreground .text .long-description>p,
@@ -607,7 +645,7 @@
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-seven>.background .foreground .text .long-description>p,
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.--skyblue>.background .foreground .text .long-description>p {
     font-size: .875rem;
-    line-height: 1rem;
+    line-height: 20px;
   }
 
   .banner-carousel-wrapper .carousel-wrapper .carousel .panel-container .teaser .foreground .long-description {
@@ -617,7 +655,7 @@
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .foreground .text .cta>a,
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .short-description>ul>li>p>a {
     font-size: .875rem;
-    line-height: 1.063rem;
+    line-height: 17px;
     padding: 14px 16px;
     margin: 0;
   }
@@ -639,12 +677,12 @@
 
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .short-description>ul>li>ul>li {
     font-size: .75rem;
-    line-height: 1rem;
+    line-height: 16px;
   }
 
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .short-description>ul>li>ul>li>a {
     font-size: .875rem;
-    line-height: 1.25rem;
+    line-height: 20px;
   }
 
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .foreground .text {
@@ -672,7 +710,7 @@
 
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-two>.background .foreground .text .eyebrow {
     font-size: .875rem;
-    line-height: 1rem;
+    line-height: 16px;
     margin-bottom: 12px;
   }
 
@@ -724,12 +762,35 @@
   
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-whatsapp-banner .background .foreground .text .cta-image-wrapper .img-with-text-wrap p {
     font-size: 0.875rem;
-    line-height: 1.25rem;
+    line-height: 20px;
     padding-top: 4px;
   }
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-whatsapp-banner>.background .front-picture img {
     max-width: 240px;
     max-height: 200px;
+  }
+
+  .banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser .foreground {
+    padding-top: unset;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description>p {
+    margin-top: 20px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser {
+    height: 400px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+    max-height: 154px;
+    max-width: 412px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture {
+    right: 60px;
+  }
+}
+
+@media screen and (min-width:1025px) and (max-width: 1300px) {
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-five>.background .foreground {
+    width: 52%;
   }
 }
 
@@ -755,5 +816,21 @@
   .section.carousel-container {
     padding-top: 0;
     padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1300px){
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background{
+    padding: 0 115px 0 119px;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .carousel.block .button-container {
+    left: 119px;
+    bottom: 60px;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+    max-height: 335px;
+    max-width: 394px;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background{
+    background-size: cover;
   }
 }

@@ -1967,6 +1967,13 @@
         "name": "textwithinnerhtml",
         "value": "",
         "label": "Text With RTE"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "fileReference3",
+        "label": "Mobile Image",
+        "description": "Mobile Image"
       }
     ]
   },

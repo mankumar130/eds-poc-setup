@@ -355,6 +355,19 @@ table {
 .section.documents-required-brown .accordion.block > details > div > ul > li > ul{
     margin: unset;
 }
+.section.documents-required-brown .accordion.block > details > div > ul > li:first-child{
+    padding-top: unset;
+}
+.section.documents-required-brown .accordion.block > details > div > ul > li{
+    color: #000;
+    display: block;
+    font-family: Nunito-Regular, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 24px;
+    margin-bottom: unset;
+}
 .section.documents-required-brown .accordion.block > details > div > ul > li > ul > li {
     color: #000;
     display: block;
@@ -568,6 +581,10 @@ table {
     .section.documents-required-brown .default-content-wrapper:last-child{
         display: block
      }
+     .section.documents-required-brown .accordion.block > details > div > ul > li{
+        font-size: 0.75rem;
+        line-height: 16px;
+     }
 }
 @media screen and (min-width:768px) and (max-width:1024px) {
     .section.documents-required-brown .default-content-wrapper .button-container{     
@@ -582,4 +599,10 @@ table {
         .section.documents-required-brown .accordion-group-wrapper {
             margin-bottom: unset;
         }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1300px){
+    .section.documents-required-brown .default-content-wrapper>h2{
+        width: 67%;
+    }
 }

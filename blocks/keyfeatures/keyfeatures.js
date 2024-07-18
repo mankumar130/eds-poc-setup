@@ -2,9 +2,6 @@ import { fetchPlaceholders } from "../../scripts/aem.js";
 import { renderHelper } from "../../scripts/scripts.js";
 
 export default async function decorate(block) {
-    const resp = await fetchPlaceholders();
-    console.log(resp);
-    block.innerHTML = renderHelper([resp], `<div class="forName">${block.innerHTML}</div>`);
     const props = [...block.children].map(row => row);
     const getHTML = generateFeatureHTML(props);
     const newDivFeature = document.createElement('div');
@@ -142,18 +139,14 @@ function generateFeatureHTML(props) {
                 </div>
     
                 <div class="feature" id="hideshow">
-                    <img data-src="${keyFeatureInnerImage2}" alt="tenure"
-                        class="lozad" src="${keyFeatureInnerImage2}"
-                        data-loaded="true">
+                ${keyFeatureInnerImage2 ? `<img data-src="${keyFeatureInnerImage2}" alt="Interest" class="lozad" src="${keyFeatureInnerImage2}" data-loaded="true">` : ''}
                     <div class="feature-details">
                         ${keyFeatureInnerText2.outerHTML}
                     </div>
                 </div>
     
                 <div class="feature" id="hideshow">
-                    <img data-src="${keyFeatureInnerImage3}" alt="Interest"
-                        class="lozad" src="${keyFeatureInnerImage3}"
-                        data-loaded="true">
+                ${keyFeatureInnerImage3 ? `<img data-src="${keyFeatureInnerImage3}" alt="Interest" class="lozad" src="${keyFeatureInnerImage3}" data-loaded="true">` : ''}
                     <div class="feature-details">
                     ${keyFeatureInnerText3.outerHTML}
                     </div>

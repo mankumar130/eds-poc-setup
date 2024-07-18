@@ -435,22 +435,20 @@ main img {
 .teaser.block.--lilen>.background {
   background-color: var(--lilen);
 }
-
 .teaser.block.--rosewhite>.background {
   background-color: var(--rosewhite);
 }
-
 .teaser.block.bg--linear-red>.background {
   background: url("url"), linear-gradient(320.12deg, rgb(127, 76, 168) -0.41%, rgb(242, 104, 65) 101.64%) !important;
   background-size: 100% 100%;
 }
-
 .teaser.block.--skyblue>.background {
   background-color: var(--skyblue);
 }
 .teaser.block.--light-gray>.background {
   background-color: var(--light-gray);
 }
+
 .gradient-blue-gray .background .foreground {
   border-radius: 10px;
   background-image: linear-gradient(to right, #2B4054, #2B405400);
@@ -811,7 +809,7 @@ main .section.highlight {
 }
 
 .dp-none {
-  display: none;
+  display: none !important;
 }
 .dp-block{
   display: block;
@@ -830,7 +828,7 @@ main .section.highlight {
     max-width: 76.1% !important;
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (min-width:1025px) and (max-width: 1300px) {
   .section.page-container>div{
     max-width: 81.25% !important;
   }
@@ -895,4 +893,7 @@ body.overlay-active {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1111;
+}
+.blue-bg{
+  background: #EEF3FF !important;
 }
