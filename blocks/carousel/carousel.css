@@ -763,3 +763,8 @@
     padding-bottom: 0;
   }
 }
+@media screen and (min-width: 1025px) and (max-width: 1300px){
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background{
+    padding: 0 115px 0 119px;
+  }
+}
