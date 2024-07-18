@@ -234,6 +234,8 @@ ol .accordion ul {
     line-height: 40px;
     padding-bottom: 8px;
     margin-bottom: 24px;
+    width: 100%;
+    text-align: start;
 }
 
 .faq-accordion-css-with-orange-heading .default-content-wrapper,
@@ -409,6 +411,13 @@ ol .accordion ul {
 .faq-section-wrapper .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block{
     border-bottom: 1px solid #e5e7eb;
 }
+.faq-accordion-css-with-orange-heading .accordion-group-wrapper > .accordion-group > .accordion details > div > ul > li > strong{
+    color: #666;
+    font-family: Nunito-Regular, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 28px;
+}
 /* .faq-accordion-css-with-orange-heading .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block details>div>article>div,
 .faq-accordion-css-with-orange-heading .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block details>div>article>div>article>div {
     margin: 0;
@@ -516,4 +525,24 @@ ol .accordion ul {
     /* .section.faq-section-wrapper .default-content-wrapper{
         padding-top: 10px;
     } */
+    .faq-accordion-css-with-orange-heading .accordion-group-wrapper > .accordion-group > .accordion details > div > ul > li > strong{
+        font-size: 1rem;
+        line-height: 24px;
+    }
+    .section.inventory-financing .default-content-wrapper > p{
+        font-size: 0.875rem;
+        line-height: 20px;
+    }
+    .section.inventory-financing .default-content-wrapper > p > strong{
+        font-size: 0.875rem;
+        line-height: 20px;
+    }
+    .section.inventory-financing .default-content-wrapper > ul > li > p >strong{
+        font-size: 0.875rem;
+        line-height: 20px;
+    }
+    .section.inventory-financing .default-content-wrapper > h2{
+        font-size: 1.125rem;
+        line-height: 27px;
+    }
 }

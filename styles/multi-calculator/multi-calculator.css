@@ -298,6 +298,10 @@
     .section.center-home-loan-calculator.teaser-container {
         padding: unset;
     }
+    .section.center-home-loan-calculator .default-content-wrapper h2{
+        font-size: 1.125rem;
+        line-height: 27px;
+    }
 }
 
 @media screen and (min-width: 768px) and  (max-width: 1024px){
