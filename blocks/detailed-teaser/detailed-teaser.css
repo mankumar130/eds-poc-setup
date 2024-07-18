@@ -101,7 +101,7 @@
   /* the main title */
   /* stylelint-disable-next-line no-descending-specificity */
   .detailed-teaser.block > .foreground > .text > .title {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: var(--font-weight-700);
     line-height: 27px;
     color: var(--non-spectrum-custom-dark);
@@ -116,7 +116,7 @@
   /* description */
   .detailed-teaser.block > .foreground > .text > .description,
   .detailed-teaser.block > .foreground > .text > .description * {
-    font-size: 22px;
+    font-size: 1.375rem;
     color: var(--non-spectrum-custom-dark);
     line-height: 30px;
     margin-top: 10px;
@@ -150,7 +150,7 @@
   /* the cta buttons */
   .detailed-teaser.block > .foreground > .text > .cta > a.button {
     margin: 0;
-    font-size: 15px;
+    font-size: 0.938rem;
     font-weight: var(--font-weight-700);
     line-height: 15px;
     padding: 5px 14px 6px;
@@ -224,7 +224,7 @@
     }
   
     .detailed-teaser.block > .foreground > .text > .title {
-      font-size: 32px;
+      font-size: 2rem;
       font-weight: 800;
     }
   

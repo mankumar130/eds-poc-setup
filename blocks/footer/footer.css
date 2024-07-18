@@ -699,3 +699,8 @@ footer.footer-wrapper .footer {
   }
 /* footer third section onwords css end  */
 }
+@media screen and (min-width: 1025px) and (max-width: 1300px){
+  footer.footer-wrapper .footer{
+    max-width: 81.25%;
+  }
+}

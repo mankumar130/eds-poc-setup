@@ -1,6 +1,6 @@
 .section.awards-recognition-wrapper .default-content-wrapper h3 {
     font-family: 'Nunito-Extrabold', sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 3pc;
     margin-bottom: 1.4pc;
 }
@@ -13,7 +13,7 @@
 
 .section.awards-recognition-wrapper .tab-name-nested-wrapper .tab-name-nested .normal .carousel-inner .carousel-item {
     font-family: Nunito-Regular, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 2pc;
     cursor: pointer;
@@ -51,7 +51,7 @@
     box-sizing: border-box;
     margin-right: unset;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .section.awards-recognition-wrapper .tab-name-nested-wrapper .tab-name-nested .nested-tab-name-child .carousel-inner .carousel-item.active {
@@ -117,7 +117,7 @@
     list-style-type: disc;
     margin-bottom: 16px;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 28px;
 }
 
@@ -128,7 +128,7 @@
     }
 
     .section.awards-recognition-wrapper .tab-name-nested-wrapper .tab-name-nested .normal .carousel-inner .carousel-item {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 24px;
     }
 
@@ -149,7 +149,7 @@
     }
 
     .section.awards-recognition-wrapper .tab-container-wrapper .tab-container .panel-container .teaser .background .foreground .text .long-description>ul>li {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
     }
 }
