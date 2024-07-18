@@ -42,8 +42,8 @@
     color: var(--non-spectrum-raisin-black);
     font-size: var(--spectrum-font-size-200);
     line-height: var(--spectrum-line-height-m);
-    margin-left: 14px;
-    margin-top: 14px;
+    /* margin-left: 14px;
+    margin-top: 14px; */
 }
 
 .accordion details h1,
@@ -346,6 +346,7 @@ ol .accordion ul {
     line-height: 28px;
     margin-left: unset;
     margin-top: unset;
+    width: 95%;
 }
 
 .faq-accordion-css-with-orange-heading .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block summary.active h3,
