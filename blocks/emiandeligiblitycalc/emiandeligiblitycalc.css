@@ -1237,7 +1237,7 @@
   .homeloancalculator .calculator-parent .calculator-parent-child .cp-child .calctabs .commoncalculator .parent-emi .outputdiv .output-parent .mainoutput .outputans, .homeloancalculator .calculator-parent .calculator-parent-child .cp-child .calctabs .commoncalculator .parent-emi .outputdiv .output-parent .mainoutput span {
     font-family: "Nunito-Extrabold", sans-serif;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 3rem;
     color: #365069;
   }

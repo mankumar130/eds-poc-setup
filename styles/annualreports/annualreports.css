@@ -2,7 +2,7 @@
 .section.annual-reports-wrapper .default-content-wrapper h2 {
     color: var(--orange);
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 800;
     line-height: 42px;
     margin: 24px 0;
@@ -22,7 +22,7 @@
     color: #333;
     display: block;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     padding: 20px 50px 20px 16px;
     position: relative;
@@ -62,7 +62,7 @@
 
 @media screen and (max-width: 767px) {
     .section.annual-reports-wrapper .default-content-wrapper h2 {
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 27px;
         margin: 40px 0 14px;
     }
@@ -91,7 +91,7 @@
     display: flex;
     align-items: center;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 12px;
@@ -275,7 +275,7 @@
     padding: 5px 0;
 }
 .section.offer-documents-wrapper .wrappercreation-wrapper .offer-documents-wrapper .offer-documents.block .richtext.text .stake-pop-up .text.popupText .cmp-text .popup-parent-cont .popupContainer div ul li::marker{
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 

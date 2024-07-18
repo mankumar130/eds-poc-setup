@@ -25,7 +25,7 @@
     color: #fff;
     display: block;
     font-family: 'Nunito-Extrabold', sans-serif;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 800;
     line-height: 60px;
     margin-bottom: 16px;
@@ -35,7 +35,7 @@
     /* color: #fff;
     display: block;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 32px;
     width: 73%; */
@@ -50,7 +50,7 @@
     color: #fff;
     display: block;
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 800;
     line-height: 60px;
     margin-bottom: 16px;
@@ -59,7 +59,7 @@
     color: #fff;
     display: block;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 32px;
     width: 73%;
@@ -92,20 +92,20 @@
 @media screen and (max-width:767px) {
 
     .section.corporate-financing-banner-wrapper .teaserv2-wrapper .teaserv2>a .bg-image .description .containerimage>.cmp-container>.text>.cmp-text>h1 .title strong {
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 32px;
     }
 
     .section.corporate-financing-banner-wrapper .teaserv2-wrapper .teaserv2>a .bg-image .description .containerimage>.cmp-container>.text>.cmp-text>p .title {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
     }
     .section.corporate-financing-banner-wrapper .rte-text-description > h1 > strong{
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 2pc;
     }
     .section.corporate-financing-banner-wrapper .rte-text-description > p{
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
     }
     .section.corporate-financing-banner-wrapper .rte-text-description{

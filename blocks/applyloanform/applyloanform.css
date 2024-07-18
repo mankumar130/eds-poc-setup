@@ -211,7 +211,7 @@
 .loan-form-sub-parent>.cmp-container .loan-form>.cmp-container .loan-form-heading-parent>.cmp-container .text p {
     font-family: "Nunito-Bold", sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 28px;
     color: #333333;
 }
@@ -243,7 +243,7 @@
 .loan-form-sub-parent>.cmp-container .loan-form>.cmp-container .cmp-form .loan-form-checkbox .cmp-form-options--radio .cmp-form-options__legend {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
     color: #365069;
 }
@@ -347,7 +347,7 @@
     margin-left: 8px;
     font-family: "Nunito-Bold", sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     color: rgba(0, 0, 0, 0.8705882353);
 }
@@ -402,7 +402,7 @@
 .loan-form-sub-parent>.cmp-container .loan-form>.cmp-container .cmp-form .text .cmp-form-text label {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
     color: #365069;
 }
@@ -410,7 +410,7 @@
 .loan-form-sub-parent>.cmp-container .loan-form>.cmp-container .cmp-form .text .cmp-form-text label span {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
     color: #eb5752;
 }
@@ -475,7 +475,7 @@
     z-index: 1;
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 23px;
     color: rgba(0, 0, 0, 0.8705882353);
 }
@@ -483,7 +483,7 @@
 .loan-form-sub-parent>.cmp-container .loan-form>.cmp-container .cmp-form .text .cmp-form-text .cmp-form-text-parent .cmp-form-text__text::-webkit-input-placeholder {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 23px;
     color: #afb9c3;
     opacity: 1;
@@ -492,7 +492,7 @@
 .loan-form-sub-parent>.cmp-container .loan-form>.cmp-container .cmp-form .text .cmp-form-text .cmp-form-text-parent .cmp-form-text__text::-moz-placeholder {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 23px;
     color: #afb9c3;
     opacity: 1;
@@ -501,7 +501,7 @@
 .loan-form-sub-parent>.cmp-container .loan-form>.cmp-container .cmp-form .text .cmp-form-text .cmp-form-text-parent .cmp-form-text__text:-ms-input-placeholder {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 23px;
     color: #afb9c3;
     opacity: 1;
@@ -510,7 +510,7 @@
 .loan-form-sub-parent>.cmp-container .loan-form>.cmp-container .cmp-form .text .cmp-form-text .cmp-form-text-parent .cmp-form-text__text::-ms-input-placeholder {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 23px;
     color: #afb9c3;
     opacity: 1;
@@ -519,7 +519,7 @@
 .loan-form-sub-parent>.cmp-container .loan-form>.cmp-container .cmp-form .text .cmp-form-text .cmp-form-text-parent .cmp-form-text__text::placeholder {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 23px;
     color: #afb9c3;
     opacity: 1;
@@ -532,7 +532,7 @@
 .loan-form-sub-parent>.cmp-container .loan-form>.cmp-container .cmp-form .text .cmp-form-text .cmp-form-text-parent .rupee {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 23px;
     color: rgba(0, 0, 0, 0.5411764706);
     margin-right: 8px;
@@ -591,7 +591,7 @@
     padding-top: 4px;
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 16px;
     color: #EF4444;
 }
@@ -619,7 +619,7 @@
     cursor: pointer;
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     color: rgba(0, 0, 0, 0.8705882353);
 }
@@ -627,7 +627,7 @@
 .loan-form-sub-parent>.cmp-container .loan-form>.cmp-container .cmp-form .text .cmp-form-text>.option-form-parent .option-form ul li:nth-child(1) {
     font-family: "Nunito-Bold", sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     color: #F58667;
     padding: 12px 0px 12px 0px;
@@ -669,7 +669,7 @@
 .loan-form-sub-parent>.cmp-container .loan-form>.cmp-container .cmp-form-checkbox>.checkboxtext {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
     color: #333333;
 }
@@ -679,7 +679,7 @@
     text-decoration: underline;
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
     color: #333333;
 }
@@ -722,7 +722,7 @@
     border-radius: 8px;
     font-family: "Nunito-Bold", sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 20px;
     color: #ffffff;
     display: -webkit-box;
@@ -746,7 +746,7 @@
 .loan-form-sub-parent>.cmp-container>.loan-form-button-container .cmp-container .btn-text {
     font-family: "Nunito-Bold", sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 20px;
     color: #ffffff;
 }
@@ -828,7 +828,7 @@
     cursor: pointer;
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     color: rgba(0, 0, 0, 0.8705882353);
 }
@@ -836,7 +836,7 @@
 .loan-form-sub-parent>.cmp-container>.option-form-parent .option-form ul li:nth-child(1) {
     font-family: "Nunito-Bold", sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     color: #F58667;
     padding: 12px 0px 12px 0px;
@@ -887,7 +887,7 @@
     display: block;
     position: relative;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 1.375rem;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -1150,7 +1150,7 @@
     margin-top: 12px;
     font-family: "Nunito-Bold", sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 28px;
     color: rgba(0, 0, 0, 0.8705882353);
 }
@@ -1185,14 +1185,14 @@
 .loan-form-sub-otp>.cmp-container .loan-form>.cmp-container .loan-form-otp .loan-form-otp-parent .otpsubheadcontainer .otpsubhead {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
     color: #666666;
 }
 
 @media screen and (max-width: 1024px) {
     .loan-form-sub-otp>.cmp-container .loan-form>.cmp-container .loan-form-otp .loan-form-otp-parent .otpsubheadcontainer .otpsubhead {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
     }
 }
@@ -1200,7 +1200,7 @@
 .loan-form-sub-otp>.cmp-container .loan-form>.cmp-container .loan-form-otp .loan-form-otp-parent .otpsubheadcontainer .otpsubhead .otp-phone-num {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
     color: #666666;
 }
@@ -1208,7 +1208,7 @@
 @media screen and (max-width: 1024px) {
     .loan-form-sub-otp>.cmp-container .loan-form>.cmp-container .loan-form-otp .loan-form-otp-parent .otpsubheadcontainer .otpsubhead .otp-phone-num {
         display: block;
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
     }
 }
@@ -1224,7 +1224,7 @@
     cursor: pointer;
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
     color: #333333;
     text-decoration: underline;
@@ -1240,7 +1240,7 @@
     margin-top: 24px;
     font-family: "Nunito-Bold", sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
     color: #365069;
 }
@@ -1301,7 +1301,7 @@
 .loan-form-sub-otp>.cmp-container .loan-form>.cmp-container .loan-form-otp .loan-form-otp-parent .inputotp input {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 23px;
     color: rgba(0, 0, 0, 0.8705882353);
     padding: 4px 0px 5px;
@@ -1320,7 +1320,7 @@
 .loan-form-sub-otp>.cmp-container .loan-form>.cmp-container .loan-form-otp .loan-form-otp-parent .inputotp span {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 23px;
     color: #20303f;
     position: absolute;
@@ -1332,7 +1332,7 @@
     padding-top: 4px;
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 16px;
     color: #EF4444;
 }
@@ -1351,7 +1351,7 @@
 .loan-form-sub-otp>.cmp-container .loan-form>.cmp-container .loan-form-otp .loan-form-otp-parent .resendtext p {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 16px;
     color: #666666;
 }
@@ -1359,7 +1359,7 @@
 .loan-form-sub-otp>.cmp-container .loan-form>.cmp-container .loan-form-otp .loan-form-otp-parent .resendtext button {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 16px;
     color: #666666;
     background: transparent;
@@ -1370,7 +1370,7 @@
 .loan-form-sub-otp>.cmp-container .loan-form>.cmp-container .loan-form-otp .loan-form-otp-parent .resendtext span {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 16px;
     color: #666666;
 }
@@ -1491,7 +1491,7 @@
     text-align: center;
     font-family: "Nunito-Bold", sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 28px;
     color: rgba(0, 0, 0, 0.8705882353);
 }
@@ -1500,7 +1500,7 @@
     padding-top: 8px;
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     color: #333333;
 }
@@ -1544,7 +1544,7 @@
         display: block;
         font-family: "Nunito-Regular", sans-serif;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
         color: #333333;
     }
@@ -1685,7 +1685,7 @@
     padding-top: 24px;
     font-family: "Nunito-Bold", sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 28px;
     color: rgba(0, 0, 0, 0.8705882353);
 }
@@ -1695,7 +1695,7 @@
     padding-top: 8px;
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     color: #333333;
 }
@@ -1724,7 +1724,7 @@
 .loan-form-request-fail>.cmp-container .loan-form .cmp-container .loan-request-fail-form .redbox p {
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 16px;
     color: #E14046;
 }
@@ -1829,7 +1829,7 @@
     padding-top: 24px;
     font-family: "Nunito-Extrabold", sans-serif;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 28px;
     color: rgba(0, 0, 0, 0.8705882353);
 }
@@ -1839,7 +1839,7 @@
     padding-top: 8px;
     font-family: "Nunito-Regular", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
     color: #333333;
 }
@@ -1871,7 +1871,7 @@
     cursor: pointer;
     font-family: "Nunito-Bold", sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     color: #ffffff;
 }

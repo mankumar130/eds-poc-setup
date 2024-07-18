@@ -3,7 +3,7 @@
     color: var(--black);
     display: block;
     font-family: 'Nunito-Extrabold',sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 40px;
     margin-bottom: 8px;
@@ -13,7 +13,7 @@
     color: var(--gradient-gray);
     display: block;
     font-family: 'Nunito-Regular',sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 28px;
     margin-bottom: 8px;
@@ -30,7 +30,7 @@
     border-right: 1px solid #afb9c3;
     color: var(--black);
     font-family: "Nunito-Bold",sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 24px;
     padding: 0 24px;
@@ -88,7 +88,7 @@
     color: var(--white);
     display: block;
     font-family: 'Nunito-Bold',sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     line-height: 28px;
     margin-bottom: 9px;
@@ -99,7 +99,7 @@
     color: var(--white);
     display: block;
     font-family: 'Nunito-Regular',sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 20px;
 }
@@ -117,13 +117,13 @@
 }
 @media screen and (max-width:767px) {
     .section.tab-with-cards-wrapper .default-content-wrapper> h4 {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 28px;
         margin-bottom: 4px;
     }
 
     .section.tab-with-cards-wrapper .default-content-wrapper>p {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
         margin-bottom: 20px;
     }
@@ -145,13 +145,13 @@
 
     .section.tab-with-cards-wrapper .panel-container .teaser.block .background >.foreground .text .title> h3,
     .section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block .background >.foreground .text .title> h3 {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 24px;
     }
 
     .section.tab-with-cards-wrapper .panel-container .teaser.block .background >.foreground .text .long-description > p,
         .section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block .background >.foreground .text .long-description > p {
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 16px;
     }
 }

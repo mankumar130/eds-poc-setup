@@ -1,6 +1,6 @@
 .section.ratings-card-wrapper .default-content-wrapper #ratings{
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 48px;
     margin-bottom: 40px;
 }
@@ -25,7 +25,7 @@
 }
 .section.ratings-card-wrapper .cards-wrapper .cards ul li .cards-card-body .button-container .button{
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 28px;
     text-align: center;
     text-decoration: underline;
