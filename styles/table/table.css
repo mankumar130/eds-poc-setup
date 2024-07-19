@@ -57,6 +57,7 @@
     height: 18px;
     vertical-align: middle;
     border-radius: 9px 0px 0 0;
+    max-width: unset;
 }
 .section.fees-charges-wrapper .code-wrapper .code.block>div>table>tbody>tr > td > p {
    height: unset;
@@ -203,7 +204,7 @@
         margin-top: unset;
     }
     .section.fees-charges-wrapper .code-wrapper .code>div>table>tbody>tr :first-child{
-        width: 12px;
+        width: 20px;
         height: 12px;
     }
 }
@@ -333,13 +334,6 @@
     text-decoration: underline;
     text-decoration-color: var(--orange);
 }
-
-@media screen and (max-width: 767px) {
-    .section.offer-document-table-wrapper .default-content-wrapper h2 {
-        font-size: 1rem;
-        line-height: 24px;
-    }
-}
 /* offer document table end */
 
 
@@ -385,9 +379,20 @@
     .section.statutory-committees-wrapper .code-wrapper .code>div>table>tbody>tr>td:nth-child(3) {
         padding: 8px;
     }
+    .section.offer-document-table-wrapper .default-content-wrapper h2 {
+        font-size: 1rem;
+        line-height: 24px;
+    }
+    .section.fees-charges-wrapper.three-col-table .code-wrapper .code > div > table > tbody > tr>td>p>img{
+        width: 12px;
+        height: 12px;
+        left: -12px;
+        top: 2px;
+        border-radius: unset;
+    }
 }
 /* statutory committees table end */
-@media screen and (max-width:1024px) {
+@media screen and (min-width:768px) and (max-width:1024px) {
     .section.fees-charges-wrapper.three-col-table .code-wrapper .code > div > table > tbody > tr>td>p>img{
         width: 12px;
         height: 12px;
@@ -396,7 +401,7 @@
         border-radius: unset;
     }
     .section.fees-charges-wrapper .code-wrapper .code>div>table>tbody>tr :first-child{
-        width: 12px;
+        width: 20px;
         height: 12px;
     }
 }

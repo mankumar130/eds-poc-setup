@@ -46,7 +46,7 @@
 
 .section.years-info-tab-wrapper .tab-container-wrapper .tab-container.block .teaser.block .background .foreground .text .long-description>p {
     font-family: "Nunito-Regular";
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--gradient-gray);
 }
 

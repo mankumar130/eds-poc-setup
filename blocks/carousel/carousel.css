@@ -367,6 +367,29 @@
   color: var(--darkcharcoal);
 }
 
+.section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background {
+  align-items: start;
+}
+
+.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser .foreground {
+  padding-top: 133px;
+}
+
+.section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser {
+  height: 630px;
+}
+
+.section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+  max-height: 394px;
+  mix-blend-mode: luminosity;
+  max-width: 814px;
+}
+
+.section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description>p{
+  color: var(--darkcharcoal);
+  margin-top: 4px;
+}
+
 @media (min-width:1024px) and (max-width:1366px) {
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
     max-width: 312px;
@@ -507,7 +530,8 @@
     max-width: 200px;
   }
 
-  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .front-picture {
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .front-picture,
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture {
     right: 16px;
   }
 
@@ -562,6 +586,20 @@
     max-width: 240px;
     max-height: 200px;
   }
+
+  .banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser .foreground {
+    padding-top: unset;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description>p{
+    margin-top: 12px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser {
+    height: 455px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+    max-height: 154px;
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -607,7 +645,7 @@
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-seven>.background .foreground .text .long-description>p,
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.--skyblue>.background .foreground .text .long-description>p {
     font-size: .875rem;
-    line-height: 16px;
+    line-height: 20px;
   }
 
   .banner-carousel-wrapper .carousel-wrapper .carousel .panel-container .teaser .foreground .long-description {
@@ -731,6 +769,23 @@
     max-width: 240px;
     max-height: 200px;
   }
+
+  .banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser .foreground {
+    padding-top: unset;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description>p {
+    margin-top: 20px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser {
+    height: 400px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+    max-height: 154px;
+    max-width: 412px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture {
+    right: 60px;
+  }
 }
 
 @media screen and (min-width:1025px) and (max-width: 1300px) {
@@ -762,4 +817,41 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+}
+@media screen and (min-width: 1025px) and (max-width: 1300px){
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background{
+    padding: 0 125px 0 120px;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .carousel.block .button-container {
+    left: 119px;
+    bottom: 60px;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+    max-height: 335px;
+    max-width: 394px;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser-block-one.block>.background .front-picture img {
+    max-width: 312px;
+    max-height: 265px;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-two >.background .front-picture img{
+    max-width: 204px;
+    max-height: 212px;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background{
+    background-size: cover;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-two>.background .front-picture{
+    bottom: 55%;
+    right: 9%;
+    translate: -50% 50%;
+  }
+  .section.banner-scale-img .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+    max-height: 315px;
+    max-width: 350px;
+    width: 350px;
+    height: 315px;
+    object-fit: contain;
+    object-position: bottom;
+}
 }

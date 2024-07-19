@@ -1,6 +1,6 @@
 .section.board-of-directors-wrapper .default-content-wrapper #board-of-directors{
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 48px;
     margin-bottom: 40px;
 }
@@ -53,7 +53,7 @@
     bottom: -31px;
     color: #000;
     font-family: Nunito-Bold, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     line-height: 28px;
 }
@@ -61,7 +61,7 @@
     text-decoration: none;
     color: #000;
     font-family: Nunito-regular, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     position: absolute;
     bottom: -54px;
@@ -107,13 +107,13 @@
         justify-content: space-around;
     }
     .section.board-of-directors-wrapper .description{
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 16px;
         left: 0%;
         bottom: -52px;
     }
     .section.board-of-directors-wrapper .title{
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
         bottom: -38px;
     }

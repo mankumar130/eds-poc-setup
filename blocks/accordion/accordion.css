@@ -42,8 +42,8 @@
     color: var(--non-spectrum-raisin-black);
     font-size: var(--spectrum-font-size-200);
     line-height: var(--spectrum-line-height-m);
-    margin-left: 14px;
-    margin-top: 14px;
+    /* margin-left: 14px;
+    margin-top: 14px; */
 }
 
 .accordion details h1,
@@ -234,6 +234,8 @@ ol .accordion ul {
     line-height: 40px;
     padding-bottom: 8px;
     margin-bottom: 24px;
+    width: 100%;
+    text-align: start;
 }
 
 .faq-accordion-css-with-orange-heading .default-content-wrapper,
@@ -346,6 +348,7 @@ ol .accordion ul {
     line-height: 28px;
     margin-left: unset;
     margin-top: unset;
+    width: 95%;
 }
 
 .faq-accordion-css-with-orange-heading .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block summary.active h3,
@@ -407,6 +410,13 @@ ol .accordion ul {
 }
 .faq-section-wrapper .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block{
     border-bottom: 1px solid #e5e7eb;
+}
+.faq-accordion-css-with-orange-heading .accordion-group-wrapper > .accordion-group > .accordion details > div > ul > li > strong{
+    color: #666;
+    font-family: Nunito-Regular, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 28px;
 }
 /* .faq-accordion-css-with-orange-heading .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block details>div>article>div,
 .faq-accordion-css-with-orange-heading .accordion-group-wrapper .accordion-group.block.shade-box .accordion.block details>div>article>div>article>div {
@@ -515,4 +525,24 @@ ol .accordion ul {
     /* .section.faq-section-wrapper .default-content-wrapper{
         padding-top: 10px;
     } */
+    .faq-accordion-css-with-orange-heading .accordion-group-wrapper > .accordion-group > .accordion details > div > ul > li > strong{
+        font-size: 1rem;
+        line-height: 24px;
+    }
+    .section.inventory-financing .default-content-wrapper > p{
+        font-size: 0.875rem;
+        line-height: 20px;
+    }
+    .section.inventory-financing .default-content-wrapper > p > strong{
+        font-size: 0.875rem;
+        line-height: 20px;
+    }
+    .section.inventory-financing .default-content-wrapper > ul > li > p >strong{
+        font-size: 0.875rem;
+        line-height: 20px;
+    }
+    .section.inventory-financing .default-content-wrapper > h2{
+        font-size: 1.125rem;
+        line-height: 27px;
+    }
 }

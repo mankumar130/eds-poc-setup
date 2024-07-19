@@ -1,7 +1,7 @@
 /* interest rate accordian start */
 .section.interest-rates-accordian-wrapper .default-content-wrapper h2 {
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 800;
     line-height: 30px;
     margin-top: 40px;
@@ -37,7 +37,7 @@
 .section.interest-rates-accordian-wrapper .accordion-group-wrapper .accordion-group .accordion>details>summary>div>h3,
 .section.interest-rates-accordian-wrapper .accordion-group-wrapper .accordion-group .accordion>details>summary>div>p{
     font-family: Nunito-Regular, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     margin: 0;
 }
@@ -50,7 +50,7 @@
     color: var(--text-color);
     content: "+";
     font-family: Nunito-Extrabold, sans-serif;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 800;
     height: 2px;
     position: absolute;
@@ -95,7 +95,7 @@
     text-decoration: none;
     display: block;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 24px;
     margin-bottom: 4px;
 }
@@ -110,7 +110,7 @@
 
 .section.interest-rates-accordian-wrapper .accordion-group-wrapper .accordion-group .accordion>details>div>ul>li>ul>li>a {
     font-family: Nunito-Regular, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     color: var(--text-color);
     display: block;
@@ -135,7 +135,7 @@
 
 @media screen and (max-width: 767px) {
     .section.interest-rates-accordian-wrapper .default-content-wrapper h2 {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 24px;
     }
 
@@ -144,12 +144,12 @@
     }
 
     .section.interest-rates-accordian-wrapper .accordion-group-wrapper .accordion-group .accordion>details>div>ul>li> a{
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 18px;
     }
 
     .section.interest-rates-accordian-wrapper .accordion-group-wrapper .accordion-group .accordion>details>div>ul>li>ul>li>a {
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 18px;
     }
 
@@ -181,7 +181,7 @@
     margin: 0;
     color: #333;
     font-family: Nunito-Regular, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
 }
@@ -193,7 +193,7 @@
 
 .section.media-acc-wrapper .accordion-group-wrapper .accordion-group .accordion>details >div>ul >li{
     font-family: Nunito-Regular, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     align-items: center;
@@ -234,7 +234,7 @@
  .section.media-acc-wrapper .accordion-group-wrapper .accordion-group .accordion>details >div>ul >li>a{
     color: var(--text-color);
     font-family: Nunito-Regular, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     margin: 0;

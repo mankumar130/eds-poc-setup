@@ -101,7 +101,7 @@
     color:var(--teaser-background-color);
     margin: 0;
     font-family: var(--body-font-family);
-    font-size: 15px;
+    font-size: 0.938rem;
     font-weight: var(--font-weight-700);
     line-height: 15px;
     padding: 5px 14px 6px;
@@ -336,7 +336,7 @@
   
     body[class ^= 'browse-'] .teaser.block > .foreground > .text > .cta > a.button,
     body[class ^= 'article-'] .teaser.block > .foreground > .text > .cta > a.button {
-      font-size: 13px;
+      font-size: 0.813rem;
       line-height: 16px;
       padding: 4px 14px 6px;
     }
@@ -421,7 +421,7 @@
   color: var(--black);
   display: block;
   font-family: 'Nunito-Extrabold',sans-serif;
-  font-size: 2pc;
+  font-size: 2rem;
   line-height: 40px;
 }
 
@@ -476,13 +476,13 @@
   width: 10pc;
   color: #fff;
   font-family: 'Nunito-Bold',sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 28px;
 }
 
 @media screen and (max-width:768px) {
   .section.carousel-container .default-content-wrapper>p>strong {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 28px;
     margin: 20px 0;
   }
