@@ -43,7 +43,7 @@ export function renderEmiEligibility(parentElement) {
     
     let calculators = parentElement.querySelector(".calctabs").children;
     let currentCalculator = Array.from(calculators).filter( element => element.style.display != "none")[0];
-    let calculatorType = currentCalculator.classList.contains("emicalculator") ? "emi" : "eligibility";
+    let calculatorType = currentCalculator && currentCalculator.classList.contains("emicalculator") ? "emi" : "eligibility";
 
     workflowHomeLoanCalculation(currentCalculator, calculatorType);
 }

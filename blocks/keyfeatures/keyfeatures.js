@@ -192,18 +192,18 @@ function featureDropDownClick(block) {
             keyfeaturesList.forEach(function (keyfeatures) {
                 if (keyfeatures.style.display === 'none') {
                     keyfeatures.style.display = 'block';
-                    block.querySelectorAll('.plusicon').forEach(function (icon) {
+                    wrapperContainer.querySelectorAll('.plusicon').forEach(function (icon) {
                         icon.style.display = 'none';
                     })
-                    block.querySelectorAll('.minusicon').forEach(function (icon) {
+                    wrapperContainer.querySelectorAll('.minusicon').forEach(function (icon) {
                         icon.style.display = 'block';
                     })
                 } else {
                     keyfeatures.style.display = 'none';
-                    block.querySelectorAll('.plusicon').forEach(function (icon) {
+                    wrapperContainer.querySelectorAll('.plusicon').forEach(function (icon) {
                         icon.style.display = 'block';
                     })
-                    block.querySelectorAll('.minusicon').forEach(function (icon) {
+                    wrapperContainer.querySelectorAll('.minusicon').forEach(function (icon) {
                         icon.style.display = 'none';
                     })
                 }
