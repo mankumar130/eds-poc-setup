@@ -5,7 +5,4 @@ LICENSE
 package.json
 package-lock.json
 test/*
-_component-definition.json
-_component-models.json
-_component-filters.json
-blocks/*/component.json
+_*

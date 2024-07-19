@@ -6,9 +6,9 @@
     ]
   },
   {
-    "...": "./section.json#/filters"
+    "...": "./_section.json#/filters"
   },
   {
-    "...": "../blocks/*/componnet.json#/filters"
+    "...": "../blocks/*/_component.json#/filters"
   }
 ]
