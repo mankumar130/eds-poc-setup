@@ -1359,6 +1359,9 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
   .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper>ul>li.nav-drop>p::after{
     right: -12px;
   }
+  .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper>ul>li.nav-drop[aria-expanded="true"]>p::before{
+    bottom: -25px;
+  }
 }
 
 /* header mobile */
