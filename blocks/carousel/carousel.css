@@ -820,7 +820,7 @@
 }
 @media screen and (min-width: 1025px) and (max-width: 1300px){
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background{
-    padding: 0 115px 0 119px;
+    padding: 0 125px 0 120px;
   }
   .section.banner-carousel-wrapper .carousel-wrapper .carousel.block .button-container {
     left: 119px;
