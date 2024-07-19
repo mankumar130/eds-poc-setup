@@ -846,4 +846,10 @@
     right: 9%;
     translate: -50% 50%;
   }
+  .section.banner-scale-img .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+    max-height: 315px;
+    max-width: 350px;
+    width: 350px;
+    height: 315px;
+}
 }
