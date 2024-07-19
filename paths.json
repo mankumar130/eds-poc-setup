@@ -2,6 +2,7 @@
   "mappings": [
     "/content/piramalfinance-eds/:/",
     "/content/piramalfinance-eds/in/en/:/",
+    "/content/piramalfinance/in/en/:/",
     "/content/piramalfinance-eds/in/en/api/redirects:/api/redirects.json",
     "/content/piramalfinance-eds/in/en/api/cust-testimonial:/api/cust-testimonial.json",
     "/content/piramalfinance-eds/in/en/api/home-emi-calc:/api/home-emi-calc.json",
