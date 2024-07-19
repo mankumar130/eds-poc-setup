@@ -128,7 +128,7 @@
   
   /* the background image , hidden in mobile */
   .teaser.block > .background img {
-    display:none;
+    /* display:none; */
     width: auto;
     height: max-content;
     object-fit: cover;
