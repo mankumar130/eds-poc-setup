@@ -820,6 +820,36 @@
 }
 @media screen and (min-width: 1025px) and (max-width: 1300px){
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background{
-    padding: 0 115px 0 119px;
+    padding: 0 125px 0 120px;
   }
+  .section.banner-carousel-wrapper .carousel-wrapper .carousel.block .button-container {
+    left: 119px;
+    bottom: 60px;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+    max-height: 335px;
+    max-width: 394px;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser-block-one.block>.background .front-picture img {
+    max-width: 312px;
+    max-height: 265px;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-two >.background .front-picture img{
+    max-width: 204px;
+    max-height: 212px;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background{
+    background-size: cover;
+  }
+  .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-two>.background .front-picture{
+    bottom: 55%;
+    right: 9%;
+    translate: -50% 50%;
+  }
+  .section.banner-scale-img .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+    max-height: 315px;
+    max-width: 350px;
+    width: 350px;
+    height: 315px;
+}
 }

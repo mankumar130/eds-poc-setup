@@ -1822,4 +1822,10 @@
     .homeloancalculator .home-loan-calculator-parent .hlc-subparent .radiotab .firsttab{
       padding: 12px 16px 0 0;
     }
+    .homeloancalculator .home-loan-calculator-parent .hlc-subparent .radiotab .secondtab .customecheck{
+      margin-left: 78px;
+    }
+    .homeloancalculator .calculator-parent .calculator-parent-child .cp-child .headingtabs .headul .active p{
+      font-size: 22px;
+    }
   }

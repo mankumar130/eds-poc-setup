@@ -1,11 +1,11 @@
 /* rte bg blue Start */
 
 .section.rte-wrapper.rte-bg-blue{
-    background-color: #365069;
+    background-color: var(--greyishblue);
     padding: 40px 0;
 }
 .section.rte-wrapper.rte-bg-blue .default-content-wrapper p{
-    color: #d7dce1;
+    color: var(--pattensblue);
     font-family: 'Nunito-Regular', sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -29,7 +29,7 @@
     padding: 42px 0;
 }
 .section.rte-wrapper.rte-bg-light-yellow .default-content-wrapper p{
-    color: #000;
+    color: var(--black);
     font-family: Nunito-Regular, sans-serif;
     font-size: 1.125rem;
     font-weight: 400;
@@ -42,3 +42,23 @@
     }
 }
 /* rte bg light yellow End */
+
+
+/* rte bg white start */
+.section.rte-wrapper.rte-bg-white {
+    background-color: unset;
+    padding: 0;
+}
+
+.section.rte-wrapper.rte-bg-white .default-content-wrapper p {
+    color: var(--black);
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .section.rte-wrapper.rte-bg-white .default-content-wrapper p {
+        font-size: 1rem;
+        line-height: 24px;
+    }
+}
+/* rte bg white end */
