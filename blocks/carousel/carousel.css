@@ -851,5 +851,7 @@
     max-width: 350px;
     width: 350px;
     height: 315px;
+    object-fit: contain;
+    object-position: bottom;
 }
 }
