@@ -15,7 +15,7 @@
 .carousel.block>.panel-container {
   display: flex;
   scroll-snap-type: x mandatory;
-  overflow: auto;
+  /* overflow: auto; */
   scroll-behavior: smooth;
   margin: auto;
   align-items: stretch;
