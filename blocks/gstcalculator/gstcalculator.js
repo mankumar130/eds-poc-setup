@@ -21,8 +21,8 @@ export default async function decorate(block) {
 
     if (document.querySelector(".home-loan-calculator-parent").classList.contains("combined-emi-eligibility")) {
       document.querySelector(".home-loan-calculator-parent").classList.remove("combined-emi-eligibility");
-      document.querySelector(".homeloancalculator").querySelector(".eligibilitycalculator") &&
-        (document.querySelector(".homeloancalculator").querySelector(".eligibilitycalculator").style.display = "block");
+      /* document.querySelector(".homeloancalculator").querySelector(".eligibilitycalculator") &&
+        (document.querySelector(".homeloancalculator").querySelector(".eligibilitycalculator").style.display = "block"); */
     }
 
     homeLoanCalcFunc(currentSection);
