@@ -1,7 +1,6 @@
 import { fetchAPI } from "../../scripts/scripts.js";
 import { homeLoanCalcFunc } from "../emiandeligiblitycalc/homeloancalculators.js";
 import { homeloanCalHTML } from "../homeloancalculatorv2/templatehtmlv2.js";
-import { readMoreFucn } from "../calculatorsection/calculatorsection.js";
 
 export default async function decorate(block) {
   let cfURL = block.textContent.trim();
@@ -131,3 +130,20 @@ export const CheckAprRate = (LA, LO, IR, LT) => {
 
   return ddk.toFixed(2);
 };
+
+function readMoreFucn(block) {
+    document.querySelector('.discalimer-details').classList.remove('dp-none');
+    if (block.querySelector(".discalimer-calc")) {
+      const readMoreBtn = block.querySelector(".read-more-discalimer-calc");
+      const discalimerContainer = block.querySelector(".disclaimer-container");
+      readMoreBtn.addEventListener("click", (e) => {
+        if(e.target.textContent.trim() == "Read more"){
+          discalimerContainer.classList.remove('dp-none');
+          readMoreBtn.textContent = "Read less"
+        }else if(e.target.textContent.trim() == "Read less"){
+          discalimerContainer.classList.add('dp-none');
+          readMoreBtn.textContent = "Read more";
+        }
+      });
+    }
+  }
