@@ -92,6 +92,8 @@ textarea:focus {
   --submidorange: #fce6e5;
   --skyblue: #DEF3FD;
   --light-gray: #F8FAFF;
+  --light-pink: #FEEBE7;
+  --light-violet: #ECE4F2
   /* fonts */
   --body-font-family: roboto, roboto-fallback;
   --heading-font-family: var(--body-font-family);
@@ -479,6 +481,23 @@ main img {
 }
 
 /* common classes for banner background end */
+
+/* background color on section  */
+.section.--lilen {
+  background-color: var(--lilen);
+}
+.section.--rosewhite {
+  background-color: var(--rosewhite);
+}
+.section.--light-pink {
+  background-color: var(--light-pink);
+}
+.section.--swansdown {
+  background-color: var(--swansdown);
+}
+.section.--light-violet {
+  background-color: var(--light-violet);
+}
 
 /* column classes */
 @media screen and (min-width: 768px) {
