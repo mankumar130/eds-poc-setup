@@ -20,11 +20,17 @@
     "/content/piramalfinance-eds/in/en/api/business-loan-combined-calculator:/api/business-loan-combined-calculator.json",
     "/content/piramalfinance-eds/in/en/api/personal-loan-combined-calculator:/api/personal-loan-combined-calculator.json",
     "/content/piramalfinance-eds/in/en/api/home-loan-eligibility-calculator:/api/home-loan-eligibility-calculator.json",
+    "/content/piramalfinance-eds/in/en/api//home-loan-emi-calculator:/api/home-loan-emi-calculator.json",
+    "/content/piramalfinance-eds/in/en/api/business-loan-eligibility-calculator:/api/business-loan-eligibility-calculator.json",
+    "/content/piramalfinance-eds/in/en/api/business-loan-emi-calculator:/api/business-loan-emi-calculator.json",
+    "/content/piramalfinance-eds/in/en/api/personal-loan-eligibility-calculator:/api/personal-loan-eligibility-calculator.json",
+    "/content/piramalfinance-eds/in/en/api/personal-loan-emi-calculator:/api/personal-loan-emi-calculator.json",
     "/content/piramalfinance-eds/in/en/api/apply-form-loan:/api/apply-form-loan.json",
     "/content/piramalfinance-eds/in/en/api/homepage-eligibility-calculator:/api/homepage-eligibility-calculator.json",
     "/content/piramalfinance-eds/in/en/api/homepage-emi-calculator:/api/homepage-emi-calculator.json",
     "/content/piramalfinance-eds/in/en/api/placeholder:/api/placeholder.json",
     "/content/piramalfinance-eds/in/en/api/metadata:/api/metadata.json",
+    "/content/piramalfinance-eds/in/en/metadata:/metadata.json",
     "/content/piramalfinance-eds/in/en/api/test:/api/test.json"
   ]
 }

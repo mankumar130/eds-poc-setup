@@ -600,3 +600,9 @@ table {
             margin-bottom: unset;
         }
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1300px){
+    .section.documents-required-brown .default-content-wrapper>h2{
+        width: 67%;
+    }
+}
