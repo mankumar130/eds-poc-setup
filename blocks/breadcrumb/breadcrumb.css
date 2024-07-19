@@ -37,6 +37,9 @@
     display: flex;
     align-items: center;
 }
+.section.breadcrumb-handle .breadcrumb-wrapper > .breadcrumb > nav > span svg {
+    stroke: #747272;
+}
 .section.breadcrumb-handle .breadcrumb-wrapper > .breadcrumb.white > nav > span svg {
     stroke: #fff;
 }
