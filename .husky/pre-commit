@@ -1,2 +1,1 @@
 node .husky/pre-commit.mjs
-git update-index --again
