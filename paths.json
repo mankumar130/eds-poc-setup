@@ -2,6 +2,8 @@
   "mappings": [
     "/content/piramalfinance-eds/:/",
     "/content/piramalfinance-eds/in/en/:/",
+    "/content/piramalfinance/in/en/:/",
+    "/content/piramalfinance/content/in/en/:/",
     "/content/piramalfinance-eds/in/en/api/redirects:/api/redirects.json",
     "/content/piramalfinance-eds/in/en/api/cust-testimonial:/api/cust-testimonial.json",
     "/content/piramalfinance-eds/in/en/api/home-emi-calc:/api/home-emi-calc.json",
@@ -25,6 +27,8 @@
     "/content/piramalfinance-eds/in/en/api/business-loan-emi-calculator:/api/business-loan-emi-calculator.json",
     "/content/piramalfinance-eds/in/en/api/personal-loan-eligibility-calculator:/api/personal-loan-eligibility-calculator.json",
     "/content/piramalfinance-eds/in/en/api/personal-loan-emi-calculator:/api/personal-loan-emi-calculator.json",
+    "/content/piramalfinance-eds/in/en/api/apr-calculator:/api/apr-calculator.json",
+    "/content/piramalfinance-eds/in/en/api/gst-calculator:/api/gst-calculator.json",
     "/content/piramalfinance-eds/in/en/api/apply-form-loan:/api/apply-form-loan.json",
     "/content/piramalfinance-eds/in/en/api/homepage-eligibility-calculator:/api/homepage-eligibility-calculator.json",
     "/content/piramalfinance-eds/in/en/api/homepage-emi-calculator:/api/homepage-emi-calculator.json",
