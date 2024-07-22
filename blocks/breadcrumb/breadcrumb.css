@@ -76,5 +76,8 @@
     .section.breadcrumb-handle .breadcrumb-wrapper{
         padding: 0 120px;
     }
+    .section.breadcrumb-handle .breadcrumb-wrapper .breadcrumb>nav{
+        max-height: 20px;
+    }
 }
 
