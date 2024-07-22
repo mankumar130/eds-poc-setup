@@ -282,3 +282,26 @@
 }
 
 /* verification Wrapper End */
+
+
+/* our stories video css start */
+
+.section.embed-text-center .default-content-wrapper h2 {
+    text-align: center;
+}
+
+.section.embed-text-center .embed-wrapper .embed {
+    max-height: 560px;
+}
+
+.section.embed-text-center .embed-wrapper .embed>div {
+    max-height: 560px;
+}
+
+.section.embed-wrapper .embed-wrapper .embed>div>iframe {
+    height: 560px;
+    max-height: 560px;
+    max-width: 1022px;
+}
+
+/* our stories video css end */
