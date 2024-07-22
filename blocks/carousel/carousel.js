@@ -6,7 +6,8 @@ import { stateMasterApi, statemasterGetStatesApi } from '../applyloanform/statem
 import { validationJSFunc } from '../applyloanform/validation.js';
 import { generateDetailedTeaserDOM } from '../detailed-teaser/detailed-teaser.js';
 import { generateTeaserDOM } from '../teaser/teaser.js';
-
+import gliderMin from './glider.min.js';
+console.log(gliderMin);
 const carouselContainerMapping = {}
 carouselContainerMapping["detailed-teaser"] = generateDetailedTeaserDOM;
 carouselContainerMapping["ss-teaser"] = generateDetailedTeaserDOM;
