@@ -855,6 +855,7 @@
     width: 350px;
     height: 315px;
     object-position: bottom;
+    object-fit: contain;
 }
 .section.banner-scale-img .carousel-wrapper .carousel .panel-container .teaser .foreground{
   width: 64%;
