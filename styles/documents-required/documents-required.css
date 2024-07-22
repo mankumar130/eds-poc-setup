@@ -39,7 +39,7 @@
 .section.documents-required-brown .default-content-wrapper .button-container ::after{
     content: '';
     position: absolute;
-    background-image: url('https://publish-p133703-e1380816.adobeaemcloud.com/content/dam/piramalfinance/product-page/home-loan/whatsapp.svg');
+    background-image: url('/content/dam/piramalfinance/product-page/home-loan/whatsapp.svg');
     top: 13px;
     height: 20px;
     width: 20px;
@@ -103,7 +103,7 @@
 .section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion details summary div::before{
     content:'';
     position: absolute;
-    background-image: url('https://publish-p133703-e1380816.adobeaemcloud.com/content/dam/piramalfinance/product-page/home-loan/down-arrow.png');
+    background-image: url('/content/dam/piramalfinance/product-page/home-loan/down-arrow.png');
     height: 24px;
     right: 0;
     top: 13px;
@@ -119,7 +119,7 @@
 .section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion:nth-child(4) details summary div::before{
     content:'';
     position: absolute;
-    background-image: url('https://publish-p133703-e1380816.adobeaemcloud.com/content/dam/piramalfinance/product-page/home-loan/down-arrow.png');
+    background-image: url('/content/dam/piramalfinance/product-page/home-loan/down-arrow.png');
     height: 24px;
     right: 0;
     top: 2px;
@@ -141,7 +141,7 @@
 }
 .section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion:nth-child(1) details::before{
     position: absolute;
-    background-image: url('https://publish-p133703-e1380816.adobeaemcloud.com/content/dam/piramalfinance/product-page/home-loan/kyc.svg');
+    background-image: url('/content/dam/piramalfinance/product-page/home-loan/kyc.svg');
     left: 0;
     top: 40px;
     object-fit: contain;
@@ -158,7 +158,7 @@
 }
 .section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion:nth-child(2) details::before{
     position: absolute;
-    background-image: url('https://publish-p133703-e1380816.adobeaemcloud.com/content/dam/piramalfinance/product-page/home-loan/income.svg');
+    background-image: url('/content/dam/piramalfinance/product-page/home-loan/income.svg');
     left: 0;
     top: 40px;
     object-fit: contain;
@@ -175,7 +175,7 @@
 }
 .section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion:nth-child(3) details::before{
     position: absolute;
-    background-image: url('https://publish-p133703-e1380816.adobeaemcloud.com/content/dam/piramalfinance/product-page/home-loan/property.svg');
+    background-image: url('/content/dam/piramalfinance/product-page/home-loan/property.svg');
     left: 0;
     top: 40px;
     object-fit: contain;
@@ -192,7 +192,7 @@
 }
 .section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion:nth-child(4) details::before{
     position: absolute;
-    background-image: url('https://publish-p133703-e1380816.adobeaemcloud.com/content/dam/piramalfinance/product-page/home-loan/co-applicants.svg');
+    background-image: url('/content/dam/piramalfinance/product-page/home-loan/co-applicants.svg');
     left: 0;
     top: 30px;
     object-fit: contain;
@@ -209,7 +209,7 @@
 }
 .section.documents-required-brown .accordion-group-wrapper .accordion-group .accordion:nth-child(5) details::before{
     position: absolute;
-    background-image: url('https://publish-p133703-e1380816.adobeaemcloud.com/content/dam/piramalfinance/product-page/home-loan/photo.svg');
+    background-image: url('/content/dam/piramalfinance/product-page/home-loan/photo.svg');
     left: 0;
     top: 30px;
     object-fit: contain;
