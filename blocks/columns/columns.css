@@ -44,7 +44,7 @@
 .section.view-more-btn .default-content-wrapper .button-container a::after{
   content: '';
   position: absolute;
-  background: url('https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/product-page/business-loan/arrow-up.svg');
+  background: url('/content/dam/piramalfinance/product-page/business-loan/arrow-up.svg');
   height: 8px;
   transform: rotate(180deg);
   width: 16px;

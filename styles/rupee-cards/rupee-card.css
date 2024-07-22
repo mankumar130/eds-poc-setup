@@ -104,7 +104,7 @@
     content: '';
     height: 12px;
     width: 16px;
-    background-image: url('https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/product-page/personal-loan/right-arrow.svg');
+    background-image: url('/content/dam/piramalfinance/product-page/personal-loan/right-arrow.svg');
     bottom: 26px;
     display: block;
     position: absolute;

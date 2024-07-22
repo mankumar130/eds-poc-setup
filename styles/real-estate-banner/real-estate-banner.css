@@ -120,3 +120,15 @@
         width: 85%;
     }
 }
+@media screen and (min-width: 1025px) and (max-width: 1300px){
+    .section.corporate-financing-banner-wrapper .rte-text-description{
+        width: 81.25%;
+        padding: 100px 0 70px;
+    }
+    .section.corporate-financing-banner-wrapper .rte-text-description >h1{
+        width: 80%;
+    }
+    .section.corporate-financing-banner-wrapper .rte-text-description > p{
+        width: 69.28%;
+    }
+}

@@ -879,13 +879,12 @@
     width: 350px;
     height: 315px;
     object-position: bottom;
-  }
-
-  .section.banner-scale-img .carousel-wrapper .carousel .panel-container .teaser .foreground {
-    width: 64%;
-  }
-
-  .section.banner-scale-img .carousel-wrapper .panel-container .teaser.block>.background .foreground .text .eyebrow {
-    padding-top: 60px;
-  }
+    object-fit: contain;
+}
+.section.banner-scale-img .carousel-wrapper .carousel .panel-container .teaser .foreground{
+  width: 64%;
+}
+.section.banner-scale-img  .carousel-wrapper .panel-container .teaser.block>.background .foreground .text .eyebrow{
+  padding-top: 60px;
+}
 }

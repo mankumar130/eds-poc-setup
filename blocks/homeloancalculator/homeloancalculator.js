@@ -29,7 +29,7 @@ export default async function decorate(block) {
           salariedtabname: "employementStatus",
           salariedtabvalue: "80",
           salariedtabtext: "I'm Salaried",
-          calculatorsalariedimg: "https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/product-page/home-loan/calculator-salaried.svg",
+          calculatorsalariedimg: "/content/dam/piramalfinance/product-page/home-loan/calculator-salaried.svg",
           calculatorsalariedimgalt: "salaried",
         },
         business: {
@@ -38,7 +38,7 @@ export default async function decorate(block) {
           businesstabname: "employementStatus",
           businesstabvalue: "60",
           businesstabtext: "I'm doing Business",
-          calculatorbusinessimg: "https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/product-page/home-loan/calculator-business.svg",
+          calculatorbusinessimg: "/content/dam/piramalfinance/product-page/home-loan/calculator-business.svg",
           calculatorbusinessimgalt: "business",
         },
         selectloantype: {
@@ -139,8 +139,8 @@ export default async function decorate(block) {
             },
           ],
         },
-        calendarbox: "https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/homepage/images/calc-calendar-mobile.webp",
-        calendarmobile: "https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/homepage/images/calc-calendar-mobile.webp",
+        calendarbox: "/content/dam/piramalfinance/homepage/images/calc-calendar-mobile.webp",
+        calendarmobile: "/content/dam/piramalfinance/homepage/images/calc-calendar-mobile.webp",
         outputtext1: "Your home loan EMI is",
         outputtext2: "Your business loan EMI is",
         principaltext: "Principal amount",

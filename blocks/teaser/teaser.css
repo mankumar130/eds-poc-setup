@@ -414,7 +414,11 @@
         width:70%;
       }
     }
-
+@media  screen and (min-width: 1025px) and (max-width: 1300px){
+  .section.teaser-scale{
+    padding: unset;
+  }
+}
 /* about us cards carousel start */
 /* .section.carousel-container .default-content-wrapper>p>strong{
   margin: 20px 0 24px;

@@ -30,7 +30,7 @@ export default async function decorate(block) {
            salariedtabname: "businessStatus",
            salariedtabvalue: "65",
            salariedtabtext: "I'm Salaried",
-           calculatorsalariedimg: "https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/product-page/home-loan/calculator-salaried.svg",
+           calculatorsalariedimg: "/content/dam/piramalfinance/product-page/home-loan/calculator-salaried.svg",
            calculatorsalariedimgalt: "salaried",
          },
          business: {
@@ -39,7 +39,7 @@ export default async function decorate(block) {
            businesstabname: "businessStatus",
            businesstabvalue: "80",
            businesstabtext: "I'm doing Business",
-           calculatorbusinessimg: "https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/product-page/home-loan/calculator-business.svg",
+           calculatorbusinessimg: "/content/dam/piramalfinance/product-page/home-loan/calculator-business.svg",
            calculatorbusinessimgalt: "business",
          },
          selectloantype: {
@@ -166,8 +166,8 @@ export default async function decorate(block) {
              },
            ],
          },
-         calendarbox: "https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/homepage/images/calc-tick-mobile.webp",
-         calendarmobile: "https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/homepage/images/calc-tick-mobile.webp",
+         calendarbox: "/content/dam/piramalfinance/homepage/images/calc-tick-mobile.webp",
+         calendarmobile: "/content/dam/piramalfinance/homepage/images/calc-tick-mobile.webp",
          outputtext1: "Your home loan eligibility is",
          outputtext2: "Your business loan eligibility is",
          button1text: "Talk to loan expert",

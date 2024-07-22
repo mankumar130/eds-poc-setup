@@ -15,6 +15,8 @@ export default async function decorate(block) {
   const repsonseData = cfRepsonse.data[0].data;
   const jsonResponseData = JSON.parse(repsonseData)
 
+  if(!jsonResponseData) return;
+
   block.innerHTML = homeloanCalHTML(jsonResponseData);
 
   try {
