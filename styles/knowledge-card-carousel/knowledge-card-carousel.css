@@ -1,4 +1,7 @@
-.section.knowledge-card-carousel .carousel-wrapper .carousel .panel-container .teaser{
+.section.knowledge-card-carousel .carousel-wrapper {
+    position: relative;
+}
+.section.knowledge-card-carousel .carousel .panel-container .teaser{
     height: 100%;
     position: relative;
     max-width: 340px;
@@ -16,8 +19,6 @@
     padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 16px;
-    /* padding-top: 45px;
-    margin-top: 40px; */
     min-height: 270px;
 }
 .section.knowledge-card-carousel .carousel-wrapper .carousel .panel-container .teaser .background .foreground .text .long-description {
@@ -28,7 +29,7 @@
 .section.knowledge-card-carousel .carousel-wrapper .carousel .panel-container .teaser .background .foreground .text .long-description p{
     color: #333;
     display: block;
-    font-family: Nunito-Regular, sans-serif;
+    font-family: 'Nunito-Regular', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
@@ -36,7 +37,7 @@
 }
 .section.knowledge-card-carousel .carousel-wrapper .carousel .panel-container .teaser .background .foreground .text .long-description p strong{
     color: #000;
-    font-family: Nunito-Bold, sans-serif;
+    font-family: 'Nunito-Bold', sans-serif;
     font-size: 1rem;
     font-weight: 700;
     line-height: 24px;
@@ -47,7 +48,7 @@
 .section.knowledge-card-carousel .default-content-wrapper #piramal-values{
     color: #000;
     display: block;
-    font-family: Nunito-Extrabold, sans-serif;
+    font-family: 'Nunito-Extrabold', sans-serif;
     font-size: 2rem;
     font-weight: 800;
     line-height: 40px;
@@ -55,12 +56,10 @@
     margin: 20px 24px;
 }
 .section.knowledge-card-carousel .teaser.block > .background{
-    position: unset;
     border-radius: 18px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 100%;
-    position: relative;
+    position: unset;
     display: flex;
     flex-direction: column-reverse;
     min-height: 439px;
@@ -82,23 +81,44 @@
     color: #fff;
     cursor: default;
     display: block;
-    font-family: Nunito-Bold, sans-serif;
+    font-family: 'Nunito-Bold', sans-serif;
     font-size: 1.25rem;
     line-height: 28px;
     text-align: center;
     padding: 10px 16px;
 }
-.section.knowledge-card-carousel .carousel-navigation-buttons .slide-prev,
-.section.knowledge-card-carousel .carousel-navigation-buttons .slide-next{
+.section.knowledge-card-carousel .carousel-wrapper .slide-prev  div div picture img,
+.section.knowledge-card-carousel .carousel-wrapper .slide-next div div picture img{
+    border: 1px solid #365069;
+    border-radius: 50%;
+    color: #365069;
+    height: 40px;
+    margin-top: unset;
+    width: 40px;
+}
+.section.knowledge-card-carousel .carousel-wrapper .slide-prev.light  div div picture img,
+.section.knowledge-card-carousel .carousel-wrapper .slide-next.light div div picture img{
+    opacity: 0.5;
+}
+.section.knowledge-card-carousel .carousel-wrapper .slide-prev,
+.section.knowledge-card-carousel .carousel-wrapper .slide-next{
+    background: unset;
+}
+.section.knowledge-card-carousel .carousel-wrapper .slide-prev{
+    padding: unset;
+    margin: unset;
     position: absolute;
+    left: -5%;
+    top: 40%;
+    display: inline-block;
 }
-.section.knowledge-card-carousel .carousel-navigation-buttons .slide-prev{
-    left: -8%;
-    top: 50%;
-}
-.section.knowledge-card-carousel .carousel-navigation-buttons .slide-next{
-    right: -8%;
-    top: 50%;
+.section.knowledge-card-carousel .carousel-wrapper .slide-next{
+    padding: unset;
+    margin: unset;
+    position: absolute;
+    right: -5%;
+    top: 40%;
+    display: inline-block;
 }
 .section.knowledge-card-carousel .carousel-wrapper .carousel{
     position: relative;
@@ -126,8 +146,8 @@
         width: 16px;
         opacity: 1;
     }
-    .carousel-wrapper .carousel .carousel-navigation-buttons .slide-next,
-    .carousel-wrapper .carousel .carousel-navigation-buttons .slide-prev{
+    .section.knowledge-card-carousel .carousel-wrapper .slide-prev,
+    .section.knowledge-card-carousel .carousel-wrapper .slide-next{
         display: none;
     }
     .section.knowledge-card-carousel .default-content-wrapper #piramal-values{
@@ -153,5 +173,15 @@
     }
     .section.knowledge-card-carousel .carousel-wrapper .carousel.block>.panel-container {
         width: 95%;
+    }
+    .section.knowledge-card-carousel .carousel-wrapper .slide-prev,
+    .section.knowledge-card-carousel .carousel-wrapper .carousel .carousel-navigation-buttons .slide-prev {
+        left: 5px;
+        display: block;
+    }
+    .section.knowledge-card-carousel .carousel-wrapper .slide-next,
+    .section.knowledge-card-carousel .carousel-wrapper .carousel .carousel-navigation-buttons .slide-next {
+        right: 5px !important;
+        display: block;
     }
 }
