@@ -80,7 +80,7 @@
 }
 
 .section.nearest-branches .columns-wrapper .columns>div>div>.button-container::after {
-    background-image: url("https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/product-page/cities/ahmedabad/arrow-right-orange.svg");
+    background-image: url("/content/dam/piramalfinance/product-page/cities/ahmedabad/arrow-right-orange.svg");
     background-repeat: no-repeat;
     background-size: cover;
     content: "";
@@ -91,7 +91,7 @@
 }
 
 .section.nearest-branches .columns-wrapper .columns>div>div>h2::before {
-    background-image: url("https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/product-page/cities/ahmedabad/location.svg");
+    background-image: url("/content/dam/piramalfinance/product-page/cities/ahmedabad/location.svg");
     background-repeat: no-repeat;
     background-size: cover;
     content: "";
@@ -105,7 +105,7 @@
 }
 
 .section.nearest-branches .columns-wrapper .columns>div:hover>div>h2::before {
-    background-image: url("https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/product-page/cities/ahmedabad/location-orange.svg");
+    background-image: url("/content/dam/piramalfinance/product-page/cities/ahmedabad/location-orange.svg");
 }
 
 .section.nearest-branches .columns-wrapper .columns>div>div>p {
@@ -123,7 +123,7 @@
     }
 
     .section.nearest-branches .columns-wrapper .columns>div>div>h2::before {
-        background-image: url("https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/product-page/cities/ahmedabad/location-orange.svg");
+        background-image: url("/content/dam/piramalfinance/product-page/cities/ahmedabad/location-orange.svg");
     }
 
     .section.nearest-branches .columns-wrapper .columns>div>div>h2 {
