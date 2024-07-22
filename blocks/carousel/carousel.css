@@ -819,6 +819,9 @@
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1300px){
+  .section.banner-scale-img .carousel-wrapper .carousel .panel-container .teaser{
+    height: 443px;
+  }
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background{
     padding: 0 125px 0 120px;
   }
@@ -853,5 +856,11 @@
     height: 315px;
     object-fit: contain;
     object-position: bottom;
+}
+.section.banner-scale-img .carousel-wrapper .carousel .panel-container .teaser .foreground{
+  width: 64%;
+}
+.section.banner-scale-img  .carousel-wrapper .panel-container .teaser.block>.background .foreground .text .eyebrow{
+  padding-top: 60px;
 }
 }
