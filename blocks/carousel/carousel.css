@@ -600,7 +600,7 @@
   }
 
   .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser {
-    height: 455px;
+    height: 450px;
   }
 
   .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
@@ -834,8 +834,13 @@
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1300px) {
+
+  .section.banner-scale-img .carousel-wrapper .carousel .panel-container .teaser {
+    height: 443px;
+  }
+
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background {
-    padding: 0 115px 0 119px;
+    padding: 0 125px 0 120px;
   }
 
   .section.banner-carousel-wrapper .carousel-wrapper .carousel.block .button-container {
@@ -867,17 +872,21 @@
     right: 9%;
     translate: -50% 50%;
   }
+
+  .section.banner-scale-img .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+    max-height: 315px;
+    max-width: 350px;
+    width: 350px;
+    height: 315px;
+    object-fit: contain;
+    object-position: bottom;
+  }
+
+  .section.banner-scale-img .carousel-wrapper .carousel .panel-container .teaser .foreground {
+    width: 64%;
+  }
+
+  .section.banner-scale-img .carousel-wrapper .panel-container .teaser.block>.background .foreground .text .eyebrow {
+    padding-top: 60px;
+  }
 }
-
-
-/* startup business loan banner start */
-
-.section.startup-business-align-banner .carousel-wrapper .carousel .panel-container .teaser {
-  height: 430px;
-}
-
-.section.startup-business-align-banner .carousel-wrapper .carousel .panel-container .teaser .background .foreground .text .short-description >ul > li{
-  margin-top: 48px  ;
-}
-
-/* startup business loan banner end */

@@ -83,7 +83,9 @@
       "applyloanform",
       "datepickerlib",
       "homeloancalculatorv2",
-      "calculatorsection"
+      "calculatorsection",
+      "aprcalculator",
+      "gstcalculator"
     ]
   },
   {

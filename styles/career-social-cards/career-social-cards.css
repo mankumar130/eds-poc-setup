@@ -2,7 +2,7 @@
     display: flex;
     gap: 24px;
     max-width: 1240px !important;
-    margin: 0 auto 70px!important;
+    margin: 0 8.5% 70px!important;
     padding: unset;
 }
 .section.career-social-cards.teaser-container {
@@ -127,5 +127,8 @@
     }
     .section.career-social-cards .teaser-wrapper .teaser .background .front-picture picture img{
         display: none;
+    }
+    .section.career-social-cards {
+        margin: 0 auto 70px!important;
     }
 }

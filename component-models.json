@@ -2246,5 +2246,27 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "aprcalculator",
+    "fields": [
+      {
+        "component": "text-input",
+        "label": "URL of Content Fragment",
+        "name": "text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "gstcalculator",
+    "fields": [
+      {
+        "component": "text-input",
+        "label": "URL of Content Fragment",
+        "name": "text",
+        "valueType": "string"
+      }
+    ]
   }
 ]

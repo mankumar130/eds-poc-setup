@@ -1351,6 +1351,16 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
 @media screen and (min-width: 1025px) and (max-width: 1300px){
   .header-wrapper .nav-wrapper nav{
     max-width: 81.25%;
+    margin-top: 22px;
+  }
+  .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper>ul>li>p{
+    margin-right: 11px;
+  }
+  .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper>ul>li.nav-drop>p::after{
+    right: -12px;
+  }
+  .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper>ul>li.nav-drop[aria-expanded="true"]>p::before{
+    bottom: -25px;
   }
 }
 

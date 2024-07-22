@@ -37,6 +37,9 @@
     display: flex;
     align-items: center;
 }
+.section.breadcrumb-handle .breadcrumb-wrapper > .breadcrumb > nav > span svg {
+    stroke: #747272;
+}
 .section.breadcrumb-handle .breadcrumb-wrapper > .breadcrumb.white > nav > span svg {
     stroke: #fff;
 }
@@ -67,6 +70,14 @@
     .section.breadcrumb-handle > .breadcrumb-wrapper > .breadcrumb.block > nav > a:last-child{
         font-size: 0.75rem;
         line-height: 16px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1300px){
+    .section.breadcrumb-handle .breadcrumb-wrapper{
+        padding: 0 120px;
+    }
+    .section.breadcrumb-handle .breadcrumb-wrapper .breadcrumb>nav{
+        max-height: 20px;
     }
 }
 
