@@ -854,7 +854,6 @@
     max-width: 350px;
     width: 350px;
     height: 315px;
-    object-fit: contain;
     object-position: bottom;
 }
 .section.banner-scale-img .carousel-wrapper .carousel .panel-container .teaser .foreground{
