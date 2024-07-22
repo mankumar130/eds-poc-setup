@@ -20,7 +20,7 @@
     background-position: center;
     right: 0;
     bottom: 0;
-    background-image: url('https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/product-page/home-loan/MoreButton.png');
+    background-image: url('/content/dam/piramalfinance/product-page/home-loan/MoreButton.png');
 }
 .section.board-of-directors-wrapper .teaserv2-wrapper .teaserv2 a .bg-image{
     background-repeat:  no-repeat;

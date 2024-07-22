@@ -122,7 +122,7 @@
 
 .section.interest-rates-accordian-wrapper .accordion-group-wrapper .accordion-group .accordion>details>div>ul>li::after {
     content: "";
-    background-image: url('https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/company/stakeholders/pdf-icon.png');
+    background-image: url('/content/dam/piramalfinance/company/stakeholders/pdf-icon.png');
     position: absolute;
     right: 24px;
     top: 35%;
@@ -208,7 +208,7 @@
 
  .section.media-acc-wrapper .accordion-group-wrapper .accordion-group .accordion>details>summary::before {
     content: "";
-    background-image: url('https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/company/stakeholders/bell.png');
+    background-image: url('/content/dam/piramalfinance/company/stakeholders/bell.png');
     height: 20px;
     width: 20px;
     position: absolute;

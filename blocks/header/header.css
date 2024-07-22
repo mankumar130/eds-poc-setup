@@ -622,31 +622,31 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
 }
 
 .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper > ul > li:nth-child(2) > ul > li:nth-child(1) > p::before {
-  background-image: url("https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/header-images/home-loan.svg");
+  background-image: url("/content/dam/piramalfinance/header-images/home-loan.svg");
 }
 
 .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper > ul > li:nth-child(2) > ul > li:nth-child(2) > p::before {
-  background-image: url("https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/header-images/business-loan.svg");
+  background-image: url("/content/dam/piramalfinance/header-images/business-loan.svg");
 }
 
 .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper > ul > li:nth-child(2) > ul > li:nth-child(3) > p::before {
-  background-image: url("https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/header-images/other-products.svg");
+  background-image: url("/content/dam/piramalfinance/header-images/other-products.svg");
 }
 
 .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper > ul > li:nth-child(2) > ul > li:nth-child(4) > p::before {
-  background-image: url("https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/header-images/corporate-financing.svg");
+  background-image: url("/content/dam/piramalfinance/header-images/corporate-financing.svg");
 }
 
 .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper > ul > li:nth-child(6) > ul > li:nth-child(1) > p::before {
-  background-image: url("https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/header-images/help-support.svg");
+  background-image: url("/content/dam/piramalfinance/header-images/help-support.svg");
 }
 
 .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper > ul > li:nth-child(6) > ul > li:nth-child(2) > p::before {
-  background-image: url("https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/header-images/existing-customer.svg");
+  background-image: url("/content/dam/piramalfinance/header-images/existing-customer.svg");
 }
 
 .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper > ul > li:nth-child(6) > ul > li:nth-child(3) > p::before {
-  background-image: url("https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/header-images/resources.svg");
+  background-image: url("/content/dam/piramalfinance/header-images/resources.svg");
 }
 
 .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper > ul > li:nth-child(6) > ul > li:nth-child(1) > ul>li:nth-child(5) {
@@ -689,7 +689,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
   left: 0;
   top: 11px;
   background-size: 100% 100%;
-  background-image: url("https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/header-images/language-black.svg");
+  background-image: url("/content/dam/piramalfinance/header-images/language-black.svg");
 } */
 
 .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper>ul>li.nav-drop[aria-expanded="true"]:last-child >p::before {

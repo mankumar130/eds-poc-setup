@@ -166,10 +166,10 @@ export default async function decorate(block) {
   hamburger.classList.add('nav-hamburger');
   hamburger.innerHTML = `<div class="hambuger-menu" aria-controls="nav" aria-label="Open navigation">
     <div class="hamburger-image-custom">
-        <img src="https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/header-images/hamburger-icon.png" alt="hamburger-icon">
+        <img src="/content/dam/piramalfinance/header-images/hamburger-icon.png" alt="hamburger-icon">
     </div>
     <div class="cross-image-custom">
-        <img src="https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/header-images/cross-icon-custom.png" alt="cross-icon">
+        <img src="/content/dam/piramalfinance/header-images/cross-icon-custom.png" alt="cross-icon">
     </div>
 </div>`;
   nav.prepend(hamburger);
@@ -206,7 +206,7 @@ export default async function decorate(block) {
 
   // Last element with Image
   try {
-    block.querySelector('.nav-sections').querySelector('ul').lastElementChild.querySelector('p').innerHTML = `<img src="https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/header-images/language-black.svg" alt="language" class="leveloneimg">`
+    block.querySelector('.nav-sections').querySelector('ul').lastElementChild.querySelector('p').innerHTML = `<img src="/content/dam/piramalfinance/header-images/language-black.svg" alt="language" class="leveloneimg">`
   } catch (error) {
     console.warn(error);
   }

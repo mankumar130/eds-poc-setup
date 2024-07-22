@@ -15,8 +15,8 @@ export default async function decorate(block) {
         const cards = renderHelper(
             // [
             //     {
-            //         ":path": "https://publish-p133703-e1305981.adobeaemcloud.com/content/piramalfinance-edge/cf/happy-customer/jcr:content/row",
-            //         "customerImage": "https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/homepage/testimonials/ch-maruthi-prasad.webp",
+            //         ":path": "/content/piramalfinance-edge/cf/happy-customer/jcr:content/row",
+            //         "customerImage": "/content/dam/piramalfinance/homepage/testimonials/ch-maruthi-prasad.webp",
             //         "customerDetails": "I was very much delighted with the way the loan was disbursed. I would like to also thank for the quickest response by Piramal Finance executive. The loan was disbursed in a week’s time in a hassle free manner.",
             //         "customerDetailsClass": "",
             //         "customerName": "CH Maruthi Prasad",
@@ -27,8 +27,8 @@ export default async function decorate(block) {
             //         "customerClass": "customerclassfive"
             //     },
             //     {
-            //         ":path": "https://publish-p133703-e1305981.adobeaemcloud.com/content/piramalfinance-edge/cf/happy-customer/jcr:content/row_1912225365",
-            //         "customerImage": "https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/homepage/testimonials/dileep-s.webp",
+            //         ":path": "/content/piramalfinance-edge/cf/happy-customer/jcr:content/row_1912225365",
+            //         "customerImage": "/content/dam/piramalfinance/homepage/testimonials/dileep-s.webp",
             //         "customerDetails": "Appreciate the efforts of Piramal Finance for quick and smooth processing of my Loan Against Property. Piramal Finance team understood my requirements and explained the process, product details and required document list. Piramal Finance was helpful in every step and gave me quick loan sanction. Thank you Piramal Finance.",
             //         "customerDetailsClass": "",
             //         "customerName": "Dileep S",
@@ -39,8 +39,8 @@ export default async function decorate(block) {
             //         "customerClass": "customerclassthree"
             //     },
             //     {
-            //         ":path": "https://publish-p133703-e1305981.adobeaemcloud.com/content/piramalfinance-edge/cf/happy-customer/jcr:content/row_557713100",
-            //         "customerImage": "https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/homepage/testimonials/mohd-irshad-ansari.webp",
+            //         ":path": "/content/piramalfinance-edge/cf/happy-customer/jcr:content/row_557713100",
+            //         "customerImage": "/content/dam/piramalfinance/homepage/testimonials/mohd-irshad-ansari.webp",
             //         "customerDetails": "I have availed Loan From Piramal Finance for Business Expansion. I was attended with utmost professional attitude and perfection. Piramal Finance very patiently answered all my queries and resolved all doubts. Once again, thanks a lot for serving my needs with such warmth.",
             //         "customerDetailsClass": "",
             //         "customerName": "Mohd Irshad Ansari",
@@ -51,8 +51,8 @@ export default async function decorate(block) {
             //         "customerClass": "customerclassfour"
             //     },
             //     {
-            //         ":path": "https://publish-p133703-e1305981.adobeaemcloud.com/content/piramalfinance-edge/cf/happy-customer/jcr:content/row_1116482712",
-            //         "customerImage": "https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/homepage/testimonials/nirmal-dand.webp",
+            //         ":path": "/content/piramalfinance-edge/cf/happy-customer/jcr:content/row_1116482712",
+            //         "customerImage": "/content/dam/piramalfinance/homepage/testimonials/nirmal-dand.webp",
             //         "customerDetails": "We are in the business of financial planning but the day I finalized my property, I needed to get a loan I found Piramal Finance to be the best option. They cater to all the requirements of their customers and helped me at every single step to get a business loan.",
             //         "customerDetailsClass": "",
             //         "customerName": "Nirmal Dand",
@@ -63,8 +63,8 @@ export default async function decorate(block) {
             //         "customerClass": "customerclasstwo"
             //     },
             //     {
-            //         ":path": "https://publish-p133703-e1305981.adobeaemcloud.com/content/piramalfinance-edge/cf/happy-customer/jcr:content/row_1065156299",
-            //         "customerImage": "https://publish-p133703-e1305981.adobeaemcloud.com/content/dam/piramalfinance/homepage/testimonials/uday-biradar.webp",
+            //         ":path": "/content/piramalfinance-edge/cf/happy-customer/jcr:content/row_1065156299",
+            //         "customerImage": "/content/dam/piramalfinance/homepage/testimonials/uday-biradar.webp",
             //         "customerDetails": "I and my family were planning on buying a new home for which we needed a loan and I chose Piramal Capital & Housing Finance. From collecting documents to guiding me at every step, Piramal has been a strong support system through the process.",
             //         "customerDetailsClass": "",
             //         "customerName": "Uday Biradar",
