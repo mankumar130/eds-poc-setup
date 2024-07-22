@@ -23,6 +23,14 @@
   margin: 0;
 }
 
+.section.choose-us-css .default-content-wrapper p > strong {
+    color: #333;
+    font-family: Nunito-Bold, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
 .section.choose-us-css>.columns-wrapper>.columns.block {
   margin-top: 20px;
 }
