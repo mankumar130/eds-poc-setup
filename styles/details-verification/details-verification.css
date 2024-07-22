@@ -298,7 +298,7 @@
     max-height: 560px;
 }
 
-.section.embed-wrapper .embed-wrapper .embed>div>iframe {
+.section.embed-text-center .embed-wrapper .embed>div>iframe {
     height: 560px;
     max-height: 560px;
     max-width: 1022px;
