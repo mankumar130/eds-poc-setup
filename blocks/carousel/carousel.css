@@ -81,7 +81,7 @@
 /* homepage top banner carousel css start */
 .section.banner-carousel-wrapper .carousel-wrapper .carousel .panel-container .teaser {
   position: relative;
-  height: 529px;
+  min-height: 529px;
 }
 
 .section.banner-carousel-wrapper .carousel-wrapper .carousel.block {
@@ -115,8 +115,6 @@
 
 .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
   height: 335px;
-  /* max-height: 335px;
-  max-width: 394px; */
   width: 394px;
   display: block;
   object-fit: contain;
@@ -387,7 +385,7 @@
   width: 814px;
 }
 
-.section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description>p {
+.section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .long-description>p {
   color: var(--darkcharcoal);
   margin-top: 4px;
 }
@@ -418,7 +416,7 @@
 
 @media screen and (max-width:767px) {
   .section.banner-carousel-wrapper .carousel-wrapper .carousel .panel-container .teaser {
-    height: 450px;
+    min-height: 450px;
   }
 
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background {
@@ -612,7 +610,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .section.banner-carousel-wrapper .carousel-wrapper .carousel .panel-container .teaser {
-    height: 440px;
+    min-height: 440px;
   }
 
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background {
@@ -875,8 +873,6 @@
   }
 
   .section.banner-scale-img .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
-    max-height: 315px;
-    max-width: 350px;
     width: 350px;
     height: 315px;
     object-position: bottom;
