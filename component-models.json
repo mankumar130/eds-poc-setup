@@ -1876,6 +1876,41 @@
         "description": "Front Image"
       },
       {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "valueType": "string",
+        "required": true,
+        "options": [
+          {
+            "name": "Theme",
+            "children": [
+              {
+                "name": "Light",
+                "value": "light"
+              },
+              {
+                "name": "Light",
+                "value": "light"
+              },
+              {
+                "name": "Dark",
+                "value": "dark"
+              }
+            ]
+          },
+          {
+            "name": "Type",
+            "children": [
+              {
+                "name": "teaserv2",
+                "value": "teaserv2"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "component": "text",
         "valueType": "string",
         "name": "fileReferenceAlt",
@@ -1938,41 +1973,6 @@
         "value": "",
         "label": "teaserv2 Attribute",
         "description": "Set TeaserV2 Attribute"
-      },
-      {
-        "component": "multiselect",
-        "name": "classes",
-        "label": "Style",
-        "valueType": "string",
-        "required": true,
-        "options": [
-          {
-            "name": "Theme",
-            "children": [
-              {
-                "name": "Light",
-                "value": "light"
-              },
-              {
-                "name": "Light",
-                "value": "light"
-              },
-              {
-                "name": "Dark",
-                "value": "dark"
-              }
-            ]
-          },
-          {
-            "name": "Type",
-            "children": [
-              {
-                "name": "teaserv2",
-                "value": "teaserv2"
-              }
-            ]
-          }
-        ]
       },
       {
         "component": "richtext",
