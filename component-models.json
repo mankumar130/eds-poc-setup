@@ -1869,13 +1869,6 @@
         "description": "Background Image"
       },
       {
-        "component": "reference",
-        "valueType": "string",
-        "name": "fileReference1",
-        "label": "Image",
-        "description": "Front Image"
-      },
-      {
         "component": "multiselect",
         "name": "classes",
         "label": "Style",
@@ -1909,6 +1902,13 @@
             ]
           }
         ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "fileReference1",
+        "label": "Image",
+        "description": "Front Image"
       },
       {
         "component": "text",
