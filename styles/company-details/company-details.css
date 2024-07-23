@@ -272,7 +272,7 @@
     }
 
     /* Modal and Overlay Styles */
-    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>div {
+    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>.compony-details {
         display: none;
         display: flex;
         outline: 0;
@@ -286,7 +286,7 @@
         height: auto;
         background-color: var(--white);
         border-radius: 16px 16px 0 0;
-        transform: translateY(100%);
+        /* transform: translateY(100%); */
         transition: transform 0.5s cubic-bezier(0, 0, 0.2, 1);
         height: 100%;
         max-height: 80vh;

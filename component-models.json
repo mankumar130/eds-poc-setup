@@ -1962,6 +1962,15 @@
                 "value": "dark"
               }
             ]
+          },
+          {
+            "name": "Type",
+            "children": [
+              {
+                "name": "teaserv2",
+                "value": "teaserv2"
+              }
+            ]
           }
         ]
       },
