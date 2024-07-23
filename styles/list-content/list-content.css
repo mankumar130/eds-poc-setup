@@ -109,7 +109,7 @@
     font-weight: 400;
     line-height: 24px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 /* list content common css start  */
     .section.list-content-wrapper .default-content-wrapper h2,
     .section.types-of-interest-rates-wrapper .default-content-wrapper h2 {
@@ -118,7 +118,8 @@
     }
 
     .section.list-content-wrapper .default-content-wrapper p,
-    .section.types-of-interest-rates-wrapper .default-content-wrapper p {
+    .section.types-of-interest-rates-wrapper .default-content-wrapper p ,
+    .section.list-content-wrapper .default-content-wrapper p > strong{
         font-size: 0.875rem;
         line-height: 20px;
     }
