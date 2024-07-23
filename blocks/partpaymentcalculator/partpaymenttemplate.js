@@ -130,17 +130,17 @@ export function partPaymentCalHTML(callJson) {
       // Part Payment Start
     let partpaymentoutputDiv = "";
     callJson.partpayment &&
-      callJson.partpayment.forEach(function (eachDiv,index) {
+      callJson.partpayment.forEach(function (eachDiv, index) {
         partpaymentoutputDiv += `<div class="parpaymentmainoutputcontainer">
               <div class="text-and-img">
                   <img data-src="${eachDiv.rightimage}" class="outputimg lozad" alt="roi"
                       src="${eachDiv.rightimage}" data-loaded="true">
                   <div class="amountContainer">
-                      <p class="outputdes desc-${index}">
+                      <p class="outputdes desc-${index + 1}">
                           ${eachDiv.resulttext}
                       </p>
                       <div class="outputans" data-cal-result="resultAmt"><span class="outputans">${eachDiv.sign}</span><span
-                              class="amount-${index}">${eachDiv.resultAmount}</span>
+                              class="amount-${index + 1}">${eachDiv.resultAmount}</span>
                       </div>
                   </div>
               </div>
@@ -196,7 +196,7 @@ export function partPaymentCalHTML(callJson) {
                       </div>
                       <div class="rangediv">
                           <input type="range" min="${callJson.partpaymentlogic.minAmount}" step="${callJson.partpaymentlogic.steps}"
-                              max="${callJson.partpaymentlogic.maxAmount}" value="${properties.minAmount}" class="range-slider__range"
+                              max="${callJson.partpaymentlogic.maxAmount}" value="${callJson.partpaymentlogic.minAmount}" class="range-slider__range"
                               id="partPayment1"
                               style="background: linear-gradient(90deg, rgb(218, 77, 52) 4.0404%, rgb(219, 215, 216) 4.0404%);">
                           <div class="values">

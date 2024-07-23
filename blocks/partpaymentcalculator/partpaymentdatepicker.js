@@ -1,5 +1,14 @@
 import { currenyCommaSeperation } from "../../scripts/scripts.js";
 import { updatePartPayment } from "../partpaymentcalculator/partpaymentlogic.js";
+// import { nextMonth, firstElem, secondEle, parentContainer, count, array, partpaymentArra, datepickerObjFirstLoan, airDatePickerObj } from "./partpaymentcalculator.js";
+
+export let nextMonth;
+export let firstElem, secondEle, parentContainer;
+export let count = 2;
+export let array = [];
+export let partpaymentArra = {};
+export let datepickerObjFirstLoan;
+export let airDatePickerObj;
 
 function increaseDateByoneMonth(date) {
   // Create a new Date object based on the input date

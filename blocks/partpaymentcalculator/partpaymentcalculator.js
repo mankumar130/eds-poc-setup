@@ -1,15 +1,8 @@
 import { fetchAPI } from "../../scripts/scripts.js";
 import { homeLoanCalcFunc } from "../emiandeligiblitycalc/homeloancalculators.js";
 import { onloadDatePickerCalls } from "./partpaymentdatepicker.js";
+import { partPaymentCalHTML } from "./partpaymenttemplate.js"
 
-export let nextMonth;
-export let firstElem, secondEle, parentContainer;
-export let count = 2;
-export let array = [];
-export let partpaymentArra = {};
-export let datepickerObjFirstLoan;
-export let airDatePickerObj;
-// Increase 1 month Function
 
 export default async function decorate(block) {
   let cfURL = block.textContent.trim();
