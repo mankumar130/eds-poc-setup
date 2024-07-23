@@ -11,9 +11,9 @@ let calculatorType, emiCalDiv, emiOverlay;
 export default async function decorate(block) {
   let cfURL = block.textContent.trim();
   
-  const cfRepsonse = await CFApiCall(cfURL);
-  const repsonseData = cfRepsonse.data[0].data;
-  const jsonResponseData = JSON.parse(repsonseData)
+  const cfRepsonse = cfURL && await CFApiCall(cfURL);
+  const repsonseData = cfRepsonse && cfRepsonse.data[0].data;
+  const jsonResponseData = repsonseData && JSON.parse(repsonseData)
 
   if(!jsonResponseData) return;
 

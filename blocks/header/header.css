@@ -499,8 +499,9 @@ header nav .nav-sections .nav-drop::after{
   transition: all ease 0.3s;
 }
 
-.header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper>ul>li>ul>li>ul>li:hover {
-  color: rgb(242 104 65);
+.header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper>ul>li>ul>li>ul>li a:hover,
+.header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper > ul > li:nth-child(7) > ul > li:hover {
+  color: rgb(242 104 65) !important;
 }
 
 
@@ -1361,6 +1362,10 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
   }
   .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper>ul>li.nav-drop[aria-expanded="true"]>p::before{
     bottom: -25px;
+  }
+  .header-wrapper .nav-wrapper nav .nav-sections .default-content-wrapper > ul > li:nth-child(6) > ul > li:nth-child(1) > ul > li:nth-child(5)::after{
+    right: 13px;
+    top: 0px;
   }
 }
 
