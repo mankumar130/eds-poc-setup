@@ -53,7 +53,7 @@
     position: relative;
     white-space: nowrap;
     color: #000;
-    font-family: Nunito-Regular, sans-serif;
+    font-family: 'Nunito-Regular', sans-serif;
     font-size: 1pc;
     font-weight: 400;
     line-height: 24px;
@@ -93,6 +93,33 @@
     display: none;
 }
 
+/* about us tabs css  */
+.section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block {
+    margin-top: 32px;
+}
+
+.section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div>div>ul {
+    gap: 48px;
+}
+
+.section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div>div>ul>li a {
+    font-family: 'Nunito-Bold', sans-serif;
+    border: 1px solid #333333;
+}
+
+.section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div>div>ul>li a:after {
+    right: -24px;
+}
+
+.section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div>div>ul>li>strong>a {
+    color: var(--white);
+}
+
+.section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div>div>ul>li>a:hover, 
+.section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div>div>ul>li>strong>a:hover {
+    background-color: var(--white);
+    color: #000;
+}
 
 @media screen and (max-width:1024px) {
 
@@ -273,7 +300,6 @@
 
     /* Modal and Overlay Styles */
     .section.company-details-wrapper .tab-link-wrapper .tab-link.block>.compony-details {
-        display: none;
         display: flex;
         outline: 0;
         z-index: 1200;
@@ -318,5 +344,18 @@
         margin-top: 16px;
         padding: 0;
         text-align: start;
+    }
+
+    .section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div>div>ul>li a::before {
+        border: 1px solid var(--orange);
+    }
+
+    .section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div>div>ul>li>strong a::after {
+        background: var(--orange);
+    }
+
+    .section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>.compony-details {
+        transform: translateY(100%);
+        max-height: 312px;
     }
 }
