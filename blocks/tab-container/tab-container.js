@@ -23,7 +23,7 @@ export default function decorate(block) {
     block.children[1].remove();
     [...panels].forEach((panel, i) => {
         // generate the  panel
-        const [imagebg, image, classList, ...rest] = panel.children;
+        const [imagebg, image, classList, classss, ...rest] = panel.children;
         const classesText = classList.textContent.trim();
         const classes = (classesText ? classesText.split(',') : []).map((c) => c && c.trim()).filter((c) => !!c);
         let blockType = 'teaser';
