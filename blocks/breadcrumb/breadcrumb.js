@@ -7,7 +7,7 @@ const getPageTitle = async (url) => {
     if (resp.ok) {
         const html = document.createElement('div');
         html.innerHTML = await resp.text();
-        return html.querySelector('title').innerText;
+        return html.querySelector('[name="page-name"]')?.getAttribute("content");
     }
 
     return '';
@@ -29,6 +29,7 @@ const getAllPathsExceptCurrent = async (paths, startLevel) => {
     let pathVal = '';
     // Excluding current link
     for (let i = 0; i <= pathsList.length - 2; i += 1) {
+    // for (let i = 0; i <= pathsList.length - 1; i += 1) {
         pathVal = `${pathVal}/${pathsList[i]}`;
         let url = `${window.location.origin}${pathVal}`;
         if (window.location.host.includes('author')) {
@@ -91,7 +92,7 @@ export default async function decorate(block) {
             const currentPath = document.createElement('a');
             currentPath.href = window.location.href;
             // const currentTitle = document.querySelector('title').innerText;
-            const currentTitle = getMetadata("og:title")
+            const currentTitle = getMetadata("page-name")
             currentPath.innerText = currentTitle.replace(' | Pricefx', '');
             breadcrumbLinks.push(currentPath.outerHTML);
         }
