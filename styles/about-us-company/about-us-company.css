@@ -192,26 +192,3 @@
 }
 
 /* About us Buttons End */
-
-/* Who we are text Start */
-.section.about-us-text .default-content-wrapper p:first-child {
-    margin: 0;
-    color: #000;
-    display: block;
-    font-family: Nunito-Extrabold, sans-serif;
-    font-size: 2rem;
-    font-weight: 800;
-    line-height: 40px;
-    margin-bottom: 8px;
-}
-
-.section.about-us-text .default-content-wrapper p:last-child {
-    margin: 0;
-    color: #000;
-    font-family: Nunito-Regular, sans-serif;
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-/* Who we are text End */
