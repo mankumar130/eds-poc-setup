@@ -7,7 +7,6 @@ import { validationJSFunc } from '../applyloanform/validation.js';
 import { generateDetailedTeaserDOM } from '../detailed-teaser/detailed-teaser.js';
 import { generateTeaserDOM } from '../teaser/teaser.js';
 import gliderMin from './glider.min.js';
-console.log(gliderMin);
 const carouselContainerMapping = {}
 carouselContainerMapping["detailed-teaser"] = generateDetailedTeaserDOM;
 carouselContainerMapping["ss-teaser"] = generateDetailedTeaserDOM;
@@ -47,9 +46,9 @@ export default function decorate(block) {
   const slideNavButtons = document.createElement("div");
   slideNavButtons.classList.add("carousel-navigation-buttons");
   slideNavButtons.innerHTML = `
-    <button type="button" class="slide-prev" aria-label="${"Previous Slide"
+    <button type="button" class="slide-prev glider-prev" aria-label="${"Previous Slide"
     }">${block.children[0].outerHTML || "<"}</button>
-    <button type="button" class="slide-next" aria-label="${"Next Slide"
+    <button type="button" class="slide-next glider-next" aria-label="${"Next Slide"
     }">${block.children[1].outerHTML || ">"}</button>
   `;
   // block.appendChild(slideNavButtons);
@@ -123,7 +122,60 @@ export default function decorate(block) {
   const slideNext = block.querySelector(".slide-next")
 
   // /*
-  if (isOldversion) {
+  if (version === "Glider") {
+    block.append(buttonContainer);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            new Glider(panelContainer, {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              scrollLock: true,
+              dots: buttonContainer,
+              arrows: {
+                prev: slidePrev,
+                next: slideNext
+              },           
+              scrollLock:true,
+              draggable: true,
+              responsive: [
+                {
+                  breakpoint: 767,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                  }
+                },
+               {
+                  // screens greater than >= 1024px
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 3.5,
+                    slidesToScroll: 1,
+                    arrows: {
+                      prev: slidePrev,
+                      next: slideNext
+                    },                   
+                    scrollLock:true,
+                    draggable: true,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 1,
+                      duration: 0.25
+                    }
+                  }
+                }
+
+              ]
+            });
+          }
+        });
+      }
+    );
+
+    observer.observe(block);
+  } else if (isOldversion) {
 
     function activePanelContainer(panel) {
       panelContainer.scrollTo({ top: 0, left: panel.offsetLeft - panel.parentNode.offsetLeft, behavior: 'smooth' });
@@ -145,7 +197,7 @@ export default function decorate(block) {
         if (panel) {
           activePanelContainer(panel)
         } else {
-          slideNext.classList.add("disabled")
+          // slideNext.classList.add("disabled")
         };
       }
     }
