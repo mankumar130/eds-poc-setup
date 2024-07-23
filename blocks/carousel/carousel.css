@@ -376,7 +376,7 @@
 }
 
 .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser {
-  height: 630px;
+  min-height: 630px;
 }
 
 .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
@@ -788,7 +788,7 @@
   }
 
   .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser {
-    height: 400px;
+    min-height: 400px;
   }
 
   .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
@@ -835,7 +835,7 @@
 @media screen and (min-width: 1025px) and (max-width: 1300px) {
 
   .section.banner-scale-img .carousel-wrapper .carousel .panel-container .teaser {
-    height: 443px;
+    min-height: 443px;
   }
 
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background {
@@ -877,11 +877,25 @@
     height: 315px;
     object-position: bottom;
     object-fit: contain;
-}
-.section.banner-scale-img .carousel-wrapper .carousel .panel-container .teaser .foreground{
-  width: 64%;
-}
-.section.banner-scale-img  .carousel-wrapper .panel-container .teaser.block>.background .foreground .text .eyebrow{
-  padding-top: 60px;
-}
+  }
+  .section.banner-scale-img .carousel-wrapper .carousel .panel-container .teaser .foreground{
+    width: 64%;
+  }
+  .section.banner-scale-img  .carousel-wrapper .panel-container .teaser.block>.background .foreground .text .eyebrow{
+    padding-top: 60px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
+    width: 600px;
+    height: 409px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture {
+    bottom: -58px;
+  }
+  .banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser .foreground {
+    width: 80%;
+    padding-top: 40px;
+  }
+  .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser {
+    min-height: 435px;
+  } 
 }
