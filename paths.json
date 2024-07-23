@@ -29,6 +29,7 @@
     "/content/piramalfinance-eds/in/en/api/personal-loan-emi-calculator:/api/personal-loan-emi-calculator.json",
     "/content/piramalfinance-eds/in/en/api/apr-calculator:/api/apr-calculator.json",
     "/content/piramalfinance-eds/in/en/api/gst-calculator:/api/gst-calculator.json",
+    "/content/piramalfinance-eds/in/en/api/personal-loan-part-payment-calculator:/api/personal-loan-part-payment-calculator.json",
     "/content/piramalfinance-eds/in/en/api/apply-form-loan:/api/apply-form-loan.json",
     "/content/piramalfinance-eds/in/en/api/homepage-eligibility-calculator:/api/homepage-eligibility-calculator.json",
     "/content/piramalfinance-eds/in/en/api/homepage-emi-calculator:/api/homepage-emi-calculator.json",
