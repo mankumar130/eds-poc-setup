@@ -164,7 +164,6 @@ export function currenyCommaSeperation(x) {
 }
 
 export function createCarousle(block, prevButton, nextButton) {
-  console.log(targetObject.carouselButton.disabled);
   block.parentElement ? block.parentElement.append(prevButton) : block.append(prevButton);
   block.parentElement ? block.parentElement.append(nextButton) : block.append(nextButton);
   prevButton.addEventListener("click", function (e) {
