@@ -118,8 +118,7 @@
     }
 
     .section.list-content-wrapper .default-content-wrapper p,
-    .section.types-of-interest-rates-wrapper .default-content-wrapper p ,
-    .section.list-content-wrapper .default-content-wrapper p > strong{
+    .section.types-of-interest-rates-wrapper .default-content-wrapper p {
         font-size: 0.875rem;
         line-height: 20px;
     }
@@ -136,5 +135,10 @@
     .section.types-of-interest-rates-wrapper .default-content-wrapper h3 {
         font-size: 1rem;
         line-height: 24px;
+    }
+
+    .section.list-content-wrapper.about-us-text-bold .default-content-wrapper p > strong{
+        font-size: 0.875rem;
+        line-height: 20px;
     }
 }
