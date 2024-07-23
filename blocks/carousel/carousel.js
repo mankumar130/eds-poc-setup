@@ -143,7 +143,7 @@ export default function decorate(block) {
                 {
                   breakpoint: 767,
                   settings: {
-                    slidesToShow: 2.6,
+                    slidesToShow: 2,
                     slidesToScroll: 1
                   }
                 },

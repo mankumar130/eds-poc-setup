@@ -90,38 +90,24 @@
     text-align: center;
     padding: 10px 16px;
 }
-.section.knowledge-card-carousel .carousel-wrapper .slide-prev  div div picture img,
-.section.knowledge-card-carousel .carousel-wrapper .slide-next div div picture img{
-    border: 1px solid #365069;
-    border-radius: 50%;
-    color: #365069;
+.section.knowledge-card-carousel .carousel-wrapper .carousel-navigation-buttons .glider-prev  div div picture img,
+.section.knowledge-card-carousel .carousel-wrapper .carousel-navigation-buttons .glider-next div div picture img{
     height: 40px;
-    margin-top: unset;
     width: 40px;
 }
-.section.knowledge-card-carousel .carousel-wrapper .slide-prev.light  div div picture img,
-.section.knowledge-card-carousel .carousel-wrapper .slide-next.light div div picture img{
-    opacity: 0.5;
-}
-.section.knowledge-card-carousel .carousel-wrapper .slide-prev,
-.section.knowledge-card-carousel .carousel-wrapper .slide-next{
+.section.knowledge-card-carousel .carousel-wrapper .carousel-navigation-buttons .glider-prev,
+.section.knowledge-card-carousel .carousel-wrapper .carousel-navigation-buttons .glider-next{
     background: unset;
 }
-.section.knowledge-card-carousel .carousel-wrapper .slide-prev{
-    padding: unset;
-    margin: unset;
+.section.knowledge-card-carousel .carousel-wrapper .carousel-navigation-buttons .glider-prev{
     position: absolute;
     left: -5%;
     top: 40%;
-    display: inline-block;
 }
-.section.knowledge-card-carousel .carousel-wrapper .slide-next{
-    padding: unset;
-    margin: unset;
+.section.knowledge-card-carousel .carousel-wrapper .carousel-navigation-buttons .glider-next{
     position: absolute;
     right: -5%;
     top: 40%;
-    display: inline-block;
 }
 .section.knowledge-card-carousel .carousel-wrapper .carousel{
     position: unset;
@@ -149,8 +135,8 @@
         width: 16px;    
         opacity: 1;
     }
-    .section.knowledge-card-carousel .carousel-wrapper .slide-prev,
-    .section.knowledge-card-carousel .carousel-wrapper .slide-next{
+    .section.knowledge-card-carousel .carousel-wrapper .carousel-navigation-buttons .glider-prev,
+    .section.knowledge-card-carousel .carousel-wrapper .carousel-navigation-buttons .glider-next{
         display: none;
     }
     .section.knowledge-card-carousel .default-content-wrapper #piramal-values{
@@ -170,21 +156,20 @@
     }
 }
 
-@media (min-width:768px) and (max-width:1024) {
-    .section.knowledge-card-carousel .carousel-wrapper .carousel .panel-container .teaser {
+@media (min-width:768px) and (max-width:1024px) {
+    .section.knowledge-card-carousel .carousel .panel-container .teaser {
         max-width: 318px;
     }
-    .section.knowledge-card-carousel .carousel-wrapper .carousel.block>.panel-container {
+    /* .section.knowledge-card-carousel .carousel-wrapper .carousel.block>.panel-container {
         width: 95%;
+    }  */
+    .section.knowledge-card-carousel .carousel-wrapper .carousel .panel-container {
+        margin: 0 20px;
     }
-    .section.knowledge-card-carousel .carousel-wrapper .slide-prev,
-    .section.knowledge-card-carousel .carousel-wrapper .carousel .carousel-navigation-buttons .slide-prev {
-        left: 5px;
-        display: block;
+    .section.knowledge-card-carousel .carousel-wrapper .carousel-navigation-buttons .glider-prev{
+        left: 0;
     }
-    .section.knowledge-card-carousel .carousel-wrapper .slide-next,
-    .section.knowledge-card-carousel .carousel-wrapper .carousel .carousel-navigation-buttons .slide-next {
-        right: 5px !important;
-        display: block;
+    .section.knowledge-card-carousel .carousel-wrapper .carousel-navigation-buttons .glider-next{
+        right: 0;
     }
 }
