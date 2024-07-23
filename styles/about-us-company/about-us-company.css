@@ -1,4 +1,7 @@
 /* Director Banner Start*/
+.section.teaser-container-about-us.teaser-container{
+    padding: 0;
+}
 
 .section.teaser-container-about-us {
     padding: 0;
@@ -8,6 +11,8 @@
 
 .section.teaser-container-about-us .teaser-wrapper {
     position: relative;
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
 .section.teaser-container-about-us .teaser-wrapper .teaser {
@@ -69,20 +74,26 @@
     font-family: ' Nunito-Bold', sans-serif;
 }
 
-@media screen and (max-width:768px) {
-    .section.teaser-container-about-us {
+@media screen and (max-width:767px) {
+    .section.teaser-container-about-us .teaser-wrapper .teaser .foreground .text {
+        max-width: 97%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .section.teaser-container-about-us .teaser-wrapper .teaser .foreground .text {
+        max-width: 318px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .section.teaser-container-about-us .teaser-wrapper {
+        max-width: 100%;
         padding: 0 16px;
     }
 
     .section.teaser-container-about-us .teaser-wrapper .teaser {
-        padding-top: 9px;
-        min-height: auto;
-    }
-
-    .section.teaser-container-about-us .teaser-wrapper .teaser .front-picture,
-    .section.teaser-container-about-us .teaser-wrapper .teaser .front-picture picture img {
-        height: 170px;
-        width: 200px;
+        min-height: 400px;
     }
 
     .section.teaser-container-about-us .teaser-wrapper .teaser .foreground {
@@ -90,8 +101,15 @@
     }
 
     .section.teaser-container-about-us .teaser-wrapper .teaser .foreground .text {
-        padding: 3pc 0 190px;
-        max-width: 97%;
+        padding: 48px 0 190px;
+    }
+
+    .section.teaser-container-about-us .teaser-wrapper .teaser .foreground .text .long-description {
+        margin-bottom: 16px;
+    }
+
+    .section.teaser-container-about-us .teaser-wrapper .teaser .front-picture {
+        right: 20px;
     }
 
     .section.teaser-container-about-us .teaser-wrapper .teaser .foreground .text .long-description,
@@ -106,6 +124,16 @@
 
     .section.teaser-container-about-us .teaser-wrapper .teaser .foreground .text .short-description p strong {
         font-size: 1rem;
+    }
+
+    .section.teaser-container-about-us .teaser-wrapper .teaser .foreground .text .short-description p {
+        font-size: 0.875rem;
+    }
+
+    .section.teaser-container-about-us .teaser-wrapper .teaser .front-picture,
+    .section.teaser-container-about-us .teaser-wrapper .teaser .front-picture picture img {
+        height: 170px;
+        width: 200px;
     }
 }
 /* Director Banner End*/
@@ -164,26 +192,3 @@
 }
 
 /* About us Buttons End */
-
-/* Who we are text Start */
-.section.about-us-text .default-content-wrapper p:first-child {
-    margin: 0;
-    color: #000;
-    display: block;
-    font-family: Nunito-Extrabold, sans-serif;
-    font-size: 2rem;
-    font-weight: 800;
-    line-height: 40px;
-    margin-bottom: 8px;
-}
-
-.section.about-us-text .default-content-wrapper p:last-child {
-    margin: 0;
-    color: #000;
-    font-family: Nunito-Regular, sans-serif;
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-/* Who we are text End */
