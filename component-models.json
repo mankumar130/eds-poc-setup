@@ -150,22 +150,6 @@
     ]
   },
   {
-    "id": "image-carousel",
-    "fields": [
-      {
-        "name": "classes",
-        "type": "multiselect",
-        "label": "Options",
-        "options": [
-          {
-            "name": "Auto Scroll",
-            "value": "auto-scroll"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "hero",
     "fields": [
       {
@@ -188,6 +172,22 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "image-carousel",
+    "fields": [
+      {
+        "name": "classes",
+        "type": "multiselect",
+        "label": "Options",
+        "options": [
+          {
+            "name": "Auto Scroll",
+            "value": "auto-scroll"
+          }
+        ]
       }
     ]
   }

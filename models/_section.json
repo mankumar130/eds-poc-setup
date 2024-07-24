@@ -43,7 +43,8 @@
         "title",
         "hero",
         "cards",
-        "columns"
+        "columns",
+        "image-carousel"
       ]
     }
   ]
