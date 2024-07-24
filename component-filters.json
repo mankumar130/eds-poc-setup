@@ -24,6 +24,12 @@
     ]
   },
   {
+    "id": "columns",
+    "components": [
+      "column"
+    ]
+  },
+  {
     "id": "column",
     "components": [
       "text",
