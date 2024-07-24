@@ -1869,41 +1869,6 @@
         "description": "Background Image"
       },
       {
-        "component": "multiselect",
-        "name": "classes",
-        "label": "Style",
-        "valueType": "string",
-        "required": true,
-        "options": [
-          {
-            "name": "Theme",
-            "children": [
-              {
-                "name": "Light",
-                "value": "light"
-              },
-              {
-                "name": "Light",
-                "value": "light"
-              },
-              {
-                "name": "Dark",
-                "value": "dark"
-              }
-            ]
-          },
-          {
-            "name": "Type",
-            "children": [
-              {
-                "name": "teaserv2",
-                "value": "teaserv2"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "component": "reference",
         "valueType": "string",
         "name": "fileReference1",

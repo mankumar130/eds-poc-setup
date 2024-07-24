@@ -358,4 +358,7 @@
         transform: translateY(100%);
         max-height: 312px;
     }
+    /* .section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div:first-child {
+        display: block;
+    } */
 }

@@ -1,10 +1,10 @@
 import { generateDetailedTeaserDOM } from '../detailed-teaser/detailed-teaser.js';
 import { generateTeaserDOM } from '../teaser/teaser.js';
-import generateTeaserV2DOM from '../teaserv2/teaserv2.js';
+import { renderTeaserHTMLFactory } from '../teaserv2/teaserv2.js';
 
 const carouselContainerMapping = {}
 carouselContainerMapping["detailed-teaser"] = generateDetailedTeaserDOM;
-carouselContainerMapping["teaserv2"] = generateTeaserV2DOM;
+carouselContainerMapping["teaserv2"] = renderTeaserHTMLFactory;
 
 export default function decorate(block) {
     const tabid = block.children[0].innerText.trim();
