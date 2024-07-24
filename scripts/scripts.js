@@ -668,6 +668,7 @@ async function loadingCustomCss() {
     // `${window.hlx.codeBasePath}/styles/breadcrumb/breadcrumb.css`,
     `${window.hlx.codeBasePath}/styles/disclaimer/disclaimer.css`,
     `${window.hlx.codeBasePath}/styles/risk-gradation-popup/risk-gradation-popup.css`,
+    `${window.hlx.codeBasePath}/styles/piramal-group-ajay-info/piramal-group-ajay-info.css`,
   ];
 
   loadCssArray.forEach(async (eachCss) => {
