@@ -174,3 +174,16 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+/* partnership text css start */
+
+.section.partnership-text .default-content-wrapper p {
+    font-family: Nunito-Regular, sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-top: 24px;
+}
+
+/* partnership text css end */
