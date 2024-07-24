@@ -8,12 +8,12 @@ export default function decorate(block) {
   loanProductsAnalytics(block);
 }
 
-function renderTeaserHTMLFactory(props) {
+export function renderTeaserHTMLFactory(props) {
 
   const isDesktop = window.matchMedia('(min-width: 900px)');
   const isMobile = window.matchMedia('(max-width: 767px)');
 
-  const [mainHref, bgImage, frontImage, title, description, mobileDescription, button, buttonHref, bgColor, teaserv2Attr, textwithinnerhtml, mobileImg] = props;
+  let [mainHref, bgImage, frontImage, title, description, mobileDescription, button, buttonHref, bgColor, teaserv2Attr, textwithinnerhtml, mobileImg] = props;
 
   const createElement = (tag, className, content) => {
     const element = document.createElement(tag);
@@ -31,9 +31,9 @@ function renderTeaserHTMLFactory(props) {
   const bgBannerColor = bgColor?.textContent.trim()?.src || "";
   const bgImageDiv = createElement("div", "bg-image");
 
-  if(isDesktop){
+  if (isDesktop) {
     if (bgImageSrc) bgImageDiv.style.backgroundImage = `url(${bgImageSrc})`;
-  }else if(isMobile){
+  } else if (isMobile) {
     if (mobileSrc) bgImageDiv.style.backgroundImage = `url(${mobileSrc})`;
   }
 
@@ -62,7 +62,7 @@ function renderTeaserHTMLFactory(props) {
   bgImageDiv.append(frontImageDiv, titleDiv, descriptionDiv, newButtonTag, textwithDiv);
 
   const teaserv2AttrGet = teaserv2Attr?.textContent?.trim() || "";
-  teaserv2Attr.closest(".teaserv2-wrapper").setAttribute("data-teaserv2-xf", teaserv2AttrGet);
+  teaserv2Attr.closest(".teaserv2-wrapper")?.setAttribute("data-teaserv2-xf", teaserv2AttrGet);
 
   if (container.tagName === "A") {
     container.append(bgImageDiv);
