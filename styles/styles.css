@@ -20,6 +20,29 @@
     }
 } */
 
+/* Disable text selection */
+body {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+/* Disable text copying */
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+}/* Disable text selection */
+body {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+/* Disable text copying */
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+}
+
 input,
 select {
   vertical-align: middle
