@@ -18,6 +18,12 @@
     ]
   },
   {
+    "id": "cards",
+    "components": [
+      "card"
+    ]
+  },
+  {
     "id": "column",
     "components": [
       "text",
