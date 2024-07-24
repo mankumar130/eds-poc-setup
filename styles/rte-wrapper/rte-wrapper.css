@@ -68,7 +68,7 @@
 
 .section.startup-business-text .default-content-wrapper > p {
     color: #000;
-    font-family: Nunito-Regular, sans-serif;
+    font-family: 'Nunito-Regular', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -76,7 +76,7 @@
 
 .section.startup-business-text .default-content-wrapper > p > strong{
     color: #000;
-    font-family: Nunito-Bold, sans-serif;
+    font-family: 'Nunito-Bold', sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
