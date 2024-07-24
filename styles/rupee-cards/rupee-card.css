@@ -3,10 +3,10 @@
     padding: 64px 0 80px;
 }
 
-.section.rupee-cards-wrapper .default-content-wrapper #personal-loan-by-amount{
+.section.rupee-cards-wrapper .default-content-wrapper h2{
     color: #333;
     display: block;
-    font-family: Nunito-Bold, sans-serif;
+    font-family: 'Nunito-Bold', sans-serif;
     font-size: 2rem;
     font-weight: 700;
     line-height: 48px;
@@ -182,9 +182,7 @@
         line-height: 20px;
         margin-bottom: 32px;
     }
-    .section.rupee-cards-wrapper .default-content-wrapper #personal-loan-by-amount{
-        color: #333;
-        font-family: Nunito-Bold, sans-serif;
+    .section.rupee-cards-wrapper .default-content-wrapper h2{
         font-size: 1.125rem;
         line-height: 27px;
         margin-bottom: 8px;
