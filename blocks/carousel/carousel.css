@@ -390,6 +390,18 @@
   margin-top: 4px;
 }
 
+.section.banner-carousel-wrapper.cities-page-align-banner .carousel-wrapper .carousel .panel-container .teaser {
+  min-height: 496px;
+}
+
+.section.banner-carousel-wrapper.cities-page-align-banner .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .short-description>ul>li {
+  margin-top: 48px;
+}
+
+.section.banner-carousel-wrapper.cities-page-align-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture {
+  bottom: 20%;
+}
+
 @media (min-width:1024px) and (max-width:1366px) {
   .section.banner-carousel-wrapper .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
     width: 312px;
@@ -606,6 +618,16 @@
     height: 154px;
     width: 100%;
   }
+
+  .section.banner-carousel-wrapper.cities-page-align-banner .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .short-description>ul>li {
+    margin-top: 36px;
+  }
+  .section.banner-carousel-wrapper.cities-page-align-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture {
+    bottom: 0;
+  }
+  .section.banner-carousel-wrapper.cities-page-align-banner .carousel-wrapper .carousel .panel-container .teaser {
+    min-height: 400px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -798,6 +820,15 @@
 
   .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture {
     right: 60px;
+  }
+  .section.banner-carousel-wrapper.cities-page-align-banner .carousel-wrapper .panel-container .teaser.block.teaser-block-six>.background .foreground .text .short-description>ul>li {
+    margin-top: 36px;
+  }
+  .section.banner-carousel-wrapper.cities-page-align-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture {
+    bottom: 0;
+  }
+  .section.banner-carousel-wrapper.cities-page-align-banner .carousel-wrapper .carousel .panel-container .teaser {
+    min-height: 400px;
   }
 }
 
