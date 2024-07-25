@@ -166,10 +166,10 @@ export default async function decorate(block) {
   hamburger.classList.add('nav-hamburger');
   hamburger.innerHTML = `<div class="hambuger-menu" aria-controls="nav" aria-label="Open navigation">
     <div class="hamburger-image-custom">
-        <img src="/content/dam/piramalfinance/header-images/hamburger-icon.png" alt="hamburger-icon">
+        <img src="/content/dam/piramalfinance/header-images/icons8-hamburger-icon.png" alt="hamburger-icon">
     </div>
     <div class="cross-image-custom">
-        <img src="/content/dam/piramalfinance/header-images/cross-icon-custom.png" alt="cross-icon">
+        <img src="/content/dam/piramalfinance/header-images/icons8-cross-icon-custom.png" alt="cross-icon">
     </div>
 </div>`;
   nav.prepend(hamburger);
