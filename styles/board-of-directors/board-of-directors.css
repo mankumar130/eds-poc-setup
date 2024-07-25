@@ -44,11 +44,13 @@
 .section.board-of-directors-wrapper .tab-container-wrapper .tab-container .panel-container .teaser .background .foreground {
     position: absolute;
     top: 228px;
+    cursor: pointer;
 }
 
 .section.board-of-directors-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaser-wrapper .teaser .background:hover .front-picture,
 .section.board-of-directors-wrapper .tab-container-wrapper .tab-container .panel-container .teaser .background:hover .front-picture {
     display: block;
+    cursor: pointer;
 }
 
 .section.board-of-directors-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaser-wrapper .teaser .background:hover::after,

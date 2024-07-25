@@ -607,6 +607,10 @@
             "value": "normal"
           },
           {
+            "name": "Glider",
+            "value": "glider"
+          },
+          {
             "name": "carousel",
             "value": "carousel"
           }
