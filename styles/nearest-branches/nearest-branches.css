@@ -2,7 +2,7 @@
     margin-bottom: 24px;
     color: var(--text-color);
     display: block;
-    font-family: Nunito-Extrabold, sans-serif;
+    font-family: 'Nunito-Extrabold', sans-serif;
     font-size: 2rem;
     font-weight: 800;
     line-height: 40px;
@@ -178,5 +178,11 @@
     .section.nearest-branches .columns-wrapper .columns>div>div>p{
         font-size: 1rem;
         line-height: 24px;
+    }
+    .section.nearest-branches .default-content-wrapper>h2 {
+        font-size: 1.25rem;
+        line-height: 28px;
+        padding-bottom: 4px;
+        margin-bottom: 20px;
     }
 }

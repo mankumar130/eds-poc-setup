@@ -95,7 +95,7 @@
 
 /* about us tabs css  */
 .section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block {
-    margin-top: 32px;
+    margin: 32px 0 0
 }
 
 .section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div>div>ul {
@@ -281,7 +281,7 @@
         display: none;
     }
 
-    .section.company-details-wrapper .tab-link-wrapper .tab-link.block>div>div>::before {
+    .section.company-details-wrapper .tab-link-wrapper .tab-link.block .compony-details>div>p::before {
         background-color: var(--silver);
         border-radius: 6px;
         content: "";
@@ -300,6 +300,7 @@
 
     /* Modal and Overlay Styles */
     .section.company-details-wrapper .tab-link-wrapper .tab-link.block>.compony-details {
+        display: none;
         display: flex;
         outline: 0;
         z-index: 1200;
@@ -312,7 +313,7 @@
         height: auto;
         background-color: var(--white);
         border-radius: 16px 16px 0 0;
-        /* transform: translateY(100%); */
+        transform: translateY(100%);
         transition: transform 0.5s cubic-bezier(0, 0, 0.2, 1);
         height: 100%;
         max-height: 80vh;
@@ -346,19 +347,33 @@
         text-align: start;
     }
 
+    /* about us page  */
+    .section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div:first-child {
+        display: block;
+    } 
+    .section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div>div>ul {
+        gap: 0;
+    }
+    .section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div>div>ul>li>strong>a {
+        color: var(--black);
+        border: unset;
+        font-family: 'Nunito-Bold', sans-serif;
+    }
+    .section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div>div>ul>li a {
+        border: unset;
+        font-family: 'Nunito-Regular', sans-serif;
+    }
     .section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div>div>ul>li a::before {
         border: 1px solid var(--orange);
     }
-
     .section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div>div>ul>li>strong a::after {
         background: var(--orange);
     }
-
     .section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>.compony-details {
-        transform: translateY(100%);
         max-height: 312px;
     }
-    /* .section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block>div:first-child {
-        display: block;
-    } */
+    .section.company-details-wrapper.about-us-company-details .tab-link-wrapper .tab-link.block {
+        margin-top: 25px;
+        padding: 24px 0;
+    }
 }
