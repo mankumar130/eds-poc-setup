@@ -15,6 +15,6 @@
     "...": "./_section.json#/models"
   },
   {
-    "...": "../blocks/*/_component.json#/models"
+    "...": "../blocks/*/_*.json#/models"
   }
 ]

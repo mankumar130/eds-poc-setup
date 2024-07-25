@@ -9,6 +9,6 @@
     "...": "./_section.json#/filters"
   },
   {
-    "...": "../blocks/*/_component.json#/filters"
+    "...": "../blocks/*/_*.json#/filters"
   }
 ]
