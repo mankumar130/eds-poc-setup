@@ -611,7 +611,7 @@
   }
 
   .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .carousel .panel-container .teaser {
-    height: 450px;
+    min-height: 450px;
   }
 
   .section.banner-carousel-wrapper.careers-page-banner .carousel-wrapper .panel-container .teaser.block>.background .front-picture img {
