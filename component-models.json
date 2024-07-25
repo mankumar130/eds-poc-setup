@@ -552,6 +552,13 @@
             "value": "Glider"
           }
         ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "config",
+        "value": "",
+        "label": "Config"
       }
     ]
   },
@@ -605,6 +612,10 @@
           {
             "name": "normal",
             "value": "normal"
+          },
+          {
+            "name": "Glider",
+            "value": "glider"
           },
           {
             "name": "carousel",
@@ -893,6 +904,15 @@
         "valueType": "string",
         "required": true,
         "options": [
+          {
+            "name": "Type",
+            "children": [
+              {
+                "name": "Click Able",
+                "value": "click-able"
+              }
+            ]
+          },
           {
             "name": "Theme",
             "children": [
@@ -1284,6 +1304,10 @@
               {
                 "name": "gridcolumnfw",
                 "value": "card-full-width"
+              },
+              {
+                "name": "center",
+                "value": "center"
               }
             ]
           },

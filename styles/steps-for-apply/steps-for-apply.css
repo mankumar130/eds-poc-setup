@@ -1,7 +1,7 @@
 .section.steps-for-apply .default-content-wrapper >h2{
     color: #000;
     display: block;
-    font-family: Nunito-Extrabold, sans-serif;
+    font-family: 'Nunito-Extrabold', sans-serif;
     font-size: 2rem;
     font-weight: 800;
     line-height: 48px;
@@ -10,7 +10,7 @@
 .section.steps-for-apply .default-content-wrapper >p{
     color: #000;
     display: block;
-    font-family: Nunito-Regular, sans-serif;
+    font-family: 'Nunito-Regular', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
@@ -20,11 +20,19 @@
     margin-bottom: 8px;
     display: inline-block;
     color: #f26841;
-    font-family: Nunito-Bold, sans-serif;
-    font-size: 1pc;
+    font-family: 'Nunito-Bold', sans-serif;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 24px;
     min-width: 53px;
+}
+.section.steps-for-apply .default-content-wrapper >p>strong>em {
+    font-style: normal;
+    color: #000;
+    font-family: 'Nunito-Bold',sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
 }
 
 @media screen and (max-width: 767px) {

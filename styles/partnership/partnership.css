@@ -174,3 +174,69 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+/* partnership text css start */
+.section.partnership-text .default-content-wrapper p {
+    font-family: Nunito-Regular, sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-top: 24px;
+}
+/* partnership text css end */
+
+
+/* co-lending partnership tab css start */
+
+.section.co-lending-partnership-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container {
+    display: grid;
+    gap: 1pc;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 24px 0;
+}
+
+.section.co-lending-partnership-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaserv2-wrapper .teaserv2 a .bg-image{
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(51, 51, 51, .078);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    padding: 30px 50px;
+    width: 100%;
+}
+
+.section.co-lending-partnership-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaserv2-wrapper .teaserv2 a .bg-image:hover{
+    box-shadow: 0 25px 50px -9pt rgba(0, 0, 0, .25);
+}
+
+.section.co-lending-partnership-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaserv2-wrapper .teaserv2 a .bg-image .front-image{
+    height: 83px;
+    width: 206px;
+    display: flex;
+    align-items: center;
+}
+
+.section.co-lending-partnership-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaserv2-wrapper .teaserv2 a .bg-image .front-image > picture > img{
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:767px) {
+    .section.co-lending-partnership-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .section.co-lending-partnership-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+/* co-lending partnership tab css start */
