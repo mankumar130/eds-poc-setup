@@ -29,7 +29,6 @@ export function buttonCLick() {
         console.warn(error);
     }
     loanFromBtn().addEventListener("click", function ({ currentTarget }) {
-        // debugger;
         currentTarget.closest(".loan-form-button-container").classList.add("loader-initialized");
         loanOtpInput().value = "";
         workFlow();
