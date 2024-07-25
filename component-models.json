@@ -552,6 +552,13 @@
             "value": "Glider"
           }
         ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "config",
+        "value": "",
+        "label": "Config"
       }
     ]
   },
