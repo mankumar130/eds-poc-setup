@@ -56,6 +56,9 @@ export default function decorate(block) {
   const carouselshowtype = block.children[2].innerText.trim() || "primary";
   const rotatetype = block.children[3].innerText.trim() || "rotate-off";
   const version = block.children[4].innerText.trim() || "One";
+  const config = block.children[5].innerText.trim() || "";
+
+  console.log(config.innerText);
   const isOldversion = targetObject.isMobile || version === "One";
   // const isOldversion = false;
   const isrotate = rotatetype === "rotate-on";
@@ -63,7 +66,7 @@ export default function decorate(block) {
 
   // get all children elements
   // const panels = [...block.children];
-  const panels = Array.from(block.children).slice(5);
+  const panels = Array.from(block.children).slice(6);
 
   // loop through all children blocks
   [...panels].forEach((panel, i) => {
@@ -128,47 +131,7 @@ export default function decorate(block) {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            new Glider(panelContainer, {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              scrollLock: true,
-              dots: buttonContainer,
-              arrows: {
-                prev: slidePrev,
-                next: slideNext
-              },           
-              scrollLock:true,
-              draggable: true,
-              responsive: [
-                {
-                  breakpoint: 767,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                  }
-                },
-               {
-                  // screens greater than >= 1024px
-                  breakpoint: 1025,
-                  settings: {
-                    slidesToShow: 3.5,
-                    slidesToScroll: 1,
-                    arrows: {
-                      prev: slidePrev,
-                      next: slideNext
-                    },                   
-                    scrollLock:true,
-                    draggable: true,
-                    settings: {
-                      slidesToShow: 2,
-                      slidesToScroll: 1,
-                      duration: 0.25
-                    }
-                  }
-                }
-
-              ]
-            });
+            new Glider(panelContainer, );
           }
         });
       }

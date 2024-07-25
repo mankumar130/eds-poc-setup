@@ -554,7 +554,7 @@
         ]
       },
       {
-        "component": "richtext",
+        "component": "text",
         "valueType": "string",
         "name": "config",
         "value": "",
