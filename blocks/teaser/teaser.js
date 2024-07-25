@@ -68,7 +68,6 @@ export function generateTeaserDOM(props, classes) {
     bgImageAllow = mobileImageStyle;
   }
 
-  debugger;
   const teaserDOM = document.createRange().createContextualFragment(
     `
     <div class='background' style='background-image:url(${bgImageAllow})'>
