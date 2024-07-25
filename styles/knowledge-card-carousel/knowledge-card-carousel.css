@@ -69,15 +69,15 @@
     height: 100%;
     justify-content: end;
 }
-.carousel-wrapper .carousel .panel-container .teaser .background .foreground .text .cta{
+.section.knowledge-card-carousel .carousel-wrapper .carousel .panel-container .teaser .background .foreground .text .cta{
     position: absolute;
     top: 19%;
     left: 37%;
 }
-.carousel-wrapper .carousel .panel-container .teaser .background .foreground .text .cta {
+.section.knowledge-card-carousel .carousel-wrapper .carousel .panel-container .teaser .background .foreground .text .cta {
     width: 9pc;
 }
-.carousel-wrapper .carousel .panel-container .teaser .background .foreground .text .cta a{
+.section.knowledge-card-carousel .carousel-wrapper .carousel .panel-container .teaser .background .foreground .text .cta a{
     margin: unset;
     background-color: #365069;
     border-radius: 67px;
@@ -145,10 +145,10 @@
         padding-bottom: 4px;
         margin: 20px 0;
     }
-    .carousel-wrapper .carousel .panel-container .teaser .background .foreground .text .cta a {
+    .section.knowledge-card-carousel .carousel-wrapper .carousel .panel-container .teaser .background .foreground .text .cta a {
         font-size: 1rem;
     }
-    .carousel-wrapper .carousel .panel-container .teaser .background .foreground .text .cta {
+    .section.knowledge-card-carousel .carousel-wrapper .carousel .panel-container .teaser .background .foreground .text .cta {
         left: 125px;
     }
     .section.knowledge-card-carousel .carousel-wrapper .carousel .panel-container .teaser {
