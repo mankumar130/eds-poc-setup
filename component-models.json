@@ -104,7 +104,7 @@
         "label": "Style",
         "options": [
           {
-            "label": "Highlight",
+            "name": "Highlight",
             "value": "highlight"
           }
         ]
