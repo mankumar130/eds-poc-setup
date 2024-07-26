@@ -255,5 +255,9 @@
     padding-top: unset;
   }
 }
-
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+  .section.choose-us-css .default-content-wrapper p{
+    font-size: 1rem;
+  }
+}
 /* choose us end */
