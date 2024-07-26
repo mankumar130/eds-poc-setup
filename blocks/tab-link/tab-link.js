@@ -25,6 +25,9 @@ export default function decorate(block) {
         createCarousle(block, prevButton, nextButton);
     }else if (classes === "Glider"){
         const configJson = JSON.parse(configData);
+        configJson.arrows = {};
+        configJson.arrows.prev = prevButton;
+        configJson.arrows.next = nextButton;
         new Glider( block , configJson);
     }
     const heading = block.querySelector("p");
