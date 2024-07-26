@@ -456,10 +456,10 @@ export function decorateViewMore(block) {
     if(isViewMore){
       viewLink.textContent = "View less";
       viewLink.classList.add('view-less-more-column');
-      scrollToComponentNearBranch(section);
     }else{
       viewLink.textContent = "View more";
       viewLink.classList.remove('view-less-more-column');
+      scrollToComponentNearBranch(section);
     }
   });
 }
