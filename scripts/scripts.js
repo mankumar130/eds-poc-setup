@@ -453,7 +453,14 @@ export function decorateViewMore(block) {
     e.preventDefault();
     const isViewMore = viewLink.textContent.trim().toLowerCase() === 'view more';
     toggleVisibility(isViewMore);
-    viewLink.textContent = isViewMore ? 'View less' : 'View more';
+    if(isViewMore){
+      viewLink.textContent = "View less";
+      viewLink.classList.add('view-less-more-column');
+    }else{
+      viewLink.textContent = "View more";
+      viewLink.classList.remove('view-less-more-column');
+      scrollToComponentNearBranch(section);
+    }
   });
 }
 
@@ -498,6 +505,30 @@ export function decorateAnchorTag(main) {
     console.warn(error);
   }
 }
+
+
+function scrollToComponentNearBranch(component) {
+  if (window.matchMedia("(max-width: 767px)").matches) {
+      window.scroll({
+          top: component.offsetTop - 100,
+          left: 0,
+          behavior: "smooth",
+      });
+  } else if (window.matchMedia("(max-width: 1024px)").matches) {
+      window.scroll({
+          top: component.offsetTop - 140,
+          left: 0,
+          behavior: "smooth",
+      });
+  } else {
+      window.scroll({
+          top: component.offsetTop - 180,
+          left: 0,
+          behavior: "smooth",
+      });
+  }
+}
+
 /* helper script end */
 
 /**
