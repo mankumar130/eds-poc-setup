@@ -7,7 +7,7 @@
     padding-bottom: 72px;
 }
 
-.section.calc-mob-carousel-wrapper .carousel-wrapper .panel-container {
+.section.calc-mob-carousel-wrapper .carousel-wrapper .panel-container .glider-track {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,9 +64,34 @@
 
 
 @media screen and (max-width: 767px) {
-
-}
-
-@media screen and (min-width: 768px) and  (max-width: 1024px){
-    
+    .section.calc-mob-carousel-wrapper .default-content-wrapper h2{
+        font-size: 1.125rem;
+        line-height: 27px;
+        padding-bottom: 40px;
+    }
+    .section.calc-mob-carousel-wrapper .carousel-wrapper .panel-container .glider-track {
+        gap: 16px;
+    }
+    .section.calc-mob-carousel-wrapper .carousel-wrapper .panel-container .teaser.block {
+        max-width: unset;
+    }
+    .section.calc-mob-carousel-wrapper .carousel-wrapper .carousel.block .button-container.glider-dots {
+        display: flex;
+        padding-top: 40px;
+    }
+    .section.calc-mob-carousel-wrapper .carousel-wrapper .carousel.block>.button-container button.active {
+        background-color: #000;
+        border-radius: 4px;
+        width: 16px;
+        opacity: 1;
+    }
+    .section.calc-mob-carousel-wrapper .carousel-wrapper .carousel.block>.button-container button {
+        width: 4px;
+        height: 4px;
+        margin: 0 4px;
+        border-radius: 50%;
+        background: #000;
+        opacity: .2;
+        border: 1px solid #000;
+    }
 }

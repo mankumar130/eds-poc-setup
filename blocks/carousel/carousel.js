@@ -108,7 +108,11 @@ export default function decorate(block) {
       })
       if (!i) button.classList.add('selected');
 
-      isOldversion && observer.observe(panel);
+      if (version === "Glider") {
+
+      } else if (isOldversion) {
+        observer.observe(panel);
+      }
 
       // add event listener to button
       button.addEventListener('click', () => {
