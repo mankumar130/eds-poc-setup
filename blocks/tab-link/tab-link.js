@@ -1,8 +1,9 @@
 import { createButton, createCarousle, getProps,targetObject } from "../../scripts/scripts.js";
+import Glider from "../carousel/glider.min.js";
 
 export default function decorate(block) {
     //console.log("tab link block");
-    const [, classes, prev, next] = getProps(block, {
+    const [, classes, prev, next , configData] = getProps(block, {
         picture: true
     })
     if (classes === "carousel" && !targetObject.isTab) {
@@ -22,6 +23,9 @@ export default function decorate(block) {
         prevButton.classList.add(classes === "normal" ? "dp-none" : "dp-normal");
         nextButton.classList.add(classes === "normal" ? "dp-none" : "dp-normal");
         createCarousle(block, prevButton, nextButton);
+    }else if (classes === "Glider"){
+        const configJson = JSON.parse(configData);
+        new Glider( block , configJson);
     }
     const heading = block.querySelector("p");
     const activeTab = block.querySelector("strong");
