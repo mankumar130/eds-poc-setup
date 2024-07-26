@@ -510,19 +510,19 @@ export function decorateAnchorTag(main) {
 function scrollToComponentNearBranch(component) {
   if (window.matchMedia("(max-width: 767px)").matches) {
       window.scroll({
-          top: component.offsetTop - 100,
+          top: component.offsetTop + 20,
           left: 0,
           behavior: "smooth",
       });
   } else if (window.matchMedia("(max-width: 1024px)").matches) {
       window.scroll({
-          top: component.offsetTop - 140,
+          top: component.offsetTop + 20,
           left: 0,
           behavior: "smooth",
       });
   } else {
       window.scroll({
-          top: component.offsetTop - 180,
+          top: component.offsetTop - 30,
           left: 0,
           behavior: "smooth",
       });
