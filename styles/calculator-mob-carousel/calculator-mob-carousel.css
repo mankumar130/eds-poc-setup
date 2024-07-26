@@ -4,7 +4,7 @@
     font-family: 'Nunito-Extrabold', sans-serif;
     font-size: 2rem;
     line-height: 40px;
-    padding-bottom: 72px;
+    padding-bottom: 32px;
 }
 
 .section.calc-mob-carousel-wrapper .carousel-wrapper .panel-container .glider-track {
@@ -67,7 +67,7 @@
     .section.calc-mob-carousel-wrapper .default-content-wrapper h2{
         font-size: 1.125rem;
         line-height: 27px;
-        padding-bottom: 40px;
+        padding-bottom: 24px;
     }
     .section.calc-mob-carousel-wrapper .carousel-wrapper .panel-container .glider-track {
         gap: 16px;
