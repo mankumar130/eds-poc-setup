@@ -636,6 +636,13 @@
         "name": "tabpicturenext",
         "value": "",
         "label": "Set next icon on tab carousel"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "config",
+        "value": "",
+        "label": "Config"
       }
     ]
   },

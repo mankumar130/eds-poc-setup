@@ -1,0 +1,97 @@
+.section.calc-mob-carousel-wrapper .default-content-wrapper h2 {
+    color: var(--black);
+    display: block;
+    font-family: 'Nunito-Extrabold', sans-serif;
+    font-size: 2rem;
+    line-height: 40px;
+    padding-bottom: 32px;
+}
+
+.section.calc-mob-carousel-wrapper .carousel-wrapper .panel-container .glider-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.section.calc-mob-carousel-wrapper .carousel-wrapper .panel-container .teaser.block {
+    border-radius: 16px;
+    height: 100%;
+    max-width: 354px;
+    width: 100%;
+}
+
+.section.calc-mob-carousel-wrapper .carousel-wrapper .panel-container .teaser.block .background {
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 100% 100%;
+    padding: 32px;
+}
+
+.section.calc-mob-carousel-wrapper .carousel-wrapper .panel-container .teaser.block .background .foreground a {
+    margin: unset;
+    padding: unset;
+    background-color: transparent;
+    border: unset;
+    border-radius: unset;
+    white-space: normal;
+}
+
+.section.calc-mob-carousel-wrapper .carousel-wrapper .panel-container .teaser.block .background .foreground .long-description .button-container > a{
+    color: var(--white);
+    font-family: 'Nunito-Extrabold',sans-serif;
+    font-size: 1.25rem;
+    line-height: 30px;
+    max-width: 15pc;
+    text-align: left;
+}
+
+.section.calc-mob-carousel-wrapper .carousel-wrapper .panel-container .teaser.block .background .foreground .long-description .button-container > a:hover {
+    color: var(--orange);
+}
+
+.section.calc-mob-carousel-wrapper .carousel-wrapper .panel-container .teaser.block .background .foreground .cta > a {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Nunito-Bold',sans-serif;
+    font-size: 14px;
+    min-width: 129px;
+    padding: 12px;
+    text-align: center;
+    margin-top: 14px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .section.calc-mob-carousel-wrapper .default-content-wrapper h2{
+        font-size: 1.125rem;
+        line-height: 27px;
+        padding-bottom: 24px;
+    }
+    .section.calc-mob-carousel-wrapper .carousel-wrapper .panel-container .glider-track {
+        gap: 16px;
+    }
+    .section.calc-mob-carousel-wrapper .carousel-wrapper .panel-container .teaser.block {
+        max-width: unset;
+    }
+    .section.calc-mob-carousel-wrapper .carousel-wrapper .carousel.block .button-container.glider-dots {
+        display: flex;
+        padding-top: 40px;
+    }
+    .section.calc-mob-carousel-wrapper .carousel-wrapper .carousel.block>.button-container button.active {
+        background-color: #000;
+        border-radius: 4px;
+        width: 16px;
+        opacity: 1;
+    }
+    .section.calc-mob-carousel-wrapper .carousel-wrapper .carousel.block>.button-container button {
+        width: 4px;
+        height: 4px;
+        margin: 0 4px;
+        border-radius: 50%;
+        background: #000;
+        opacity: .2;
+        border: 1px solid #000;
+    }
+}

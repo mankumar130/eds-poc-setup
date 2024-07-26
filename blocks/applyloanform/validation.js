@@ -3,7 +3,6 @@ import { branchInput, cutomerIncome, cutomerName, cutomerNo, formDobInput, formL
 
 
 export function validationJSFunc(){
-    // debugger;
     let checkNumberFor = [cutomerNo()];
     let checkEmptyFor = [loanProduct(), formLoanAmt(), cutomerName(), cutomerIncome(), stateInput(), branchInput(), formTc()];
     let checkDateFor = [formDobInput()];
