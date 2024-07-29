@@ -7,7 +7,8 @@
     line-height: 48px;
     margin-bottom: 16px;
 }
-.section.steps-for-apply .default-content-wrapper >p{
+.section.steps-for-apply .default-content-wrapper >p,
+.section.steps-for-apply .default-content-wrapper >h5{
     color: #000;
     display: block;
     font-family: 'Nunito-Regular', sans-serif;
@@ -26,7 +27,7 @@
     line-height: 24px;
     min-width: 53px;
 }
-.section.steps-for-apply .default-content-wrapper >p>strong>em {
+.section.steps-for-apply .default-content-wrapper >h5>strong {
     font-style: normal;
     color: #000;
     font-family: 'Nunito-Bold',sans-serif;
@@ -39,5 +40,18 @@
     .section.steps-for-apply .default-content-wrapper >h2{
         font-size: 1.125rem;
         line-height: 27px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .section.steps-for-apply .default-content-wrapper >p {
+        position: relative;
+        padding-left: 60px;
+    }
+
+    .section.steps-for-apply .default-content-wrapper >p >strong {
+        margin-bottom: unset;
+        position: absolute;
+        left: 0;
     }
 }
