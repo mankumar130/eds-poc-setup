@@ -293,6 +293,9 @@
     .section.home-loans-products-wrapper.home-loans-single-products-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .keyfeatures-wrapper .keyfeatures .homeloanteaser .cmp-teaser .cmp-teaser__link {
         height: 343px;
     }
+    .section.home-loans-products-wrapper.renovation-home-loan-products .keyfeature-container .keyfeatures-info .keyfeatures{
+        min-height: 272px;
+    }
 }
 
 @media (min-width:1024px) and (max-width:1366px) {

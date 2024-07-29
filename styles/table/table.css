@@ -125,6 +125,12 @@
     text-align: center;
 }
 
+.section.fees-charges-wrapper.four-col-table .code-wrapper .code > div > table > tbody > tr>th,
+.section.fees-charges-wrapper.four-col-table .code-wrapper .code > div > table > tbody > tr>td {
+    width: 25%;
+    text-align: center;
+}
+
 .section.fees-charges-wrapper.three-col-table .code-wrapper .code > div > table > tbody > tr>td>p {
     position: relative;
     display: inline-block;
@@ -149,12 +155,6 @@
 .section.fees-charges-wrapper.table-text-center-align .code-wrapper .code>div>table>tbody>tr>td {
     text-align: center;
 }
-/* .section.fees-charges-wrapper.one-col-table .code-wrapper > .code.block > div > table > tbody > tr:nth-child(2) > td:nth-child(2){
-        width: 10% !important;
-} */
-/* .section.fees-charges-wrapper.one-col-table .code-wrapper > .code.block > div > table > tbody > tr > td:nth-child(1){
-    width: 73% !important;
-} */
 @media screen and (max-width: 767px) {
     .section.fees-charges-wrapper .default-content-wrapper h2 {
         font-size: 1.25rem;
@@ -200,13 +200,16 @@
         left: -13px;
     }
 
-    .section.fees-charges-wrapper.three-col-table .code-wrapper .code.block>div {
+    .section.fees-charges-wrapper.three-col-table .code-wrapper .code.block>div ,
+    .section.fees-charges-wrapper.four-col-table .code-wrapper .code.block>div {
         overflow-x: scroll;
         scrollbar-width: none;
     }
 
     .section.fees-charges-wrapper.three-col-table .code-wrapper .code.block > div > table > tbody > tr>th, 
-    .section.fees-charges-wrapper.three-col-table .code-wrapper .code.block > div > table > tbody > tr>td {
+    .section.fees-charges-wrapper.three-col-table .code-wrapper .code.block > div > table > tbody > tr>td,
+    .section.fees-charges-wrapper.four-col-table .code-wrapper .code.block > div > table > tbody > tr>th, 
+    .section.fees-charges-wrapper.four-col-table .code-wrapper .code.block > div > table > tbody > tr>td {
         min-width: 166px;
     }
     .section.fees-charges-wrapper.three-col-table > .code-wrapper > .code.block > div > table>tbody>tr>td>p>strong>span{

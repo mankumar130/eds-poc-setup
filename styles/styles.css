@@ -506,19 +506,19 @@ main img {
 /* common classes for banner background end */
 
 /* background color on section  */
-.section.--lilen {
+.section.lilen {
   background-color: var(--lilen);
 }
-.section.--rosewhite {
+.section.rosewhite {
   background-color: var(--rosewhite);
 }
-.section.--light-pink {
+.section.light-pink {
   background-color: var(--light-pink);
 }
-.section.--swansdown {
+.section.swansdown {
   background-color: var(--swansdown);
 }
-.section.--light-violet {
+.section.light-violet {
   background-color: var(--light-violet);
 }
 
