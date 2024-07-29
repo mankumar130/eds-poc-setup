@@ -237,7 +237,7 @@
     grid-column: span 4 / span 4;
 }
 
-.section.we-care-card-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaser-wrapper .teaser {
+.section.we-care-card-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaser-wrapper .teaser{
     border-radius: 30px;
 }
 
@@ -398,6 +398,10 @@
     width: 100%;
 }
 
+.section.our-work-culture-card-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaser-wrapper .teaser {
+    border-radius: 20px;
+}
+
 @media screen and (max-width: 767px) {
     .section.our-work-culture-card-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaser-wrapper:first-child {
         grid-column: span 12 / span 12;
@@ -417,6 +421,11 @@
 
     .section.our-work-culture-card-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaser-wrapper .teaser .background {
        height: 196px;
+       border-radius: 12px;
+    }
+
+    .section.our-work-culture-card-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .teaser-wrapper .teaser {
+        border-radius: 12px;
     }
 }
 
