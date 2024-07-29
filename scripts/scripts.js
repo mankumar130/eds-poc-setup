@@ -700,6 +700,7 @@ async function loadingCustomCss() {
     `${window.hlx.codeBasePath}/styles/disclaimer/disclaimer.css`,
     `${window.hlx.codeBasePath}/styles/risk-gradation-popup/risk-gradation-popup.css`,
     `${window.hlx.codeBasePath}/styles/piramal-group-ajay-info/piramal-group-ajay-info.css`,
+    `${window.hlx.codeBasePath}/styles/legal/legal.css`,
     `${window.hlx.codeBasePath}/styles/calculator-mob-carousel/calculator-mob-carousel.css`,
   ];
 
