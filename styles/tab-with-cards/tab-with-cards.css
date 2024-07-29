@@ -162,18 +162,20 @@
         font-size: 1rem;
         line-height: 24px;
     }
-
-    .section.tab-with-cards-wrapper .panel-container .teaser.block .background>.foreground .text .long-description>p,
-    .section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block .background>.foreground .text .long-description>p,
-    .section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block .background>.foreground .text .long-description>p>a>sub {
-        font-size: 0.75rem;
-        line-height: 16px;
-    }
 }
 
 @media screen and (max-width:1024px) {
     .section.tab-with-cards-wrapper.teaser-container {
         padding: unset;
+    }
+    .section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block .background>.foreground .text .long-description>p>br {
+        display: none;
+    }
+    .section.tab-with-cards-wrapper .panel-container .teaser.block .background>.foreground .text .long-description>p,
+    .section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block .background>.foreground .text .long-description>p,
+    .section.tab-with-cards-wrapper .wrappercreation-wrapper .wrapper-creation-container .teaser.block .background>.foreground .text .long-description>p>a>sub {
+        font-size: 0.75rem;
+        line-height: 16px;
     }
 }
 
