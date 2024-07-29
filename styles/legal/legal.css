@@ -1,11 +1,17 @@
 /* legal banner css start */
 .section.legal-banner-wrapper .teaser-wrapper .teaser .background {
     margin-top: 40px;
-    padding-bottom: 26px;
+    padding: 0;
+    align-items: center;
 }
 
 .section.legal-banner-wrapper .teaser-wrapper .teaser .background .foreground {
     margin: 0;
+}
+
+.section.legal-banner-wrapper .teaser-wrapper .teaser .background .front-picture {
+    margin-top: 13px;
+    justify-content: flex-end;
 }
 
 .section.legal-banner-wrapper .teaser-wrapper .teaser .background .foreground .text .title h2 {
@@ -17,19 +23,50 @@
     margin: 0;
 }
 
+.section.company-details-wrapper.legal-banner-wrapper .tab-link-wrapper {
+    padding-bottom: 26px;
+}
+
+.section.company-details-wrapper.legal-banner-wrapper .tab-link-wrapper .tab-link.block {
+    margin: 0;
+}
+
+.section.company-details-wrapper.legal-banner-wrapper .tab-link-wrapper .tab-link.block>div>div>ul {
+    gap: 16px;
+}
+
+.section.company-details-wrapper.legal-banner-wrapper .tab-link-wrapper .tab-link .compony-details div ul li strong a::after,
+.section.company-details-wrapper.legal-banner-wrapper .tab-link-wrapper .tab-link .compony-details div ul li a::after {
+    content: none;
+}
+
+.section.company-details-wrapper.legal-banner-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li>strong>a {
+    color: var(--swansdown);
+    border: 1px solid var(--greyishblue);
+}
+
+.section.company-details-wrapper.about-us-company-details.legal-banner-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li>a:hover,
+.section.company-details-wrapper.legal-banner-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li>strong>a:hover {
+    background-color: var(--greyishblue);
+    color: var(--swansdown);
+}
+
 @media screen and (max-width: 1024px) {
     .section.legal-banner-wrapper .teaser-wrapper .teaser .background {
-        margin-top: 24px;
-        padding-bottom: 26px;
-        padding-top: 0;
+        margin: 0;
+        padding-bottom: 28px;
+        padding-top: 32.8px;
+        align-items: flex-end;
+        gap: 30px;
     }
 
     .section.legal-banner-wrapper .teaser-wrapper .teaser .background .front-picture {
         max-width: unset;
         width: auto;
+        margin-right: 16px;
     }
 
-    .section.legal-banner-wrapper .teaser-wrapper .teaser .background .front-picture > picture > img {
+    .section.legal-banner-wrapper .teaser-wrapper .teaser .background .front-picture>picture>img {
         display: block;
         height: 52px;
         width: 52px;
@@ -39,7 +76,45 @@
         font-size: 1.5rem;
         line-height: 36px;
     }
+
+    .section.company-details-wrapper.legal-banner-wrapper .tab-link-wrapper .tab-link.block {
+        margin: 0;
+        padding: 0;
+    }
+
+    .section.company-details-wrapper.legal-banner-wrapper .tab-link-wrapper .tab-link.block .text.legal-mobile-text .cmp-text p:first-child {
+        margin: 0;
+    }
+
+    .section.company-details-wrapper.legal-banner-wrapper .tab-link-wrapper .tab-link.block .text.legal-mobile-text .cmp-text p:nth-child(2) {
+        padding: 0;
+        color: #333;
+    }
+
+    .section.company-details-wrapper.legal-banner-wrapper .tab-link-wrapper .tab-link.block .text.legal-mobile-text .cmp-text::after {
+        top: 29px;
+    }
+
+    .section.company-details-wrapper.legal-banner-wrapper .tab-link-wrapper .tab-link.block>div>div>ul {
+        gap: unset;
+    }
+
+    .section.company-details-wrapper.legal-banner-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li>strong>a {
+        color: unset;
+        border: unset;
+    }
+
+    .section.company-details-wrapper.about-us-company-details.legal-banner-wrapper .tab-link-wrapper .tab-link.block>div>div>ul>li>a:hover {
+        background-color: unset;
+        color: unset;
+    }
+
+    .section.company-details-wrapper.legal-banner-wrapper .tab-link-wrapper .tab-link .compony-details div ul li strong a::after,
+    .section.company-details-wrapper.legal-banner-wrapper .tab-link-wrapper .tab-link .compony-details div ul li a::after {
+        content: "";
+    }
 }
+
 /* legal banner css end */
 
 
@@ -50,7 +125,7 @@
     font-size: 1.75rem;
     font-weight: 800;
     line-height: 42px;
-    margin: 24px 0; 
+    margin: 24px 0;
 }
 
 .section.legal-privacy-policy-wrapper .default-content-wrapper p,
@@ -73,7 +148,7 @@
     list-style: none;
 }
 
-.section.legal-privacy-policy-wrapper .default-content-wrapper ul li{
+.section.legal-privacy-policy-wrapper .default-content-wrapper ul li {
     color: #333;
     font-family: Nunito-Regular, sans-serif;
     font-size: 1rem;
@@ -82,8 +157,8 @@
     padding: 5px 32px;
 }
 
-.section.legal-privacy-policy-wrapper .default-content-wrapper ul li::before{
-    background-color: #364754;
+.section.legal-privacy-policy-wrapper .default-content-wrapper ul li::before {
+    background-color: var(--arsenic);
     border-radius: 50%;
     content: "";
     display: inline-table;
@@ -94,7 +169,7 @@
     width: 8px;
 }
 
-.section.legal-privacy-policy-wrapper .default-content-wrapper p a{
+.section.legal-privacy-policy-wrapper .default-content-wrapper p a {
     color: var(--orange);
     text-decoration: none;
 }
@@ -105,13 +180,16 @@
     .section.legal-privacy-policy-wrapper .default-content-wrapper p {
         padding: 0 16px;
     }
-    .section.legal-privacy-policy-wrapper .default-content-wrapper ul li{
+
+    .section.legal-privacy-policy-wrapper .default-content-wrapper ul li {
         padding: 5px 16px;
     }
+
     .section.legal-privacy-policy-wrapper .default-content-wrapper h6 {
         padding: 0 16px;
     }
 }
+
 /* legal privacy policy css end */
 
 /* legal disclaimer css start */
@@ -123,10 +201,11 @@
     padding: 0;
 }
 
-.section.legal-disclaimer-wrapper .default-content-wrapper ul li a{
+.section.legal-disclaimer-wrapper .default-content-wrapper ul li a {
     color: var(--orange);
     text-decoration: none;
 }
+
 /* legal disclaimer css end */
 
 
@@ -138,11 +217,13 @@
     font-size: 1rem;
     font-weight: 700;
 }
+
 /* legal website usage css end */
 
 /* legal whatsapp terms and conditions css start */
 .section.whatsapp-terms-conditions-wrapper .default-content-wrapper p {
-    padding: 0 32px;;
+    padding: 0 32px;
+    ;
 }
 
 .section.whatsapp-terms-conditions-wrapper .default-content-wrapper ul li {
@@ -151,10 +232,13 @@
 
 @media screen and (max-width:1024px) {
     .section.whatsapp-terms-conditions-wrapper .default-content-wrapper p {
-        padding: 0 16px;;
+        padding: 0 16px;
+        ;
     }
+
     .section.whatsapp-terms-conditions-wrapper .default-content-wrapper ul li {
         padding: 5px 16px;
     }
 }
+
 /* legal whatsapp terms and conditions css end */
