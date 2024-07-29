@@ -1,19 +1,21 @@
-import { createButton, createCarousle, getProps,targetObject } from "../../scripts/scripts.js";
+import { createButton, createCarousle, getProps, targetObject } from "../../scripts/scripts.js";
+import Glider from "../carousel/glider.min.js";
 
 export default function decorate(block) {
     //console.log("tab link block");
-    const [, classes, prev, next] = getProps(block, {
+    const [, classes, prev, next , configData] = getProps(block, {
         picture: true
     })
     if (classes === "carousel" && !targetObject.isTab) {
+        block.children[block.children.length - 1].remove();
         block.children[3].remove();
         block.children[2].remove();
         block.children[1].remove();
         block.classList.add(classes);
-        block.querySelectorAll("ul").forEach(el => {
+        block.querySelectorAll("ul").forEach((el) => {
             el.classList.add("carousel-inner");
-            el.id = ("carouselInner");
-        })
+            el.id = "carouselInner";
+        });
         block.querySelectorAll("li").forEach((el, index) => {
             el.classList.add("carousel-item");
         });
@@ -22,6 +24,38 @@ export default function decorate(block) {
         prevButton.classList.add(classes === "normal" ? "dp-none" : "dp-normal");
         nextButton.classList.add(classes === "normal" ? "dp-none" : "dp-normal");
         createCarousle(block, prevButton, nextButton);
+    } else if (classes.toLowerCase() === "glider") {
+        block.children[block.children.length - 1].remove();
+        block.children[3].remove();
+        block.children[2].remove();
+        block.children[1].remove();
+        block.classList.add(classes);
+        if (!targetObject.isMobile && !targetObject.isTab) {
+            const prevButton = createButton("glider-prev", prev?.outerHTML);
+            const nextButton = createButton("glider-next", next?.outerHTML);
+
+            const div = document.createElement("div");
+            const btnContainer = document.createElement("div");
+            btnContainer.append(prevButton);
+            btnContainer.append(nextButton);
+            const container = block.querySelector("ul");
+            div.append(container);
+            div.append(btnContainer);
+            block.append(div);
+
+            const configJson = JSON.parse(configData);
+            configJson.arrows = {};
+            configJson.arrows.prev = prevButton;
+            configJson.arrows.next = nextButton;
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        new Glider(container, configJson);
+                    }
+                });
+            });
+            observer.observe(block);
+        }
     }
     const heading = block.querySelector("p");
     const activeTab = block.querySelector("strong");
@@ -59,9 +93,9 @@ export default function decorate(block) {
     overlay.classList.add("body-overlay");
     document.body.appendChild(overlay);
 
-    overlay.addEventListener('click', function () {
+    overlay.addEventListener("click", function () {
         model.classList.remove("model-mob-hide");
         document.body.classList.remove("overlay-active");
-        document.body.style.overflow="auto";
+        document.body.style.overflow = "auto";
     });
-} 
+}

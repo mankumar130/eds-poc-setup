@@ -453,7 +453,14 @@ export function decorateViewMore(block) {
     e.preventDefault();
     const isViewMore = viewLink.textContent.trim().toLowerCase() === 'view more';
     toggleVisibility(isViewMore);
-    viewLink.textContent = isViewMore ? 'View less' : 'View more';
+    if(isViewMore){
+      viewLink.textContent = "View less";
+      viewLink.classList.add('view-less-more-column');
+    }else{
+      viewLink.textContent = "View more";
+      viewLink.classList.remove('view-less-more-column');
+      scrollToComponentNearBranch(section);
+    }
   });
 }
 
@@ -498,6 +505,30 @@ export function decorateAnchorTag(main) {
     console.warn(error);
   }
 }
+
+
+function scrollToComponentNearBranch(component) {
+  if (window.matchMedia("(max-width: 767px)").matches) {
+      window.scroll({
+          top: component.offsetTop + 20,
+          left: 0,
+          behavior: "smooth",
+      });
+  } else if (window.matchMedia("(max-width: 1024px)").matches) {
+      window.scroll({
+          top: component.offsetTop + 20,
+          left: 0,
+          behavior: "smooth",
+      });
+  } else {
+      window.scroll({
+          top: component.offsetTop - 30,
+          left: 0,
+          behavior: "smooth",
+      });
+  }
+}
+
 /* helper script end */
 
 /**
@@ -670,6 +701,7 @@ async function loadingCustomCss() {
     `${window.hlx.codeBasePath}/styles/risk-gradation-popup/risk-gradation-popup.css`,
     `${window.hlx.codeBasePath}/styles/piramal-group-ajay-info/piramal-group-ajay-info.css`,
     `${window.hlx.codeBasePath}/styles/legal/legal.css`,
+    `${window.hlx.codeBasePath}/styles/calculator-mob-carousel/calculator-mob-carousel.css`,
   ];
 
   loadCssArray.forEach(async (eachCss) => {

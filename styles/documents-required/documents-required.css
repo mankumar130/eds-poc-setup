@@ -387,6 +387,17 @@ table {
  .section.documents-required-brown .default-content-wrapper:last-child{
     display: none
  }
+ 
+ .documents-required-brown .accordion-group .accordion recommeded {
+    background-color: #e3f6e9;
+    border-radius: 4px;
+    color: #277742;
+    font-size: 9pt;
+    margin-left: 14px;
+    padding: 4px 10px;
+ }
+ 
+
 @media screen and (max-width:1400px) {
     .section.documents-required-brown{
         /* padding-bottom: 72px; */
@@ -585,6 +596,15 @@ table {
         font-size: 0.75rem;
         line-height: 16px;
      }
+
+     .documents-required-brown .accordion-group .accordion recommeded {
+        font-family: 'Nunito-Regular',sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        margin-left: 8px;
+        padding: 1.5px 4.5px;
+     }
+
 }
 @media screen and (min-width:768px) and (max-width:1024px) {
     .section.documents-required-brown .default-content-wrapper .button-container{     

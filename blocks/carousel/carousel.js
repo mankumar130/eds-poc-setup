@@ -56,6 +56,8 @@ export default function decorate(block) {
   const carouselshowtype = block.children[2].innerText.trim() || "primary";
   const rotatetype = block.children[3].innerText.trim() || "rotate-off";
   const version = block.children[4].innerText.trim() || "One";
+  const configData = block.children[5].innerText.trim() || "";
+
   const isOldversion = targetObject.isMobile || version === "One";
   // const isOldversion = false;
   const isrotate = rotatetype === "rotate-on";
@@ -63,7 +65,7 @@ export default function decorate(block) {
 
   // get all children elements
   // const panels = [...block.children];
-  const panels = Array.from(block.children).slice(5);
+  const panels = Array.from(block.children).slice(6);
 
   // loop through all children blocks
   [...panels].forEach((panel, i) => {
@@ -106,7 +108,11 @@ export default function decorate(block) {
       })
       if (!i) button.classList.add('selected');
 
-      isOldversion && observer.observe(panel);
+      if (version === "Glider") {
+
+      } else if (isOldversion) {
+        observer.observe(panel);
+      }
 
       // add event listener to button
       button.addEventListener('click', () => {
@@ -123,52 +129,19 @@ export default function decorate(block) {
 
   // /*
   if (version === "Glider") {
+    const configJson = JSON.parse(configData);
+    console.log(configJson);
+    configJson.arrows = {};
+    configJson.arrows.prev = slidePrev;
+    configJson.arrows.next = slideNext;
+    configJson.dots = buttonContainer;
+
     block.append(buttonContainer);
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            new Glider(panelContainer, {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              scrollLock: true,
-              dots: buttonContainer,
-              arrows: {
-                prev: slidePrev,
-                next: slideNext
-              },           
-              scrollLock:true,
-              draggable: true,
-              responsive: [
-                {
-                  breakpoint: 767,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                  }
-                },
-               {
-                  // screens greater than >= 1024px
-                  breakpoint: 1025,
-                  settings: {
-                    slidesToShow: 3.5,
-                    slidesToScroll: 1,
-                    arrows: {
-                      prev: slidePrev,
-                      next: slideNext
-                    },                   
-                    scrollLock:true,
-                    draggable: true,
-                    settings: {
-                      slidesToShow: 2,
-                      slidesToScroll: 1,
-                      duration: 0.25
-                    }
-                  }
-                }
-
-              ]
-            });
+            new Glider(panelContainer, configJson);
           }
         });
       }

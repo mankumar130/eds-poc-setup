@@ -552,6 +552,13 @@
             "value": "Glider"
           }
         ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "config",
+        "value": "",
+        "label": "Config"
       }
     ]
   },
@@ -607,6 +614,10 @@
             "value": "normal"
           },
           {
+            "name": "Glider",
+            "value": "glider"
+          },
+          {
             "name": "carousel",
             "value": "carousel"
           }
@@ -625,6 +636,13 @@
         "name": "tabpicturenext",
         "value": "",
         "label": "Set next icon on tab carousel"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "config",
+        "value": "",
+        "label": "Config"
       }
     ]
   },

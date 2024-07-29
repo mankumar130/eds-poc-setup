@@ -79,6 +79,14 @@
   line-height: 1.5rem;
 }
 
+.section.choose-us-css .columns-wrapper .columns div div :nth-child(3)>strong {
+  color: #666;
+  font-family: 'Nunito-Regular',sans-serif;
+  font-size: 1rem;
+  font-weight: bolder;
+  line-height: 24px;
+}
+
 .section.choose-us-css .columns-wrapper .columns div div :nth-child(3)>a {
   color: var(--orange);
   text-decoration: none;
@@ -127,7 +135,8 @@
   }
 
   .section.choose-us-css .default-content-wrapper p,
-  .section.choose-us-css .columns-wrapper .columns div div :nth-child(3) {
+  .section.choose-us-css .columns-wrapper .columns div div :nth-child(3),
+  .section.choose-us-css .columns-wrapper .columns div div :nth-child(3)>strong  {
     font-size: 0.875rem;
     line-height: 1.25rem;
     padding-bottom: 4px;
@@ -231,7 +240,8 @@
     padding-top: 24px;
   }
   .section.choose-us-css .default-content-wrapper p,
-  .section.choose-us-css .columns-wrapper .columns div div :nth-child(3) {
+  .section.choose-us-css .columns-wrapper .columns div div :nth-child(3),
+  .section.choose-us-css .columns-wrapper .columns div div :nth-child(3)>strong  {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
@@ -245,5 +255,9 @@
     padding-top: unset;
   }
 }
-
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+  .section.choose-us-css .default-content-wrapper p{
+    font-size: 1rem;
+  }
+}
 /* choose us end */
