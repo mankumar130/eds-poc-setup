@@ -29,6 +29,10 @@
     row-gap: 10px;
 }
 
+.section.home-loans-products-wrapper.home-loans-products-single-card .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .keyfeatures-wrapper .keyfeatures .homeloanteaser .cmp-teaser .cmp-teaser__link {
+    border-radius: 9pt;
+}
+
 .section.home-loans-products-wrapper.home-loans-single-products-wrapper .wrappercreation-wrapper .wrappercreation .wrapper-creation-container .keyfeatures-wrapper .keyfeatures .homeloanteaser .cmp-teaser .cmp-teaser__link{
     height: 267px;
 }
