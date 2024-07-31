@@ -150,6 +150,16 @@
     ]
   },
   {
+    "id": "fragment",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
+      }
+    ]
+  },
+  {
     "id": "hero",
     "fields": [
       {
