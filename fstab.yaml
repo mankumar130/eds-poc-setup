@@ -1,5 +1,3 @@
 mountpoints:
   /:
     url: "https://author-p16558-e1352928.adobeaemcloud.com/bin/franklin.delivery/mankumar130/eds-poc-setup/main"
-    type: "markup"
-    suffix: ".html"
